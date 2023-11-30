@@ -1,31 +1,54 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import { Icon } from 'astro-icon';
+import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon";
+import MainButton from "../components/MainButton.astro";
 ---
 
-
 <Layout title="Victor Benazzi - Web Designer">
-	<div class="flex flex-col justify-center items-center">
-		<header class=" flex flex-col items-center justify-center w-full h-16 mt-4 px-4 gap-x-2 ">
-		<h3 class="text-slate-50 ">Victor Benazzi</h3>
-		
-		 <div class="flex flex-row items-center justify-between">
-			<a href="https://github.com/victorbenazzi/" target="_blank">
-				<div class=" w-8 h-8">
-					<Icon name="ph:github-logo-duotone" class="text-slate-50 hover:text-violet-700"/>
-				</div>
-			</a>
-			<a href="https://www.linkedin.com/in/victorbenazzi/" target="_blank">
-				<div class=" w-8 h-8">
-					<Icon name="ph:linkedin-logo-duotone" class="text-slate-50 hover:text-violet-700"/>
-				</div>
-			</a>
-		</div>
-		</header>
-	</div>
-</Layout>
+  <div class="flex flex-col justify-center items-center bg-local bg-no-repeat bg-cover h-screen" style="background-image: url(/src/assets/bg-header-2.webp)">
+    <header
+      class="flex flex-col items-center justify-center w-full h-16 mt-4 px-4 gap-x-2"
+    >
+      <h3 class="text-slate-50">Victor Benazzi</h3>
 
-<style lang="css">
-   
-  
-</style>
+      <div class="flex flex-row items-center justify-between">
+        <a href="https://github.com/victorbenazzi/" target="_blank">
+          <div class="w-8 h-8">
+            <Icon
+              name="ph:github-logo-duotone"
+              class="text-slate-50 hover:text-violet-700"
+            />
+		
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/victorbenazzi/" target="_blank">
+          <div class="w-8 h-8">
+            <Icon
+              name="ph:linkedin-logo-duotone"
+              class="text-slate-50 hover:text-violet-700"
+            />
+          </div>
+        </a>
+      </div>
+    </header>
+
+    <section
+      class="flex flex-col items-center justify-center w-full h-full px-4 gap-x-2"
+    >
+      <div
+        class="flex flex-col items-center justify-center gap-y-6 w-[80%] max-w-[890px] md:h-[18rem] lg:h-[18rem] xl:h-[18rem] sm:h-fit"
+      >
+        <h1 class="text-4xl font-bold text-center text-slate-50">
+          Web Designer & Front-end Developer
+        </h1>
+        <p class="text-center text-slate-50">
+          Sou um web designer e front-end developer especializado em criar sites
+          e landing pages incríveis. Com HTML, CSS, JavaScript, WordPress e
+          outras tecnologias, desenvolvo soluções web que combinam design,
+          funcionalidade e responsividade.
+        </p>
+		<MainButton labelButton="Fale Comigo"  iconButton="ph:whatsapp-logo" target="_blank" link="https://api.whatsapp.com/send/?phone=5569992993889&text=Olá tudo bem? Vim do seu site e queria conhecer seus serviços"/>
+      </div>
+    </section>
+  </div>
+</Layout>

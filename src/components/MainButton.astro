@@ -1,0 +1,31 @@
+---
+import { Icon } from "astro-icon";
+export interface Props {
+    labelButton: string;
+    iconButton: string;
+    link: string;
+    target: string;
+}
+const { labelButton, iconButton, link, target } = Astro.props;
+---
+
+
+
+<div class="rounded-full p-0.5 bg-gradient-to-r from-yellow-500  via-pink-500  to-cyan-500">
+<button class="flex flex-row items-center justify-center bg-slate-950 hover:bg-slate-800 text-slate-50 py-4 px-5 hover:bg rounded-full w-[200px] h-auto gradient-border">
+    <a href={link} target={target} class="flex flew-row w-full items-center justify-center gap-4">
+    <p>{labelButton}</p>
+        <div class="w-5 h-5">
+          <Icon
+            name={iconButton}
+          
+          />
+      
+        </div>
+      </a>
+</button>
+
+</div>
+
+
+<!-- border-image-source: linear-gradient(to right, #F5C12B, #C40566, #FF99DD, #4414EC, #00C9FF); -->
