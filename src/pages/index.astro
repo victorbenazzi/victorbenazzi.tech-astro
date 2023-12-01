@@ -2,13 +2,32 @@
 import Layout from "../layouts/Layout.astro";
 import { Icon } from "astro-icon";
 import MainButton from "../components/MainButton.astro";
+import { Image } from 'astro:assets';
+import HeaderImg from '../assets/hero-bg.png';
 ---
 
 <Layout title="Victor Benazzi - Web Designer">
-  <div class="flex flex-col justify-center items-center bg-local bg-no-repeat bg-cover h-screen" style="background-image: url(/src/assets/bg-header-2.webp)">
+  <div class="flex flex-col justify-center items-center h-screen">
+
+
     <header
-      class="flex flex-col items-center justify-center w-full h-16 mt-4 px-4 gap-x-2"
+      class="flex flex-row items-center justify-between w-full h-16 mt-4 px-4 gap-x-2 z-50 "
     >
+		<div class="w-6 h-6">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="31" viewBox="0 0 24 31" fill="none">
+				<path d="M16.1942 4.50354C17.5619 5.75802 17.9611 8.39386 17.3913 10.3034C16.4033 9.09943 15.0344 8.71809 13.6164 8.50281C11.4274 8.17059 9.27764 8.29483 7.24418 9.2988C7.0116 9.41373 6.79663 9.56653 6.54247 9.72135C6.3516 9.16595 6.30198 8.60508 6.36861 8.0344C6.53062 6.64433 7.21998 5.57059 8.3165 4.75668C8.75495 4.43114 9.21891 4.14013 9.67174 3.83311C11.0628 2.88959 11.4392 1.78335 10.9165 0.174064C10.904 0.134877 10.8929 0.0956885 10.8649 0C11.5752 0.318962 12.0939 0.783331 12.4892 1.39402C12.9068 2.03852 13.1055 2.75148 13.1159 3.52286C13.1212 3.89822 13.1212 4.27703 13.1715 4.64702C13.2943 5.54933 13.7164 5.95335 14.5116 5.97664C15.3278 6.00053 15.9734 5.49425 16.1446 4.69694C16.1576 4.63578 16.1766 4.57533 16.1955 4.50425L16.1942 4.50354Z" fill="url(#paint0_linear_62_66)"/>
+				<path d="M24 10.6216C24 10.6216 19.9502 12.6012 15.8891 12.6012L12.8272 22.1099C12.7126 22.5698 12.3778 22.8823 12.0001 22.8823C11.6222 22.8823 11.2874 22.5698 11.1728 22.1099L8.11084 12.6012C3.3011 12.6012 0 10.6216 0 10.6216C0 10.6216 6.87884 29.4255 6.89231 29.4632C7.08976 30.0192 7.423 30.3772 7.87238 30.3772H16.1269C16.5762 30.3772 16.8961 30.0192 17.107 29.4632C17.1218 29.4262 24 10.6216 24 10.6216Z" fill="white"/>
+				<defs>
+				  <linearGradient id="paint0_linear_62_66" x1="-35.4252" y1="15.1975" x2="27.031" y2="15.1975" gradientUnits="userSpaceOnUse">
+					<stop stop-color="#F5C12B"/>
+					<stop offset="0.265625" stop-color="#C40566"/>
+					<stop offset="0.520833" stop-color="#FF99DD"/>
+					<stop offset="0.755208" stop-color="#4414EC"/>
+					<stop offset="0.973958" stop-color="#00C9FF"/>
+				  </linearGradient>
+				</defs>
+			  </svg>
+		</div>
       <h3 class="text-slate-50">Victor Benazzi</h3>
 
       <div class="flex flex-row items-center justify-between">
@@ -50,5 +69,7 @@ import MainButton from "../components/MainButton.astro";
 		<MainButton labelButton="Fale Comigo"  iconButton="ph:whatsapp-logo" target="_blank" link="https://api.whatsapp.com/send/?phone=5569992993889&text=Olá tudo bem? Vim do seu site e queria conhecer seus serviços"/>
       </div>
     </section>
+
   </div>
 </Layout>
+
