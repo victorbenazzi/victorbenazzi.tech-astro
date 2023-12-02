@@ -1,0 +1,22 @@
+---
+export interface Props {
+    width: string;
+    height: string;
+}
+
+const { width, height } = Astro.props;
+---
+
+<svg
+xmlns="http://www.w3.org/2000/svg"
+width={width}
+height={height}
+viewBox="0 0 46 45"
+fill="none"
+>
+<path
+  fill-rule="evenodd"
+  clip-rule="evenodd"
+  d="M0.402344 22.5C0.402344 34.9256 10.4712 45 22.8903 45C35.3094 45 45.3784 34.9256 45.3784 22.5C45.3784 10.0743 35.3094 0 22.8903 0C10.4712 0 0.402344 10.0743 0.402344 22.5ZM17.2675 13.1247H13.5201V31.8752H17.2675V13.1247ZM21.015 13.1247H32.2573V16.8742H21.015V13.1247ZM32.2573 20.6236H21.015V24.3731H32.2573V20.6236ZM21.015 28.1258H32.2573V31.8752H21.015V28.1258Z"
+  fill="#FF79D1"></path>
+</svg>

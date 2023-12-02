@@ -11,8 +11,8 @@ const { labelButton, iconButton, link, target } = Astro.props;
 
 
 
-<div class="rounded-full p-0.5 bg-gradient-to-r from-yellow-500  via-pink-500  to-cyan-500">
-<button class="flex flex-row items-center justify-center bg-slate-950/[.55] hover:bg-slate-800 text-slate-50 py-4 px-5 hover:bg rounded-full w-[200px] h-auto gradient-border ">
+<div class="rounded-full p-0.5 bg-gradient-to-r from-yellow-500/[.20]  via-pink-500/[.20]  to-cyan-500/[.20]  ">
+<button class="flex flex-row items-center justify-center bg-slate-50/[.60] hover:bg-slate-50/[.80] hover:text-cyan-500 transition-all text-cyan-950 py-4 px-5 hover:bg rounded-full w-[200px] h-auto  ">
     <a href={link} target={target} class="flex flew-row w-full items-center justify-center gap-4">
     <p>{labelButton}</p>
         <div class="w-5 h-5">
