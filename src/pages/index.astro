@@ -7,14 +7,18 @@ import MainIcon from "../components/MainIcon.astro";
 import ElementorIcon from "../components/Icons/ElementorIcon.astro";
 import WordpressIcon from "../components/Icons/WordpressIcon.astro";
 import RdIcon from "../components/Icons/RdIcon.astro";
+import imgBg from "../assets/hero-bg.png";
 import { Image } from "astro:assets";
 
 ---
 
 <Layout title="Victor Benazzi - Web Designer">
-  <div class="flex flex-col justify-center pb-[190px] items-center h-screen bg-local bg-no-repeat bg-cover bg-[url(astro:static'static/bg-header-color.png')]">
+  <div class="flex flex-col justify-center pb-[190px] items-center h-screen bg-local bg-no-repeat bg-cover">
 
 
+    <div>
+      <Image src={imgBg} alt="bg" class="w-full h-full object-cover" />
+    </div>
    
 
     <section
