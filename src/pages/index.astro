@@ -7,10 +7,12 @@ import MainIcon from "../components/MainIcon.astro";
 import ElementorIcon from "../components/Icons/ElementorIcon.astro";
 import WordpressIcon from "../components/Icons/WordpressIcon.astro";
 import RdIcon from "../components/Icons/RdIcon.astro";
+import { Image } from "astro:assets";
+import bgHeaderColor from "../assets/bg-header-color.png";
 ---
 
 <Layout title="Victor Benazzi - Web Designer">
-  <div class="flex flex-col justify-center pb-[190px] items-center h-screen bg-local bg-no-repeat bg-cover bg-[url('./src/assets/bg-header-color.png')]" >
+  <div class="flex flex-col justify-center pb-[190px] items-center h-screen bg-local bg-no-repeat bg-cover bg-[url('src/assets/bg-header-color.png')]" >
 
 
    
@@ -19,7 +21,10 @@ import RdIcon from "../components/Icons/RdIcon.astro";
       class="flex flex-col items-center justify-center w-full h-full px-4 gap-x-2 " 
     >
 
-
+    <Image 
+    src={bgHeaderColor}
+    alt="transparent"
+    >
     
       <div
         class="flex flex-col items-center justify-center gap-y-6 w-[80%] max-w-[890px] md:h-[18rem] lg:h-[18rem] xl:h-[18rem] sm:h-fit z-50"
