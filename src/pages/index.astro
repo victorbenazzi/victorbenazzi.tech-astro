@@ -13,12 +13,12 @@ import { Image } from "astro:assets";
 ---
 
 <Layout title="Victor Benazzi - Web Designer">
-  <div class="flex flex-col justify-center pb-[190px] items-center h-screen bg-local bg-no-repeat bg-cover">
+  <div class="flex flex-col justify-center pb-[190px] items-center h-screen bg-local bg-no-repeat bg-cover" style={{
+    backgroundImage: `url(${imgBg.src})`,
+  }}>
 
 
-    <div>
-      <Image src={imgBg} alt="bg" class="w-full h-full object-cover" />
-    </div>
+   
    
 
     <section
