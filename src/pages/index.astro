@@ -7,14 +7,14 @@ import MainIcon from "../components/MainIcon.astro";
 import ElementorIcon from "../components/Icons/ElementorIcon.astro";
 import WordpressIcon from "../components/Icons/WordpressIcon.astro";
 import RdIcon from "../components/Icons/RdIcon.astro";
-import imgBg from "../assets/bg-header-color.png";
+import BackgroundImage from "../assets/bg-hero-transparent.webp";
 
 
 ---
 
 <Layout title="Victor Benazzi - Web Designer">
-  <div class="flex flex-col justify-center pb-[190px] items-center h-screen bg-local bg-no-repeat bg-cover" style={{
-    backgroundImage: `url(${imgBg.src})`,
+  <div class="flex flex-col  justify-center pb-[190px] items-center h-screen bg-local bg-no-repeat bg-cover" style={{
+    backgroundImage: `url(${BackgroundImage.src})`,
   }}>
 
 
@@ -30,11 +30,11 @@ import imgBg from "../assets/bg-header-color.png";
       <div
         class="flex flex-col items-center justify-center gap-y-6 w-[80%] max-w-[890px] md:h-[18rem] lg:h-[18rem] xl:h-[18rem] sm:h-fit z-50"
       >
-      <h3 class="text-cyan-950">Victor Benazzi</h3>
-        <h1 class="text-4xl font-bold text-center text-cyan-950">
+      <h3 class="text-slate-50">Victor Benazzi</h3>
+        <h1 class="text-4xl font-bold text-center text-slate-50">
           Web Designer & Front-end Developer
         </h1>
-        <p class="text-center text-cyan-800">
+        <p class="text-center text-slate-100">
           Sou um web designer e front-end developer especializado em criar sites
           e landing pages incríveis. Com HTML, CSS, JavaScript, WordPress e
           outras tecnologias, desenvolvo soluções web que combinam design,
@@ -48,7 +48,7 @@ import imgBg from "../assets/bg-header-color.png";
     <div class="flex flex-row items-center justify-center gap-x-2">
 
       <a href="https://api.whatsapp.com/send/?phone=5569992993889&text=Olá tudo bem? Vim do seu site e queria conhecer seus serviços" target="_blank">
-        <div class="flex flex-row items-center justify-center bg-slate-50/[.60] hover:bg-slate-50/[.80] transition-all text-cyan-950 hover:text-cyan-500 p-2  rounded-full">
+        <div class="flex flex-row items-center justify-center bg-slate-50/[.60] hover:bg-slate-50/[.80] transition-all text-slate-800 p-2  rounded-full">
         <div class="w-6 h-6 ">
           <Icon
             name="ph:whatsapp-logo-fill"
@@ -60,7 +60,7 @@ import imgBg from "../assets/bg-header-color.png";
 
 
       <a href="https://github.com/victorbenazzi/" target="_blank">
-        <div class="flex flex-row items-center justify-center bg-slate-50/[.60] hover:bg-slate-50/[.80] transition-all text-cyan-950 hover:text-cyan-500 p-2  rounded-full">
+        <div class="flex flex-row items-center justify-center bg-slate-50/[.60] hover:bg-slate-50/[.80] transition-all text-slate-800  p-2  rounded-full">
         <div class="w-6 h-6 ">
           <Icon
             name="ph:github-logo-fill"
@@ -72,7 +72,7 @@ import imgBg from "../assets/bg-header-color.png";
 
 
       <a href="https://www.linkedin.com/in/victorbenazzi/" target="_blank">
-      <div class="flex flex-row items-center justify-center bg-slate-50/[.60] hover:bg-slate-50/[.80] transition-all text-cyan-950 hover:text-cyan-500 p-2  rounded-full">
+      <div class="flex flex-row items-center justify-center bg-slate-50/[.60] hover:bg-slate-50/[.80] transition-all text-slate-800  p-2  rounded-full">
         <div class="w-6 h-6">
           <Icon
             name="ph:linkedin-logo-fill"
@@ -102,8 +102,11 @@ import imgBg from "../assets/bg-header-color.png";
      <MainIcon Label="Rd Station"> 
       <RdIcon width="40" height="40" />
      </MainIcon>
-    
   </section> -->
+
+
+ 
+
 </Layout>
 
 
