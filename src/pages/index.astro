@@ -3,64 +3,21 @@ import Layout from "../layouts/Layout.astro";
 import { Icon } from "astro-icon";
 import MainButton from "../components/MainButton.astro";
 import LogoSimbol from "../components/LogoSimbol.astro";
-import MainIcon from "../components/MainIcon.astro";
-import ElementorIcon from "../components/Icons/ElementorIcon.astro";
-import WordpressIcon from "../components/Icons/WordpressIcon.astro";
-import RdIcon from "../components/Icons/RdIcon.astro";
-import BackgroundImage from "../assets/bg-hero-transparent.webp";
+import { Image } from "astro:assets";
+import  DonutsImg from "../assets/donuts-bg.png";
+
 
 
 ---
 
 <Layout title="Victor Benazzi - Web Designer">
-  <div class="flex flex-col  justify-center pb-[190px] items-center h-screen bg-local bg-no-repeat bg-cover" style={{
-    backgroundImage: `url(${BackgroundImage.src})`,
-  }}>
-
-
-   
-   
-
-    <section
-      class="flex flex-col items-center justify-center w-full h-full px-4 gap-x-2 " 
-    >
-
-  
-    
-      <div
-        class="flex flex-col items-center justify-center gap-y-6 w-[80%] max-w-[890px] md:h-[18rem] lg:h-[18rem] xl:h-[18rem] sm:h-fit z-50"
-      >
-      <h3 class="text-slate-50">Victor Benazzi</h3>
-        <h1 class="text-4xl font-bold text-center text-slate-50">
-          Web Designer & Front-end Developer
-        </h1>
-        <p class="text-center text-slate-100">
-          Sou um web designer e front-end developer especializado em criar sites
-          e landing pages incríveis. Com HTML, CSS, JavaScript, WordPress e
-          outras tecnologias, desenvolvo soluções web que combinam design,
-          funcionalidade e responsividade.
-        </p>
-
-        <div class="flex flex-row justify-center gap-x-4">
-
-    
-    
-    <div class="flex flex-row items-center justify-center gap-x-2">
-
-      <a href="https://api.whatsapp.com/send/?phone=5569992993889&text=Olá tudo bem? Vim do seu site e queria conhecer seus serviços" target="_blank">
-        <div class="flex flex-row items-center justify-center bg-slate-50/[.60] hover:bg-slate-50/[.80] transition-all text-slate-800 p-2  rounded-full">
-        <div class="w-6 h-6 ">
-          <Icon
-            name="ph:whatsapp-logo-fill"
-          />
-  
-        </div>
-      </div>
-      </a>
-
+  <header class="flex flex-row items-center justify-between w-full xl:p-10 p-4 ">
+    <span class="text-indigo-300 text-lg">Victor Benazzi</span>
+     <LogoSimbol />
+     <div class="flex flex-row items-center justify-center gap-x-4">
 
       <a href="https://github.com/victorbenazzi/" target="_blank">
-        <div class="flex flex-row items-center justify-center bg-slate-50/[.60] hover:bg-slate-50/[.80] transition-all text-slate-800  p-2  rounded-full">
+        <div class="flex flex-row items-center justify-center bg-zinc-900 hover:bg-indigo-hover transition-all text-indigo-300 rounded w-10 h-10">
         <div class="w-6 h-6 ">
           <Icon
             name="ph:github-logo-fill"
@@ -72,40 +29,54 @@ import BackgroundImage from "../assets/bg-hero-transparent.webp";
 
 
       <a href="https://www.linkedin.com/in/victorbenazzi/" target="_blank">
-      <div class="flex flex-row items-center justify-center bg-slate-50/[.60] hover:bg-slate-50/[.80] transition-all text-slate-800  p-2  rounded-full">
+      <div class="flex flex-row items-center justify-center bg-zinc-900 hover:bg-indigo-hover transition-all text-indigo-300 rounded w-10 h-10">
         <div class="w-6 h-6">
           <Icon
             name="ph:linkedin-logo-fill"
-         
           />
         </div>
       </div>
       </a>
+
+
     </div>
-  </div>
-
-
-  </div>
+   </header>
+  <div class="flex flex-col items-center justify-between">
+   <section class="flex flex-row w-11/12 max-w-[1500px] xl:h-[800px] h-[500px] items-center justify-between relative">
    
-    </section>
+    <div class="flex flex-col gap-y-6 md:w-full">
+      <h1 class="lg:text-8xl xl:text-8xl md:text-6xl text-4xl text-slate-50 font-bold">
+        Web Designer <span class="text-indigo-300">&<br></span> Front-end Developer
+      </h1>
+      <p class="text-slate-100 xl:w-[50%] w-[100%] text-base ">
+        Sou um web designer e front-end developer especializado em criar sites
+        e landing pages incríveis. Com HTML, CSS, JavaScript, WordPress e
+        outras tecnologias, desenvolvo soluções web que combinam design,
+        funcionalidade e responsividade.
+      </p>
+      <MainButton 
+      labelButton="Fale comigo"
+      link="https://wa.me/5569992993889"
+      target="_blank"
+      />
+    </div>
+
+
+    <div class="absolute xl:right-[-40px] xl:top-20 top-10 right-0">
+      <Image
+        src={DonutsImg}
+        alt="victor Benazzi Background"
+        width="800"
+      />
+
+   </section>
   </div>
-  <!-- <section class="flex flex-row items-center w-full p-5 h-auto">
-     
-    <MainIcon Label="Elementor"> 
-     <ElementorIcon width="40" height="40" />
-    </MainIcon>
-
-    <MainIcon Label="Wordpress"> 
-      <WordpressIcon width="40" height="40" />
-     </MainIcon>
-
-     <MainIcon Label="Rd Station"> 
-      <RdIcon width="40" height="40" />
-     </MainIcon>
-  </section> -->
+  
+   
 
 
- 
+
+
 
 </Layout>
 

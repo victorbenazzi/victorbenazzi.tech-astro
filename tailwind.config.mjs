@@ -2,7 +2,9 @@
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-		extend: {
+		extend: {colors: {
+			'indigo-hover': '#1F212C',
+		  },
 			Animation: {
 				blob: "blob 1s infinite"
 			},
