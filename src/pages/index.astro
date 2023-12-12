@@ -1,4 +1,5 @@
 ---
+import { SEO } from "astro-seo";
 import Layout from "../layouts/Layout.astro";
 import { Icon } from "astro-icon";
 import MainButton from "../components/MainButton.astro";
@@ -9,6 +10,34 @@ import  DonutsImg from "../assets/donuts-bg.png";
 
 
 ---
+<head>
+  <head>
+    <SEO
+      title="Victor Benazzi - Webdesigner"
+      description="Criação de Sites e landing pages que convertem."
+      openGraph={{
+        basic: {
+          title: "Victor Benazzi - Webdesigner",
+          type: "A type.",
+          image: "./public/Og-SEO.png",
+        }
+      }}
+     
+      extend={{
+        // extending the default link tags
+        link: [{ rel: "icon", href: "/favicon.png" }],
+        // extending the default meta tags
+        meta: [
+          {
+            name: "twitter:image",
+            content: "./public/Og-SEO.png",
+          },
+          { name: "twitter:title", content: "Tinker Tailor Soldier Spy" },
+          { name: "twitter:description", content: "Agent" },
+        ],
+      }}
+    />
+</head>
 
 <Layout title="Victor Benazzi - Web Designer">
   <header class="flex flex-row items-center justify-between w-full xl:p-10 p-4 ">
