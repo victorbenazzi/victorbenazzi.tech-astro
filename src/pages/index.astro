@@ -10,6 +10,17 @@ import LogoLoubfy from "../assets/logo-loubfy.png";
 import AvatarImgThauane from "../assets/avatar-thauane.png";
 import LogoMutinno from "../assets/logo-mutinno.png";
 import AvatarImgKelvyn from "../assets/avatar-kelvyn.png";
+import BgCilindro from  "../assets/BgCilindro.png";
+import PortfolioCard from "../components/PortfolioCard.astro";
+import SiteMutinno from "../assets/site-mutinno.png"
+import SiteTogrow from "../assets/SiteTogrow.png"
+import LpDisparo from "../assets/LpDisparo.png"
+import SiteDisparo from "../assets/SiteDisparoInstitucional.png"
+import SiteBrasilfone from "../assets/SiteBrasilfone.png"
+import SiteAtivos from "../assets/SiteAtivos.png"
+import SiteLinkou from "../assets/SiteLinkou.png"
+import LpCapton from "../assets/LpCapton.png"
+import SiteEstudyou from "../assets/SiteEstudyou.png"
 ---
 <head>
   
@@ -32,12 +43,12 @@ import AvatarImgKelvyn from "../assets/avatar-kelvyn.png";
   <Header />
 
 
-  <div class="flex flex-col items-center justify-between">
-   <section class="flex flex-row w-11/12 max-w-[1500px] xl:h-[800px] h-[500px] items-center justify-between relative">
+  
+   <section class="flex flex-row w-full h-auto py-12 px-6 relative xl:w-[1440px] xl:h-[800px] items-center">
    
-    <div class="flex flex-col gap-y-6 md:w-full">
-      <h1 class="lg:text-8xl xl:text-8xl md:text-6xl text-4xl text-slate-50 font-bold">
-        Web Designer <span class="text-indigo-300">&<br></span> Front-end Developer
+    <div class="flex flex-col gap-y-6 w-full">
+      <h1 class="text-5xl md:text-6xl lg:text-8xl text-slate-50 font-bold xl:w-[68%] w-[100%]">
+        Web Designer <span class="text-indigo-300">&</span> Front-end Developer
       </h1>
       <p class="text-slate-100 xl:w-[50%] w-[100%] text-base ">
         Sou um web designer e front-end developer especializado em criar sites
@@ -53,26 +64,19 @@ import AvatarImgKelvyn from "../assets/avatar-kelvyn.png";
     </div>
 
 
-    <div class="absolute xl:right-[-40px] xl:top-20 top-10 right-0">
+    <div class="absolute top-0 right-0 xl:top-40 xl:-right-20">
       <Image
         src={DonutsImg}
         alt="victor Benazzi Background"
-        width="800"
+        width="700"
       />
 
    </section>
-  </div>
-  
-   
 
 
-
-
-
-  <div class="flex flex-col items-center justify-between">
-    <section class="flex flex-col w-11/12 max-w-[1500px] h-[500px] items-start justify-center gap-y-12 relative">
+    <section class="flex flex-col w-full h-[400px] px-6 relative xl:w-[1440px] items-start justify-center gap-y-8">
     
-     <div class="flex flex-col gap-y-4 md:w-full">
+     <div class="flex flex-col gap-y-6 w-full">
        <h2 class="lg:text-6xl xl:text-6xl md:text-6xl text-2xl text-slate-50 font-bold">
         Criação e integração
        </h2>
@@ -81,7 +85,7 @@ import AvatarImgKelvyn from "../assets/avatar-kelvyn.png";
        </p>
      </div>
  
-     <div class="flex flex-row flex-wrap gap-x-4 gap-y-4 ">
+     <div class="flex flex-row flex-wrap gap-x-4 gap-y-4 w-[100%]">
       <!-- Icon elementor -->
       <div class="w-[64px] ">
         <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
@@ -169,16 +173,10 @@ import AvatarImgKelvyn from "../assets/avatar-kelvyn.png";
 
 
      </div>
-     
- 
     </section>
-   </div>
-
-
-
-
-   <div class="flex flex-col items-center justify-between">
-    <section class="flex flex-col w-11/12 max-w-[1500px] h-fit items-start justify-center gap-y-12 relative py-8">
+  
+  
+    <section class="flex flex-col w-full h-fit px-6 relative xl:w-[1440px] items-start justify-center gap-y-12 mt-20">
     
      <div class="flex flex-col gap-y-4 md:w-full">
        <h2 class="lg:text-6xl xl:text-6xl md:text-6xl text-2xl text-slate-50 font-bold">
@@ -278,12 +276,128 @@ import AvatarImgKelvyn from "../assets/avatar-kelvyn.png";
         <span class="text-slate-200 text-lg font-semibold">@loubfy_</span>
       </a>
    </div>
-     
- 
-    </section>
-   </div>
+    
+   <div class="absolute -bottom-40 right-10 lg:bottom-20 lg:right-40 opacity-50">
+    <Image
+      src={BgCilindro}
+      alt="Background"
+      width="320"
+      
+     />
+  </div>
+  </section>
+    
 
-   
+ 
+    <section class="flex flex-col w-full h-auto my-40 px-6 relative xl:w-[1440px] items-start justify-center gap-y-8">
+      <div class="flex flex-col gap-y-4 md:w-full">
+        <h2 class="lg:text-6xl xl:text-6xl md:text-6xl text-2xl text-slate-50 font-bold">
+       Portfólio
+        </h2>
+        <p class="text-base text-slate-200">
+          Principais projetos
+        </p>
+      </div>
+    
+      <div class="flex flex-row flex-wrap w-full gap-y-8 gap-x-4">
+
+        <PortfolioCard 
+          spanText="Mutinno"
+          title="Landing Page • Mais Que Um Post Bonito"
+          description="Design e Desenvolvimento • RD Station"
+          imageCard={SiteMutinno}
+          alt="Landing Page Mutinno - Mais Que Um Post Bonito"
+          link="https://materiais.mutinno.com.br/q1pb"
+          linkText="Visitar site"
+        />
+
+
+        <PortfolioCard 
+          spanText="To Grow"
+          title="Site Institucional"
+          description="Desenvolvimento • Wordpress e Elementor"
+          imageCard={SiteTogrow}
+          alt="Site To Grow"
+          link="https://togrow.tech"
+          linkText="Visitar site"
+        />
+
+
+        <PortfolioCard 
+          spanText="Disparo Pro"
+          title="Landing Page • Disparo Festival "
+          description="Desenvolvimento • Wordpress e Elementor"
+          imageCard={LpDisparo}
+          alt="Landing page Disparo Festival Disparo PRO"
+          link="https://disparopro.com.br/disparo-festival"
+          linkText="Visitar site"
+        />
+
+
+        <PortfolioCard 
+        spanText="Disparo Pro"
+        title="Site institucional"
+        description="Desenvolvimento • Wordpress e Elementor"
+        imageCard={SiteDisparo}
+        alt="Site Disparo Pro"
+        link="https://disparopro.com.br/"
+        linkText="Visitar site"
+        />
+        
+        <PortfolioCard 
+        spanText="Brasilfone"
+        title="Site institucional"
+        description="Design e Desenvolvimento • Wordpress e Elementor"
+        imageCard={SiteBrasilfone}
+        alt="Site Brasilfone"
+        link="https://brasilfone.com.br/"
+        linkText="Visitar site"
+      />
+
+      <PortfolioCard 
+      spanText="Ativos Capital"
+      title="Site institucional"
+      description="Design e Desenvolvimento • Wordpress e Elementor"
+      imageCard={SiteAtivos}
+      alt="Site Ativos Capital"
+      link="https://ativos.capital/"
+      linkText="Visitar site"
+      />
+
+      <PortfolioCard 
+      spanText="Linkou"
+      title="Blog • Linkou"
+      description="Design e Desenvolvimento • Wordpress e Elementor"
+      imageCard={SiteLinkou}
+      alt="Site Linkou Digital"
+      link="https://linkou.digital/"
+      linkText="Visitar site"
+      />
+
+      <PortfolioCard 
+      spanText="Capton"
+      title="Landing Page • Página de benefícios"
+      description="Design e Desenvolvimento • Wordpress e Elementor"
+      imageCard={LpCapton}
+      alt="Página de benefícios Capton"
+      link="https://beneficios.capton.com.br/"
+      linkText="Visitar site"
+      />
+
+      <PortfolioCard 
+      spanText="estud.you"
+      title="Site Institucional"
+      description="Design e Desenvolvimento • Wordpress e Elementor"
+      imageCard={SiteEstudyou}
+      alt="Site estud.you"
+      link="https://estudyou.com/"
+      linkText="Visitar site"
+      />
+
+      </div>
+
+    </section>
+
 
 
 

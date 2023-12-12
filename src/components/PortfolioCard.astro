@@ -1,0 +1,44 @@
+---
+import { Image } from 'astro:assets';
+import { Icon } from "astro-icon";
+export interface Props {
+    spanText: string ;
+    title: string ;
+    description: string ;
+    imageCard: any;
+    link: string ;
+    linkText: string ;
+    alt: string ;
+}
+
+const { title,  description, imageCard, link, linkText, spanText, alt } = Astro.props;
+---
+
+<div class="flex flex-col w-[430px] h-[400px] bg-zinc-900  px-8 py-6 rounded-lg justify-between">
+    <span class="text-indigo-300 text-base">{spanText}</span>
+
+    <div class="flex flex-col">
+        <h3 class="text-base text-slate-50 font-bold">{title}</h3>
+        <p class="text-sm text-slate-200">{description}</p>
+    </div>
+
+    <Image 
+     src={imageCard}
+     width="382"
+     alt={alt}
+     loading="lazy"
+        decoding="async"
+    />
+
+    <a href={link} target="_blank" class="flex flex-row items-center gap-x-2 text-base text-indigo-300 hover:text-indigo-400 font-bold">
+        {linkText}
+
+        <div class="w-[18px] h-[18px]">
+            <Icon
+              name="ph:arrow-square-out-bold"
+            />
+    
+          </div>
+    </a>
+
+</div>
