@@ -1,0 +1,35 @@
+---
+import LogoSimbol from "../components/LogoSimbol.astro";
+import { Icon } from "astro-icon";
+---
+
+<header class="flex flex-row items-center justify-between w-full xl:p-10 p-4 ">
+    <span class="text-indigo-300 text-lg">Victor Benazzi</span>
+     <LogoSimbol />
+     <div class="flex flex-row items-center justify-center gap-x-4">
+
+      <a href="https://github.com/victorbenazzi/" target="_blank">
+        <div class="flex flex-row items-center justify-center bg-zinc-900 hover:bg-indigo-hover transition-all text-indigo-300 rounded w-10 h-10">
+        <div class="w-6 h-6 ">
+          <Icon
+            name="ph:github-logo-fill"
+          />
+  
+        </div>
+      </div>
+      </a>
+
+
+      <a href="https://www.linkedin.com/in/victorbenazzi/" target="_blank">
+      <div class="flex flex-row items-center justify-center bg-zinc-900 hover:bg-indigo-hover transition-all text-indigo-300 rounded w-10 h-10">
+        <div class="w-6 h-6">
+          <Icon
+            name="ph:linkedin-logo-fill"
+          />
+        </div>
+      </div>
+      </a>
+
+
+    </div>
+   </header>

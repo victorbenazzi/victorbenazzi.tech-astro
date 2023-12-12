@@ -10,12 +10,13 @@ const { labelButton,  link, target } = Astro.props;
 
 
 
-
-<button class="flex flex-row items-center justify-center bg-indigo-300 hover:bg-indigo-400 px-6 py-4 transition-all rounded-full text-slate-950 w-[200px] h-auto">
+<div class="relative">
+<div class=" w-[200px] rounded-full bg-indigo-300 blur-lg inset-0 absolute opacity-50"></div>
+<button class="flex flex-row items-center justify-center bg-indigo-300 hover:bg-indigo-200 px-6 py-4 transition-all rounded-full text-slate-950 w-[200px] h-auto relative">
     <a href={link} target={target} class="flex flew-row w-full items-center justify-center gap-4">
     <p>{labelButton}</p>
     </a>
 </button>
-
+</div>
 
 
