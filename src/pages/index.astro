@@ -46,10 +46,10 @@ import HeroCard from "../components/HeroCard.astro";
 
 
   
-   <section class="flex flex-col gap-y-8 lg:flex-row w-full lg:w-[1440px] h-auto py-12 px-6 items-center">
+   <section class="flex flex-col gap-y-8 lg:flex-row w-full xl:w-[1440px] h-auto py-12 px-6 items-center lg:justify-start">
    
-    <div class="flex flex-col gap-y-6 w-full ">
-      <h1 class="text-5xl lg:text-7xl text-slate-50 font-bold">
+    <div class="flex flex-col gap-y-6 w-full lg:items-start">
+      <h1 class="text-5xl lg:text-7xl text-slate-50 font-bold lg:items-start">
         Web Designer <span class="text-indigo-300">&</span> Front-end Developer
       </h1>
       <p class="text-slate-100 w-full text-base  ">
@@ -67,20 +67,20 @@ import HeroCard from "../components/HeroCard.astro";
    </section>
 
 
-    <section class="flex flex-col w-full h-[400px] px-6 relative xl:w-[1440px] items-start justify-center gap-y-8">
+    <section class="flex flex-col w-full h-[400px] px-6 relative xl:w-[1440px] items-start justify-center gap-y-8 border border-zinc-800 rounded-3xl">
     
      <div class="flex flex-col gap-y-6 w-full">
-       <h2 class="lg:text-6xl xl:text-6xl md:text-6xl text-2xl text-slate-50 font-bold">
+       <h2 class="lg:text-6xl xl:text-6xl md:text-6xl text-2xl text-indigo-300 font-bold">
         Criação e integração 🧑‍💻
        </h2>
-       <p class="text-slate-100 xl:w-[50%] w-[100%] text-base ">
+       <p class="text-slate-200 xl:w-[50%] w-[100%] text-base ">
         Crio, desenvolvo e integro com as principais ferramentas do mercado.
        </p>
      </div>
  
      <div class="flex flex-row flex-wrap gap-x-4 gap-y-4 w-[100%]">
       <!-- Icon elementor -->
-      <div class="w-[64px] ">
+      <div class="w-[64px]">
         <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
           <rect width="64" height="64" rx="17.6867" fill="#18181B"/>
           <path fill-rule="evenodd" clip-rule="evenodd" d="M19.8091 32C19.8091 38.7322 25.2673 44.1905 31.9995 44.1905C38.7318 44.1905 44.19 38.7322 44.19 32C44.19 25.2677 38.7318 19.8095 31.9995 19.8095C25.2673 19.8095 19.8091 25.2677 19.8091 32ZM28.9515 26.9205H26.92V37.0795H28.9515V26.9205ZM30.9829 26.9205H37.0772V28.9519H30.9829V26.9205ZM37.0772 30.9834H30.9829V33.0148H37.0772V30.9834ZM30.9829 35.048H37.0772V37.0795H30.9829V35.048Z" fill="#E2E8F0"/>
@@ -169,10 +169,10 @@ import HeroCard from "../components/HeroCard.astro";
     </section>
   
   
-    <section class="flex flex-col w-full h-fit px-6 relative xl:w-[1440px] items-start justify-center gap-y-12 mt-20">
+    <section class="flex flex-col w-full h-fit px-6  xl:w-[1440px] items-start justify-center gap-y-12 mt-20 ">
     
      <div class="flex flex-col gap-y-4 w-full">
-       <h2 class="lg:text-6xl xl:text-6xl md:text-6xl text-2xl text-slate-50 font-bold">
+       <h2 class="lg:text-6xl xl:text-6xl md:text-6xl text-2xl text-indigo-300 font-bold">
        O que estão falando sobre mim?
        </h2>
        
@@ -181,7 +181,7 @@ import HeroCard from "../components/HeroCard.astro";
      <div class="grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-4">
       
       <!-- Depoimento Ingrid -->
-      <div class="flex flex-col h-fit  px-8 py-6 rounded-2xl bg-zinc-900 gap-y-8 backdrop-opacity-10">
+      <div class="flex flex-col h-fit  px-8 py-6 rounded-2xl bg-zinc-900 gap-y-8 backdrop-opacity-10  border border-zinc-800">
         <div class="flex flex-row gap-x-4">
           <Image
             src={AvatarImgIngrid}
@@ -212,7 +212,7 @@ import HeroCard from "../components/HeroCard.astro";
      </div>
      
        <!-- Depoimento Thauane -->
-       <div class="flex flex-col  h-fit px-8 py-6 rounded-2xl bg-zinc-900 gap-y-8 backdrop-opacity-10">
+       <div class="flex flex-col  h-fit px-8 py-6 rounded-2xl bg-zinc-900 gap-y-8 backdrop-opacity-10 gap-y-8 border border-zinc-800">
         <div class="flex flex-row gap-x-4">
           <Image
             src={AvatarImgThauane}
@@ -243,7 +243,7 @@ import HeroCard from "../components/HeroCard.astro";
 
 
      <!-- Depoimento Kelvyn -->
-     <div class="flex flex-col  h-fit px-8 py-6 rounded-2xl bg-zinc-900 gap-y-8 backdrop-opacity-10">
+     <div class="flex flex-col  h-fit px-8 py-6 rounded-2xl bg-zinc-900 gap-y-8 backdrop-opacity-10 gap-y-8 border border-zinc-800">
       <div class="flex flex-row gap-x-4">
         <Image
           src={AvatarImgKelvyn}
@@ -269,22 +269,14 @@ import HeroCard from "../components/HeroCard.astro";
         <span class="text-slate-200 text-lg font-semibold">@loubfy_</span>
       </a>
    </div>
-    
-   <div class="absolute -bottom-40 right-10 lg:bottom-20 lg:right-40 opacity-50">
-    <Image
-      src={BgCilindro}
-      alt="Background"
-      width="320"
-      
-     />
-  </div>
+  
   </section>
     
 
  
     <section class="flex flex-col w-full h-auto my-40 px-6 relative xl:w-[1440px] items-start justify-center gap-y-8">
       <div class="flex flex-col gap-y-4 md:w-full">
-        <h2 class="lg:text-6xl xl:text-6xl md:text-6xl text-2xl text-slate-50 font-bold">
+        <h2 class="lg:text-6xl xl:text-6xl md:text-6xl text-2xl text-indigo-300 font-bold">
        Portfólio
         </h2>
         <p class="text-base text-slate-200">
