@@ -1,0 +1,22 @@
+---
+
+export interface Props {
+    labelButton: string;
+    link: string;
+    target: string;
+}
+const { labelButton,  link, target } = Astro.props;
+---
+
+
+
+
+
+<button class="flex flex-row items-center justify-center bg-yellowBranding hover:bg-violet-600 hover:text-yellowBranding px-8 py-4 transition-all rounded-xl text-violet-500 w-full lg:w-fit h-auto font-bold">
+    <a href={link} target={target} class="flex flew-row w-full items-center justify-center gap-4">
+    <p>{labelButton}</p>
+    </a>
+</button>
+
+
+

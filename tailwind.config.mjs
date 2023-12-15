@@ -4,6 +4,8 @@ export default {
 	theme: {
 		extend: {colors: {
 			'indigo-hover': '#1F212C',
+			'yellowBranding': '#EDCA4C',
+
 		  },
 			Animation: {
 				blob: "blob 1s infinite"

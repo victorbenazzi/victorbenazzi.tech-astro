@@ -22,6 +22,7 @@ import SiteAtivos from "../assets/SiteAtivos.png"
 import SiteLinkou from "../assets/SiteLinkou.png"
 import LpCapton from "../assets/LpCapton.png"
 import SiteEstudyou from "../assets/SiteEstudyou.png"
+import HeroCard from "../components/HeroCard.astro";
 ---
 <head>
   
@@ -45,32 +46,23 @@ import SiteEstudyou from "../assets/SiteEstudyou.png"
 
 
   
-   <section class="flex flex-row w-full h-auto py-12 px-6 relative xl:w-[1440px] xl:h-[800px] items-center">
+   <section class="flex flex-col gap-y-8 lg:flex-row w-full h-auto py-12 px-6 items-center">
    
-    <div class="flex flex-col gap-y-6 w-full">
-      <h1 class="text-5xl md:text-6xl lg:text-8xl text-slate-50 font-bold xl:w-[68%] w-[100%]">
+    <div class="flex flex-col gap-y-6 w-full ">
+      <h1 class="text-5xl  text-slate-50 font-bold">
         Web Designer <span class="text-indigo-300">&</span> Front-end Developer
       </h1>
-      <p class="text-slate-100 xl:w-[50%] w-[100%] text-base ">
-        Sou um web designer e front-end developer especializado em criar sites
-        e landing pages incríveis. Com HTML, CSS, JavaScript, WordPress e
-        outras tecnologias, desenvolvo soluções web que combinam design,
-        funcionalidade e responsividade.
+      <p class="text-slate-100 w-full text-base  ">
+        Sou web designer e front-end developer, especialista em criar sites e landing pages incríveis. Desenvolvo soluções web que aliam design, funcionalidade e responsividade.
       </p>
-      <MainButton 
-      labelButton="Fale comigo"
-      link="https://wa.me/5569992993889"
-      target="_blank"
-      />
+    
     </div>
+   
+    <div class="flex flex-col w-full">
+      <HeroCard />
+    </div>
+  
 
-
-    <div class="absolute top-0 right-0 xl:top-40 xl:-right-20">
-      <Image
-        src={DonutsImg}
-        alt="victor Benazzi Background"
-        width="700"
-      />
 
    </section>
 
@@ -199,7 +191,7 @@ import SiteEstudyou from "../assets/SiteEstudyou.png"
            />
           <div class="flex flex-col gap-x-4">
             <h5 class="text-slate-50 text-lg font-semibold">Ingrid Santin</h5>
-            <span class="text-slate-200 text-sm">CEO eSócia Fundadora</span>
+            <span class="text-slate-200 text-sm">CEO e Sócia Fundadora</span>
           </div>
       </div>
       <p class="text-slate-100 text-base mt-4">
