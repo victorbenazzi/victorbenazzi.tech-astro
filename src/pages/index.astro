@@ -1,9 +1,8 @@
 ---
 import { SEO } from "astro-seo";
 import Layout from "../layouts/Layout.astro";
-import MainButton from "../components/MainButton.astro";
+import { Icon } from "astro-icon";
 import { Image } from "astro:assets";
-import  DonutsImg from "../assets/donuts-bg.png";
 import Header from "../components/Header.astro"; 
 import Footer from "../components/Footer.astro"; 
 import AvatarImgIngrid from "../assets/avatar-ingrid.png";
@@ -11,18 +10,12 @@ import LogoLoubfy from "../assets/logo-loubfy.png";
 import AvatarImgThauane from "../assets/avatar-thauane.png";
 import LogoMutinno from "../assets/logo-mutinno.png";
 import AvatarImgKelvyn from "../assets/avatar-kelvyn.png";
-import BgCilindro from  "../assets/BgCilindro.png";
 import PortfolioCard from "../components/PortfolioCard.astro";
 import SiteMutinno from "../assets/site-mutinno.png"
 import SiteTogrow from "../assets/SiteTogrow.png"
 import LpDisparo from "../assets/LpDisparo.png"
-import SiteDisparo from "../assets/SiteDisparoInstitucional.png"
-import SiteBrasilfone from "../assets/SiteBrasilfone.png"
-import SiteAtivos from "../assets/SiteAtivos.png"
-import SiteLinkou from "../assets/SiteLinkou.png"
-import LpCapton from "../assets/LpCapton.png"
-import SiteEstudyou from "../assets/SiteEstudyou.png"
 import HeroCard from "../components/HeroCard.astro";
+import SocialIcons from "../components/SocialIcons.astro";
 ---
 <head>
   
@@ -49,6 +42,7 @@ import HeroCard from "../components/HeroCard.astro";
    <section class="flex flex-col gap-y-8 lg:flex-row w-full xl:w-[1440px] h-auto py-12 px-6 items-center lg:justify-start">
    
     <div class="flex flex-col gap-y-6 w-full lg:items-start">
+      <SocialIcons />
       <h1 class="text-5xl lg:text-7xl x:text-8xl text-slate-50 font-bold lg:items-start">
         Web Designer <span class="text-indigo-300">&</span> Front-end Developer
       </h1>
@@ -66,7 +60,7 @@ import HeroCard from "../components/HeroCard.astro";
 
    </section>
 
-   
+   <!-- ÍCONES DE STACKS -->
     <section class="flex flex-col w-full h-[400px]  relative xl:w-[1440px] items-start justify-center gap-y-8 px-6">
     
      <div class="flex flex-col gap-y-6 w-full">
@@ -202,7 +196,7 @@ import HeroCard from "../components/HeroCard.astro";
      </div>
     </section>
 
-  
+    <!-- DEPOIMENTOS -->
     <section class="flex flex-col w-full h-fit px-6  xl:w-[1440px] items-start justify-center gap-y-12 mt-20 ">
     
      <div class="flex flex-col gap-y-4 w-full">
@@ -304,14 +298,14 @@ import HeroCard from "../components/HeroCard.astro";
       </a>
    </div>
   
-  </section>
+    </section>
     
 
- 
+     <!-- PROJETOS-->
     <section class="flex flex-col w-full h-auto my-40 px-6 relative xl:w-[1440px] items-start justify-center gap-y-8">
       <div class="flex flex-col gap-y-4 md:w-full">
         <h2 class="lg:text-6xl xl:text-6xl md:text-6xl text-2xl text-slate-200 font-bold">
-       Portfólio
+       Projetos
         </h2>
         <p class="text-base text-slate-300">
           Cada projeto é como uma peça única de desenvolvimento 🧩
@@ -352,68 +346,16 @@ import HeroCard from "../components/HeroCard.astro";
           linkText="Visitar site"
         />
 
-
-        <PortfolioCard 
-        spanText="Disparo Pro"
-        title="Site institucional"
-        description="Desenvolvimento • Wordpress e Elementor"
-        imageCard={SiteDisparo}
-        alt="Site Disparo Pro"
-        link="https://disparopro.com.br/"
-        linkText="Visitar site"
-        />
-        
-        <PortfolioCard 
-        spanText="Brasilfone"
-        title="Site institucional"
-        description="Design e Desenvolvimento • Wordpress e Elementor"
-        imageCard={SiteBrasilfone}
-        alt="Site Brasilfone"
-        link="https://brasilfone.com.br/"
-        linkText="Visitar site"
-      />
-
-      <PortfolioCard 
-      spanText="Ativos Capital"
-      title="Site institucional"
-      description="Design e Desenvolvimento • Wordpress e Elementor"
-      imageCard={SiteAtivos}
-      alt="Site Ativos Capital"
-      link="https://ativos.capital/"
-      linkText="Visitar site"
-      />
-
-      <PortfolioCard 
-      spanText="Linkou"
-      title="Blog • Linkou"
-      description="Design e Desenvolvimento • Wordpress e Elementor"
-      imageCard={SiteLinkou}
-      alt="Site Linkou Digital"
-      link="https://linkou.digital/"
-      linkText="Visitar site"
-      />
-
-      <PortfolioCard 
-      spanText="Capton"
-      title="Landing Page • Página de benefícios"
-      description="Design e Desenvolvimento • Wordpress e Elementor"
-      imageCard={LpCapton}
-      alt="Página de benefícios Capton"
-      link="https://beneficios.capton.com.br/"
-      linkText="Visitar site"
-      />
-
-      <PortfolioCard 
-      spanText="estud.you"
-      title="Site Institucional"
-      description="Design e Desenvolvimento • Wordpress e Elementor"
-      imageCard={SiteEstudyou}
-      alt="Site estud.you"
-      link="https://estudyou.com/"
-      linkText="Visitar site"
-      />
-
-      </div>
+        <a href="projetos" target="_blank" class="flex flex-row items-center gap-x-2 text-base text-indigo-300 hover:text-indigo-400 font-bold mt-4">
+          Todos os projetos
+  
+          <div class="w-[18px] h-[18px]">
+              <Icon
+                name="ph:caret-double-right-bold"
+              />
+      
+            </div>
+      </a>
 
     </section>
 

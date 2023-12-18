@@ -1,0 +1,154 @@
+---
+import { SEO } from "astro-seo";
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import PortfolioCard from "../components/PortfolioCard.astro";
+import SiteMutinno from "../assets/site-mutinno.png"
+import SiteTogrow from "../assets/SiteTogrow.png"
+import LpDisparo from "../assets/LpDisparo.png"
+import SiteDisparo from "../assets/SiteDisparoInstitucional.png"
+import SiteBrasilfone from "../assets/SiteBrasilfone.png"
+import SiteAtivos from "../assets/SiteAtivos.png"
+import SiteLinkou from "../assets/SiteLinkou.png"
+import LpCapton from "../assets/LpCapton.png"
+import SiteEstudyou from "../assets/SiteEstudyou.png"
+import Footer from "../components/Footer.astro"; 
+---
+
+<head>
+  <SEO
+    title="Projetos - Victor Benazzi"
+    description="Projetos no portfólio. Criação de Sites e landing pages que convertem."
+    openGraph={{
+      basic: {
+        title:
+          "Projetos no portfólio. Criação de Sites e landing pages que convertem.",
+        type: "Website",
+        image: "https://i.imgur.com/SSISjcy.png",
+      },
+    }}
+  />
+</head>
+
+<Layout title="Projetos - Victor Benazzi">
+  <Header />
+  <section
+    class="flex flex-col gap-y-8 lg:flex-row w-full xl:w-[1440px] h-auto py-12 px-6 items-center lg:justify-start"
+  >
+    <div class="flex flex-col gap-y-6 w-full lg:items-start">
+      <h1
+        class="text-5xl lg:text-7xl x:text-8xl text-slate-50 font-bold lg:items-start"
+      >
+        Projetos
+      </h1>
+      <p class="text-slate-100 w-full text-base">
+        Cada projeto é como uma peça única de desenvolvimento 🧩
+      </p>
+    </div>
+  </section>
+
+  
+  <section class="flex flex-col w-full h-auto my-40 px-6 relative xl:w-[1440px] items-start justify-center gap-y-8">
+    
+  
+    <div class="grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-4">
+
+      <PortfolioCard 
+        spanText="Mutinno"
+        title="Landing Page • Mais Que Um Post Bonito"
+        description="Design e Desenvolvimento • RD Station"
+        imageCard={SiteMutinno}
+        alt="Landing Page Mutinno - Mais Que Um Post Bonito"
+        link="https://materiais.mutinno.com.br/q1pb"
+        linkText="Visitar site"
+      />
+
+
+      <PortfolioCard 
+        spanText="To Grow"
+        title="Site Institucional"
+        description="Desenvolvimento • Wordpress e Elementor"
+        imageCard={SiteTogrow}
+        alt="Site To Grow"
+        link="https://togrow.tech"
+        linkText="Visitar site"
+      />
+
+
+      <PortfolioCard 
+        spanText="Disparo Pro"
+        title="Landing Page • Disparo Festival "
+        description="Desenvolvimento • Wordpress e Elementor"
+        imageCard={LpDisparo}
+        alt="Landing page Disparo Festival Disparo PRO"
+        link="https://disparopro.com.br/disparo-festival"
+        linkText="Visitar site"
+      />
+
+
+      <PortfolioCard 
+      spanText="Disparo Pro"
+      title="Site institucional"
+      description="Desenvolvimento • Wordpress e Elementor"
+      imageCard={SiteDisparo}
+      alt="Site Disparo Pro"
+      link="https://disparopro.com.br/"
+      linkText="Visitar site"
+      />
+      
+      <PortfolioCard 
+      spanText="Brasilfone"
+      title="Site institucional"
+      description="Design e Desenvolvimento • Wordpress e Elementor"
+      imageCard={SiteBrasilfone}
+      alt="Site Brasilfone"
+      link="https://brasilfone.com.br/"
+      linkText="Visitar site"
+    />
+
+    <PortfolioCard 
+    spanText="Ativos Capital"
+    title="Site institucional"
+    description="Design e Desenvolvimento • Wordpress e Elementor"
+    imageCard={SiteAtivos}
+    alt="Site Ativos Capital"
+    link="https://ativos.capital/"
+    linkText="Visitar site"
+    />
+
+    <PortfolioCard 
+    spanText="Linkou"
+    title="Blog • Linkou"
+    description="Design e Desenvolvimento • Wordpress e Elementor"
+    imageCard={SiteLinkou}
+    alt="Site Linkou Digital"
+    link="https://linkou.digital/"
+    linkText="Visitar site"
+    />
+
+    <PortfolioCard 
+    spanText="Capton"
+    title="Landing Page • Página de benefícios"
+    description="Design e Desenvolvimento • Wordpress e Elementor"
+    imageCard={LpCapton}
+    alt="Página de benefícios Capton"
+    link="https://beneficios.capton.com.br/"
+    linkText="Visitar site"
+    />
+
+    <PortfolioCard 
+    spanText="estud.you"
+    title="Site Institucional"
+    description="Design e Desenvolvimento • Wordpress e Elementor"
+    imageCard={SiteEstudyou}
+    alt="Site estud.you"
+    link="https://estudyou.com/"
+    linkText="Visitar site"
+    />
+
+    </div>
+
+  </section>
+
+<Footer />
+</Layout>
