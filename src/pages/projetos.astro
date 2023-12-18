@@ -34,21 +34,24 @@ import Footer from "../components/Footer.astro";
   <Header />
   <section
     class="flex flex-col gap-y-8 lg:flex-row w-full xl:w-[1440px] h-auto py-12 px-6 items-center lg:justify-start"
+    
   >
     <div class="flex flex-col gap-y-6 w-full lg:items-start">
       <h1
         class="text-5xl lg:text-7xl x:text-8xl text-slate-50 font-bold lg:items-start"
+        transition:name="h1"
+       
       >
         Projetos
       </h1>
-      <p class="text-slate-100 w-full text-base">
+      <p class="text-slate-100 w-full text-base" transition:name="p" >
         Cada projeto é como uma peça única de desenvolvimento 🧩
       </p>
     </div>
   </section>
 
   
-  <section class="flex flex-col w-full h-auto my-40 px-6 relative xl:w-[1440px] items-start justify-center gap-y-8">
+  <section class="flex flex-col w-full h-auto my-40 px-6 relative xl:w-[1440px] items-start justify-center gap-y-8" transition:name="projetos">
     
   
     <div class="grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-4">
@@ -61,6 +64,7 @@ import Footer from "../components/Footer.astro";
         alt="Landing Page Mutinno - Mais Que Um Post Bonito"
         link="https://materiais.mutinno.com.br/q1pb"
         linkText="Visitar site"
+        
       />
 
 

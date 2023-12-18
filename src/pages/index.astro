@@ -43,10 +43,10 @@ import SocialIcons from "../components/SocialIcons.astro";
    
     <div class="flex flex-col gap-y-6 w-full lg:items-start">
       <SocialIcons />
-      <h1 class="text-5xl lg:text-7xl x:text-8xl text-slate-50 font-bold lg:items-start">
+      <h1 class="text-5xl lg:text-7xl x:text-8xl text-slate-50 font-bold lg:items-start"  transition:name="h1">
         Web Designer <span class="text-indigo-300">&</span> Front-end Developer
       </h1>
-      <p class="text-slate-100 w-full text-base  ">
+      <p class="text-slate-100 w-full text-base" transition:name="p">
         Sou web designer e front-end developer, especialista em criar sites e landing pages incríveis. Desenvolvo soluções web que aliam design, funcionalidade e responsividade.
       </p>
     
@@ -304,15 +304,15 @@ import SocialIcons from "../components/SocialIcons.astro";
      <!-- PROJETOS-->
     <section class="flex flex-col w-full h-auto my-40 px-6 relative xl:w-[1440px] items-start justify-center gap-y-8">
       <div class="flex flex-col gap-y-4 md:w-full">
-        <h2 class="lg:text-6xl xl:text-6xl md:text-6xl text-2xl text-slate-200 font-bold">
+        <h2 class="lg:text-6xl xl:text-6xl md:text-6xl text-2xl text-slate-200 font-bold" >
        Projetos
         </h2>
-        <p class="text-base text-slate-300">
+        <p class="text-base text-slate-300" >
           Cada projeto é como uma peça única de desenvolvimento 🧩
         </p>
       </div>
     
-      <div class="grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-4">
+      <div class="grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-4" transition:name="projetos">
 
         <PortfolioCard 
           spanText="Mutinno"
@@ -346,7 +346,7 @@ import SocialIcons from "../components/SocialIcons.astro";
           linkText="Visitar site"
         />
 
-        <a href="projetos" target="_blank" class="flex flex-row items-center gap-x-2 text-base text-indigo-300 hover:text-indigo-400 font-bold mt-4">
+        <a href="projetos" class="flex flex-row items-center gap-x-2 text-base text-indigo-300 hover:text-indigo-400 font-bold mt-4">
           Todos os projetos
   
           <div class="w-[18px] h-[18px]">
