@@ -2,33 +2,31 @@
 import { Image } from 'astro:assets';
 import { Icon } from "astro-icon";
 export interface Props {
-    spanText: string ;
+   
     title: string ;
     description: string ;
     imageCard: any;
     link: string ;
     linkText: string ;
     alt: string ;
+    stacks: string ;
 }
 
-const { title,  description, imageCard, link, linkText, spanText, alt } = Astro.props;
+const { title,  description, imageCard, link, linkText, alt, stacks } = Astro.props;
 ---
 
-<div class="flex flex-col h-fit bg-zinc-900  px-8 py-6 rounded-lg justify-between gap-y-8 border border-zinc-800" >
-    <span class="text-indigo-300 text-base">{spanText}</span>
+<div class="flex flex-col h-fit bg-zinc-800  px-8 py-6 rounded-lg justify-between gap-y-8 border border-zinc-700 min-h-[500px]" >
+    
+
+    <div class="aspect-video bg-cover bg-no-repeat bg-top tran hover:bg-bottom rounded-lg" style={{backgroundImage: `url(${imageCard})`, transition: "ease-in-out 7s" }}></div>
 
     <div class="flex flex-col">
-        <h3 class="text-base text-slate-50 font-bold">{title}</h3>
-        <p class="text-sm text-slate-200">{description}</p>
+        <h3 class=" text-indigo-400 text-2xl font-bold">{title}</h3>
+        <p class="text-sm text-slate-400">{stacks}</p>
     </div>
 
-    <Image 
-     src={imageCard}
-     width="382"
-     alt={alt}
-     loading="lazy"
-        decoding="async"
-    />
+    <p class="text-sm text-slate-100">{description}</p>
+    
 
     <a href={link} target="_blank" class="flex flex-row items-center gap-x-2 text-base text-indigo-300 hover:text-indigo-400 font-bold">
         {linkText}

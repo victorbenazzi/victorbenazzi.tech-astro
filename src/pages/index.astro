@@ -11,7 +11,7 @@ import AvatarImgThauane from "../assets/avatar-thauane.png";
 import LogoMutinno from "../assets/logo-mutinno.png";
 import AvatarImgKelvyn from "../assets/avatar-kelvyn.png";
 import PortfolioCard from "../components/PortfolioCard.astro";
-import SiteMutinno from "../assets/site-mutinno.png"
+import SiteMutinno from "../assets/mutinno-card.png"
 import SiteTogrow from "../assets/SiteTogrow.png"
 import LpDisparo from "../assets/LpDisparo.png"
 import HeroCard from "../components/HeroCard.astro";
@@ -78,7 +78,22 @@ import IconStack from "../components/IconStack.astro";
      </div>
  
      <div class="flex flex-row flex-wrap gap-x-4 gap-y-4 w-[100%]">
-     
+
+
+      <!-- Design -->
+     <div class="group relative flex flex-row flex-wrap gap-x-4 gap-y-4 hover:-translate-y-4 transition-all">
+
+      <!-- Icon Figma -->
+      <IconStack>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="32" viewBox="0 0 24 32" fill="none">
+      <path d="M20.8077 10.721C21.7922 9.98257 22.5194 8.95314 22.8864 7.77847C23.2533 6.60381 23.2414 5.34346 22.8522 4.17597C22.463 3.00848 21.7164 1.99303 20.718 1.27347C19.7197 0.553896 18.5202 0.166687 17.2896 0.166687H6.73533C5.50469 0.166687 4.30524 0.553896 3.30689 1.27347C2.30854 1.99303 1.5619 3.00848 1.17274 4.17597C0.783577 5.34346 0.771617 6.60381 1.13856 7.77847C1.50549 8.95314 2.23273 9.98257 3.21724 10.721C2.47182 11.2796 1.87022 12.0078 1.46228 12.8452C1.05433 13.6827 0.85179 14.6053 0.871419 15.5366C0.891049 16.4679 1.13229 17.3811 1.57515 18.2007C2.01802 19.0202 2.64976 19.7224 3.41806 20.2491C2.54416 20.9135 1.85431 21.79 1.41383 22.7955C0.973342 23.8011 0.796802 24.9024 0.900924 25.9953C1.00505 27.0881 1.38638 28.1363 2.00883 29.0406C2.63127 29.9448 3.47422 30.6753 4.45786 31.1627C5.44151 31.6501 6.53329 31.8784 7.62982 31.826C8.72636 31.7735 9.79136 31.4421 10.724 30.863C11.6566 30.2839 12.426 29.4763 12.9593 28.5168C13.4926 27.5572 13.7722 26.4775 13.7715 25.3797V20.1025C14.3875 20.5645 15.0885 20.9007 15.8344 21.0918C16.5803 21.2829 17.3566 21.3252 18.1188 21.2163C18.8811 21.1074 19.6144 20.8494 20.277 20.4571C20.9396 20.0648 21.5184 19.5458 21.9804 18.9298C22.4424 18.3138 22.7785 17.6129 22.9696 16.8669C23.1607 16.121 23.203 15.3448 23.0942 14.5825C22.9853 13.8203 22.7273 13.0869 22.335 12.4243C21.9427 11.7618 21.4237 11.183 20.8077 10.721ZM13.7715 2.51208H17.2896C18.2227 2.51208 19.1175 2.88274 19.7773 3.54251C20.437 4.20227 20.8077 5.09711 20.8077 6.03017C20.8077 6.96323 20.437 7.85807 19.7773 8.51784C19.1175 9.17761 18.2227 9.54826 17.2896 9.54826H13.7715V2.51208ZM17.2896 18.9298C16.5938 18.9298 15.9136 18.7235 15.3351 18.3369C14.7565 17.9504 14.3056 17.4009 14.0393 16.7581C13.773 16.1152 13.7034 15.4078 13.8391 14.7254C13.9749 14.043 14.3099 13.4161 14.8019 12.9241C15.2939 12.4321 15.9208 12.097 16.6033 11.9613C17.2857 11.8255 17.9931 11.8952 18.6359 12.1615C19.2788 12.4277 19.8282 12.8786 20.2148 13.4572C20.6014 14.0357 20.8077 14.7159 20.8077 15.4117C20.8077 16.3448 20.437 17.2396 19.7773 17.8994C19.1175 18.5592 18.2227 18.9298 17.2896 18.9298Z" fill="#F8FAFC"/>
+      </svg>
+      <div class=" hidden group-hover:flex  text-indigo-200 border-indigo-200 transition-all absolute -bottom-10 left-0 w-full items-center justify-center border-b "> <p class=" w-fit absolute -bottom-8 ">Design</p></div>
+      </IconStack>
+     </div>
+
+    <!-- Desenvolvimento -->
+    <div class="group relative flex flex-row flex-wrap gap-x-4 gap-y-4 hover:-translate-y-4 transition-all">
       <!-- Icon elementor -->
       <IconStack>
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
@@ -131,7 +146,20 @@ import IconStack from "../components/IconStack.astro";
       </IconStack>
 
 
-  
+      <!-- Icon Webflow -->
+      <IconStack>
+        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4893 13.1482C26.4893 20.3327 20.6651 26.157 13.4805 26.157C6.29593 26.157 0.47168 20.3327 0.47168 13.1482C0.47168 5.96359 6.29593 0.139343 13.4805 0.139343C20.6651 0.139343 26.4893 5.96359 26.4893 13.1482ZM16.1231 15.319L17.3021 11.6034H17.2939C17.8143 10.1968 18.8387 8.8715 20.7901 8.8715L18.0257 15.5873C17.7856 16.3483 17.3095 17.013 16.6663 17.4852C16.023 17.9573 15.2462 18.2124 14.4483 18.2135C14.4483 18.2135 13.6352 12.4408 13.6352 12.3107L12.4156 15.4816C11.8709 16.8882 10.8139 18.2135 8.86259 18.2135L7.33406 8.87963C8.07806 8.89828 8.7894 9.18913 9.33333 9.6971C9.87726 10.2051 10.216 10.8949 10.2854 11.6359C10.2854 11.6359 10.4887 15.0588 10.4887 15.3271L11.9278 11.6034C12.4481 10.1968 13.4401 8.8715 15.3101 8.8715C15.3101 8.8715 16.1231 15.0344 16.1231 15.319Z" fill="#F8FAFC"/>
+        </svg>
+      </IconStack>
+
+        <div class=" hidden group-hover:flex  text-indigo-200 border-indigo-200 transition-all absolute -bottom-10 left-0 w-full items-center justify-center border-b "> <p class=" w-fit absolute -bottom-8 ">Desenvolvimento</p></div>
+    </div>
+
+
+     
+    <!-- Integração -->
+    <div class="group relative flex flex-row flex-wrap gap-x-4 gap-y-4 hover:-translate-y-4 transition-all">
 
        <!-- Icon RD station -->
        <IconStack>
@@ -144,20 +172,8 @@ import IconStack from "../components/IconStack.astro";
       </IconStack>
 
 
-       <!-- Icon Figma -->
-       <IconStack>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="32" viewBox="0 0 24 32" fill="none">
-          <path d="M20.8077 10.721C21.7922 9.98257 22.5194 8.95314 22.8864 7.77847C23.2533 6.60381 23.2414 5.34346 22.8522 4.17597C22.463 3.00848 21.7164 1.99303 20.718 1.27347C19.7197 0.553896 18.5202 0.166687 17.2896 0.166687H6.73533C5.50469 0.166687 4.30524 0.553896 3.30689 1.27347C2.30854 1.99303 1.5619 3.00848 1.17274 4.17597C0.783577 5.34346 0.771617 6.60381 1.13856 7.77847C1.50549 8.95314 2.23273 9.98257 3.21724 10.721C2.47182 11.2796 1.87022 12.0078 1.46228 12.8452C1.05433 13.6827 0.85179 14.6053 0.871419 15.5366C0.891049 16.4679 1.13229 17.3811 1.57515 18.2007C2.01802 19.0202 2.64976 19.7224 3.41806 20.2491C2.54416 20.9135 1.85431 21.79 1.41383 22.7955C0.973342 23.8011 0.796802 24.9024 0.900924 25.9953C1.00505 27.0881 1.38638 28.1363 2.00883 29.0406C2.63127 29.9448 3.47422 30.6753 4.45786 31.1627C5.44151 31.6501 6.53329 31.8784 7.62982 31.826C8.72636 31.7735 9.79136 31.4421 10.724 30.863C11.6566 30.2839 12.426 29.4763 12.9593 28.5168C13.4926 27.5572 13.7722 26.4775 13.7715 25.3797V20.1025C14.3875 20.5645 15.0885 20.9007 15.8344 21.0918C16.5803 21.2829 17.3566 21.3252 18.1188 21.2163C18.8811 21.1074 19.6144 20.8494 20.277 20.4571C20.9396 20.0648 21.5184 19.5458 21.9804 18.9298C22.4424 18.3138 22.7785 17.6129 22.9696 16.8669C23.1607 16.121 23.203 15.3448 23.0942 14.5825C22.9853 13.8203 22.7273 13.0869 22.335 12.4243C21.9427 11.7618 21.4237 11.183 20.8077 10.721ZM13.7715 2.51208H17.2896C18.2227 2.51208 19.1175 2.88274 19.7773 3.54251C20.437 4.20227 20.8077 5.09711 20.8077 6.03017C20.8077 6.96323 20.437 7.85807 19.7773 8.51784C19.1175 9.17761 18.2227 9.54826 17.2896 9.54826H13.7715V2.51208ZM17.2896 18.9298C16.5938 18.9298 15.9136 18.7235 15.3351 18.3369C14.7565 17.9504 14.3056 17.4009 14.0393 16.7581C13.773 16.1152 13.7034 15.4078 13.8391 14.7254C13.9749 14.043 14.3099 13.4161 14.8019 12.9241C15.2939 12.4321 15.9208 12.097 16.6033 11.9613C17.2857 11.8255 17.9931 11.8952 18.6359 12.1615C19.2788 12.4277 19.8282 12.8786 20.2148 13.4572C20.6014 14.0357 20.8077 14.7159 20.8077 15.4117C20.8077 16.3448 20.437 17.2396 19.7773 17.8994C19.1175 18.5592 18.2227 18.9298 17.2896 18.9298Z" fill="#F8FAFC"/>
-        </svg>
-      </IconStack>
+    
   
-
-      <!-- Icon Webflow -->
-      <IconStack>
-        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4893 13.1482C26.4893 20.3327 20.6651 26.157 13.4805 26.157C6.29593 26.157 0.47168 20.3327 0.47168 13.1482C0.47168 5.96359 6.29593 0.139343 13.4805 0.139343C20.6651 0.139343 26.4893 5.96359 26.4893 13.1482ZM16.1231 15.319L17.3021 11.6034H17.2939C17.8143 10.1968 18.8387 8.8715 20.7901 8.8715L18.0257 15.5873C17.7856 16.3483 17.3095 17.013 16.6663 17.4852C16.023 17.9573 15.2462 18.2124 14.4483 18.2135C14.4483 18.2135 13.6352 12.4408 13.6352 12.3107L12.4156 15.4816C11.8709 16.8882 10.8139 18.2135 8.86259 18.2135L7.33406 8.87963C8.07806 8.89828 8.7894 9.18913 9.33333 9.6971C9.87726 10.2051 10.216 10.8949 10.2854 11.6359C10.2854 11.6359 10.4887 15.0588 10.4887 15.3271L11.9278 11.6034C12.4481 10.1968 13.4401 8.8715 15.3101 8.8715C15.3101 8.8715 16.1231 15.0344 16.1231 15.319Z" fill="#F8FAFC"/>
-        </svg>
-      </IconStack>
       
 
       <!-- Icon Facebook -->
@@ -176,7 +192,8 @@ import IconStack from "../components/IconStack.astro";
           <path d="M5.91954 26.6665C8.65702 26.6665 10.8762 24.5025 10.8762 21.833C10.8762 19.1635 8.65702 16.9994 5.91954 16.9994C3.18206 16.9994 0.962891 19.1635 0.962891 21.833C0.962891 24.5025 3.18206 26.6665 5.91954 26.6665Z" fill="#F8FAFC"/>
         </svg>
       </IconStack>
-
+      <div class=" hidden group-hover:flex  text-indigo-200 border-indigo-200 transition-all absolute -bottom-10 left-0 w-full items-center justify-center border-b "> <p class=" w-fit absolute -bottom-8 ">Integrações</p></div>
+      </div>
 
      </div>
     </section>
@@ -300,10 +317,11 @@ import IconStack from "../components/IconStack.astro";
       <div class="grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-4" transition:name="projetos">
 
         <PortfolioCard 
-          spanText="Mutinno"
-          title="Landing Page • Mais Que Um Post Bonito"
-          description="Design e Desenvolvimento • RD Station"
-          imageCard={SiteMutinno}
+         
+          title="Mutinno • Landing Page"
+          stacks="Design e Desenvolvimento • RD Station"
+          description="Landing page desenvolvida utilizando o RD Station para o método Mais que um post bonito."
+          imageCard="/src/assets/mutinno-card.png"
           alt="Landing Page Mutinno - Mais Que Um Post Bonito"
           link="https://materiais.mutinno.com.br/q1pb"
           linkText="Visitar site"
@@ -311,10 +329,11 @@ import IconStack from "../components/IconStack.astro";
 
 
         <PortfolioCard 
-          spanText="To Grow"
-          title="Site Institucional"
-          description="Desenvolvimento • Wordpress e Elementor"
-          imageCard={SiteTogrow}
+          
+          title="To Grow • Site Institucional"
+          stacks="Desenvolvimento • Wordpress e Elementor"
+          description="Site institucional focado em mostrar os serviços da empresa e captar leads."
+          imageCard="/src/assets/togrow-card.png"
           alt="Site To Grow"
           link="https://togrow.tech"
           linkText="Visitar site"
@@ -322,11 +341,12 @@ import IconStack from "../components/IconStack.astro";
 
 
         <PortfolioCard 
-          spanText="Disparo Pro"
-          title="Landing Page • Disparo Festival "
-          description="Desenvolvimento • Wordpress e Elementor"
-          imageCard={LpDisparo}
-          alt="Landing page Disparo Festival Disparo PRO"
+          
+          title="Disparo Pro • Landing Page"
+          stacks="Desenvolvimento • Wordpress e Elementor"
+          description="Landing page criada para o Disparo Festival, com o objetivo de captar leads para a campanha de Black Friday."
+          imageCard="/src/assets/disparofestival-card.png"
+          alt="Landing page criada Disparo Festival Disparo PRO"
           link="https://disparopro.com.br/disparo-festival"
           linkText="Visitar site"
         />
