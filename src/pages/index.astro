@@ -3,372 +3,442 @@ import { SEO } from "astro-seo";
 import Layout from "../layouts/Layout.astro";
 import { Icon } from "astro-icon";
 import { Image } from "astro:assets";
-import Header from "../components/Header.astro"; 
-import Footer from "../components/Footer.astro"; 
+import Header from "../components/Header.astro";
 import AvatarImgIngrid from "../assets/avatar-ingrid.png";
 import LogoLoubfy from "../assets/logo-loubfy.png";
 import AvatarImgThauane from "../assets/avatar-thauane.png";
 import LogoMutinno from "../assets/logo-mutinno.png";
 import AvatarImgKelvyn from "../assets/avatar-kelvyn.png";
 import PortfolioCard from "../components/PortfolioCard.astro";
-import SiteMutinno from "../assets/mutinno-card.png"
-import SiteTogrow from "../assets/togrow-card.png"
-import LpDisparo from "../assets/disparofestival-card.png"
+import SiteMutinno from "../assets/mutinno-thumb.png";
+import SiteTogrow from "../assets/togrow-thumb.png";
+import LpDisparo from "../assets/disparofestival-thumb.png";
 import HeroCard from "../components/HeroCard.astro";
-import SocialIcons from "../components/SocialIcons.astro";
-import IconStack from "../components/IconStack.astro";
-
-
+import MainButton from "../components/MainButton.astro";
 
 
 ---
+
 <head>
-  
-    <SEO
-      title="Victor Benazzi - Web Designer"
-      description="Criação de Sites e landing pages que convertem."
-      openGraph={{
-        basic: {
-          title: "Front-end Developer e Web Designer",
-          type: "Website",
-          image: "https://i.imgur.com/hBQ4P4Y.png",
-        }
-      }}
-     
-    
-    />
+  <SEO
+    title="Victor Benazzi - Web Designer"
+    description="Criação de Sites e landing pages que convertem."
+    openGraph={{
+      basic: {
+        title: "Front-end Developer e Web Designer",
+        type: "Website",
+        image: "https://i.imgur.com/hBQ4P4Y.png",
+      },
+    }}
+  />
 </head>
 
 <Layout title="Victor Benazzi - Web Designer">
   <Header />
 
-
-  
-   <section class="flex flex-col gap-y-8 lg:flex-row w-full xl:w-[1440px] h-auto py-12 px-6 items-center lg:justify-start">
-   
+  <section
+    class="flex flex-col gap-y-8 lg:flex-row w-full xl:w-[1440px] h-auto py-12 px-6 items-center lg:justify-start"
+  >
     <div class="flex flex-col gap-y-6 w-full lg:items-start">
-      <SocialIcons />
-      <h1 class="text-5xl lg:text-7xl x:text-8xl text-slate-50 font-bold lg:items-start"  transition:name="h1">
-        Web Designer <span class="text-indigo-300">&</span> Front-end Developer
+ 
+      <h1
+        class="text-5xl lg:text-7xl x:text-8xl text-stone-50 font-bold lg:items-start"
+        transition:name="h1"
+      >
+        Web Designer & Front-end Developer
       </h1>
-      <p class="text-slate-100 w-full text-base" transition:name="p">
-        Sou web designer e front-end developer, especialista em criar sites e landing pages incríveis. Desenvolvo soluções web que aliam design, funcionalidade e responsividade.
+      <p class="text-stone-300 w-full text-base" transition:name="p">
+        Sou web designer e front-end developer, especialista em criar sites e
+        landing pages incríveis. Desenvolvo soluções web que aliam design,
+        funcionalidade e responsividade.
       </p>
-    
     </div>
-   
-    <div class="flex flex-col w-full" >
+
+    <div class="flex flex-col w-full">
       <HeroCard />
     </div>
-  
+  </section>
 
-
-   </section>
-
-   <!-- ÍCONES DE STACKS -->
-    <section class="flex flex-col w-full h-[400px]  relative xl:w-[1440px] items-start justify-center gap-y-8 px-6">
-    
-     <div class="flex flex-col gap-y-6 w-full">
-       <h2 class="lg:text-6xl xl:text-6xl md:text-6xl text-2xl text-slate-200 font-bold">
+  <!-- ÍCONES DE STACKS -->
+  <section
+    class="flex flex-col w-full  relative xl:w-[1440px] items-start justify-center gap-y-8 px-6"
+  >
+    <div class="flex flex-col gap-y-6 w-full">
+      <h2
+        class="lg:text-4xl text-2xl text-stone-50 font-bold"
+      >
         Criação e integração 🧑‍💻
-       </h2>
-       <p class="text-slate-300 xl:w-[50%] w-[100%] text-base ">
+      </h2>
+      <p class="text-stone-300 xl:w-[50%] w-[100%] text-base">
         Crio, desenvolvo e integro com as principais ferramentas do mercado.
-       </p>
-     </div>
- 
-     <div class="flex flex-row flex-wrap gap-x-4 gap-y-4 w-[100%]">
-
-
-      <!-- Design -->
-     <div class="group relative flex flex-row flex-wrap gap-x-4 gap-y-4 hover:-translate-y-4 transition-all">
-
-      <!-- Icon Figma -->
-      <IconStack>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="32" viewBox="0 0 24 32" fill="none">
-      <path d="M20.8077 10.721C21.7922 9.98257 22.5194 8.95314 22.8864 7.77847C23.2533 6.60381 23.2414 5.34346 22.8522 4.17597C22.463 3.00848 21.7164 1.99303 20.718 1.27347C19.7197 0.553896 18.5202 0.166687 17.2896 0.166687H6.73533C5.50469 0.166687 4.30524 0.553896 3.30689 1.27347C2.30854 1.99303 1.5619 3.00848 1.17274 4.17597C0.783577 5.34346 0.771617 6.60381 1.13856 7.77847C1.50549 8.95314 2.23273 9.98257 3.21724 10.721C2.47182 11.2796 1.87022 12.0078 1.46228 12.8452C1.05433 13.6827 0.85179 14.6053 0.871419 15.5366C0.891049 16.4679 1.13229 17.3811 1.57515 18.2007C2.01802 19.0202 2.64976 19.7224 3.41806 20.2491C2.54416 20.9135 1.85431 21.79 1.41383 22.7955C0.973342 23.8011 0.796802 24.9024 0.900924 25.9953C1.00505 27.0881 1.38638 28.1363 2.00883 29.0406C2.63127 29.9448 3.47422 30.6753 4.45786 31.1627C5.44151 31.6501 6.53329 31.8784 7.62982 31.826C8.72636 31.7735 9.79136 31.4421 10.724 30.863C11.6566 30.2839 12.426 29.4763 12.9593 28.5168C13.4926 27.5572 13.7722 26.4775 13.7715 25.3797V20.1025C14.3875 20.5645 15.0885 20.9007 15.8344 21.0918C16.5803 21.2829 17.3566 21.3252 18.1188 21.2163C18.8811 21.1074 19.6144 20.8494 20.277 20.4571C20.9396 20.0648 21.5184 19.5458 21.9804 18.9298C22.4424 18.3138 22.7785 17.6129 22.9696 16.8669C23.1607 16.121 23.203 15.3448 23.0942 14.5825C22.9853 13.8203 22.7273 13.0869 22.335 12.4243C21.9427 11.7618 21.4237 11.183 20.8077 10.721ZM13.7715 2.51208H17.2896C18.2227 2.51208 19.1175 2.88274 19.7773 3.54251C20.437 4.20227 20.8077 5.09711 20.8077 6.03017C20.8077 6.96323 20.437 7.85807 19.7773 8.51784C19.1175 9.17761 18.2227 9.54826 17.2896 9.54826H13.7715V2.51208ZM17.2896 18.9298C16.5938 18.9298 15.9136 18.7235 15.3351 18.3369C14.7565 17.9504 14.3056 17.4009 14.0393 16.7581C13.773 16.1152 13.7034 15.4078 13.8391 14.7254C13.9749 14.043 14.3099 13.4161 14.8019 12.9241C15.2939 12.4321 15.9208 12.097 16.6033 11.9613C17.2857 11.8255 17.9931 11.8952 18.6359 12.1615C19.2788 12.4277 19.8282 12.8786 20.2148 13.4572C20.6014 14.0357 20.8077 14.7159 20.8077 15.4117C20.8077 16.3448 20.437 17.2396 19.7773 17.8994C19.1175 18.5592 18.2227 18.9298 17.2896 18.9298Z" fill="#F8FAFC"/>
-      </svg>
-      <div class=" hidden group-hover:flex  text-indigo-200 border-indigo-200 transition-all absolute -bottom-10 left-0 w-full items-center justify-center border-b "> <p class=" w-fit absolute -bottom-8 ">Design</p></div>
-      </IconStack>
-     </div>
-
-    <!-- Desenvolvimento -->
-    <div class="group relative flex flex-row flex-wrap gap-x-4 gap-y-4 hover:-translate-y-4 transition-all">
-      <!-- Icon elementor -->
-      <IconStack>
-        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666016 13.9999C0.666016 21.3633 6.63595 27.3333 13.9993 27.3333C21.3627 27.3333 27.3327 21.3633 27.3327 13.9999C27.3327 6.63656 21.3627 0.666626 13.9993 0.666626C6.63595 0.666626 0.666016 6.63656 0.666016 13.9999ZM10.6655 8.44425H8.44361V19.5557H10.6655V8.44425ZM12.8874 8.44425H19.5531V10.6661H12.8874V8.44425ZM19.5531 12.888H12.8874V15.1099H19.5531V12.888ZM12.8874 17.3338H19.5531V19.5557H12.8874V17.3338Z" fill="#F8FAFC"/>
-        </svg>
-      </IconStack>
-       
-      
-
-      <!-- Icon wordpress -->
-      <IconStack>
-        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28" fill="none">
-          <path d="M13.3704 1.46669C15.8771 1.46669 18.3171 2.21336 20.3838 3.61336C22.3971 4.97336 23.9838 6.89336 24.9304 9.13337C26.5838 13.04 26.1438 17.5067 23.7704 21.0133C22.4104 23.0267 20.4904 24.6134 18.2504 25.56C14.3438 27.2134 9.87709 26.7734 6.37044 24.4C4.35711 23.04 2.77044 21.12 1.82377 18.88C0.170443 14.9733 0.610443 10.5067 2.98377 7.00003C4.34378 4.9867 6.26379 3.40003 8.50378 2.45336C10.0371 1.80003 11.7038 1.46669 13.3704 1.46669ZM13.3704 0.666687C6.01044 0.666687 0.0371094 6.64003 0.0371094 14C0.0371094 21.36 6.01044 27.3334 13.3704 27.3334C20.7304 27.3334 26.7038 21.36 26.7038 14C26.7038 6.64003 20.7304 0.666687 13.3704 0.666687Z" fill="#F8FAFC"/>
-          <path d="M2.26367 13.9998C2.26367 18.2531 4.69034 22.1464 8.53034 23.9998L3.22367 9.4798C2.58367 10.9064 2.26367 12.4398 2.26367 13.9998ZM20.877 13.4398C20.877 12.0664 20.3837 11.1198 19.957 10.3731C19.5303 9.62646 18.8637 8.67979 18.8637 7.77313C18.8637 6.86646 19.637 5.79979 20.7303 5.79979H20.877C16.357 1.65312 9.33034 1.95979 5.18367 6.49313C4.78367 6.93313 4.41034 7.39979 4.09034 7.89313H4.81034C5.97034 7.89313 7.77034 7.74646 7.77034 7.74646C8.37034 7.70646 8.43701 8.58646 7.83701 8.66646C7.83701 8.66646 7.23701 8.73313 6.57034 8.77313L10.6103 20.8131L13.037 13.5198L11.3037 8.77313C10.7037 8.73313 10.1437 8.66646 10.1437 8.66646C9.54368 8.62646 9.61034 7.71979 10.2103 7.74646C10.2103 7.74646 12.0503 7.89313 13.1303 7.89313C14.2103 7.89313 16.0903 7.74646 16.0903 7.74646C16.6903 7.70646 16.757 8.58646 16.157 8.66646C16.157 8.66646 15.557 8.73313 14.8903 8.77313L18.9037 20.7198L20.0503 17.0931C20.557 15.5064 20.8637 14.3864 20.8637 13.4264L20.877 13.4398ZM13.557 14.9598L10.2237 24.6531C12.4637 25.3064 14.8503 25.2531 17.0503 24.4798L16.9703 24.3331L13.557 14.9598ZM23.117 8.66646C23.1703 9.03979 23.197 9.42646 23.197 9.81313C23.197 10.9464 22.9837 12.2131 22.357 13.7864L18.957 23.5998C24.157 20.5731 26.0103 13.9464 23.117 8.66646Z" fill="#F8FAFC"/>
-        </svg>
-      </IconStack>
-
-      <!-- Icon React -->
-      <IconStack>
-        <svg xmlns="http://www.w3.org/2000/svg" width="33" height="30" viewBox="0 0 33 30" fill="none">
-          <path d="M16.5543 17.7855C18.1074 17.7855 19.3665 16.5265 19.3665 14.9734C19.3665 13.4203 18.1074 12.1613 16.5543 12.1613C15.0012 12.1613 13.7422 13.4203 13.7422 14.9734C13.7422 16.5265 15.0012 17.7855 16.5543 17.7855Z" fill="#F8FAFC"/>
-          <path d="M16.5533 9.2562C20.3282 9.2562 23.8355 9.79799 26.4794 10.7078C29.6652 11.8044 31.6242 13.467 31.6242 14.9725C31.6242 16.5412 29.5481 18.3078 26.1272 19.4407C23.5409 20.2975 20.1368 20.7455 16.5533 20.7455C12.8787 20.7455 9.40025 20.3254 6.78419 19.4314C3.47485 18.3004 1.48145 16.5115 1.48145 14.9725C1.48145 13.4791 3.35218 11.8295 6.49331 10.7348C9.14747 9.81007 12.7412 9.2562 16.5533 9.2562Z" stroke="#F8FAFC" stroke-width="1.40875" stroke-miterlimit="10"/>
-          <path d="M11.5774 12.1315C13.463 8.86123 15.6851 6.09369 17.7946 4.25827C20.3363 2.04647 22.7554 1.18034 24.0592 1.93216C25.4179 2.71558 25.9114 5.39669 25.1837 8.92721C24.6336 11.5962 23.3213 14.768 21.5305 17.8729C19.6951 21.0559 17.593 23.8596 15.5122 25.6793C12.8794 27.9812 10.3331 28.8139 9.00041 28.0453C7.70678 27.2991 7.21238 24.855 7.83224 21.5865C8.35638 18.8227 9.67231 15.4334 11.5774 12.1315Z" stroke="#F8FAFC" stroke-width="1.40875" stroke-miterlimit="10"/>
-          <path d="M11.5817 17.8796C9.69048 14.6121 8.40243 11.3056 7.86528 8.56126C7.21846 5.25471 7.67569 2.72601 8.97861 1.97233C10.3364 1.18611 12.905 2.09778 15.6001 4.4908C17.6381 6.3002 19.73 9.02128 21.5255 12.1234C23.3665 15.3035 24.7465 18.5246 25.2827 21.2354C25.9621 24.6665 25.4119 27.2881 24.0802 28.0586C22.7875 28.8067 20.4233 28.0149 17.9011 25.8449C15.7711 24.0113 13.4914 21.1787 11.5817 17.8796Z" stroke="#F8FAFC" stroke-width="1.40875" stroke-miterlimit="10"/>
-        </svg>
-      </IconStack>
-
-
-
-       <!-- Icon astro -->
-       <IconStack>
-        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="28" viewBox="0 0 21 28" fill="none">
-          <path d="M6.94535 23.24C5.7641 22.1375 5.3966 19.88 5.89535 18.2262C6.7616 19.2762 7.94285 19.5912 9.1766 19.8012C11.0666 20.0637 12.9304 19.9587 14.6891 19.0925L15.3191 18.725C15.4766 19.1975 15.5291 19.6962 15.4504 20.195C15.3191 21.3762 14.7154 22.295 13.7704 23.0037C13.4029 23.2925 12.9829 23.5287 12.5891 23.7912C11.3816 24.6312 11.0666 25.5762 11.5391 26.9675V27.125C10.9654 26.8701 10.4809 26.4496 10.1479 25.9175C9.80142 25.3675 9.61928 24.73 9.62285 24.08C9.62285 23.765 9.62285 23.4237 9.57035 23.1087C9.46535 22.3212 9.09785 21.98 8.3891 21.9537C8.05944 21.935 7.73416 22.0363 7.47352 22.239C7.21289 22.4418 7.03457 22.7321 6.9716 23.0562L6.94535 23.24Z" fill="#F8FAFC"/>
-          <path d="M0.172852 17.9375C0.172852 17.9375 3.69035 16.2313 7.20786 16.2313L9.85911 8.015C9.96411 7.62125 10.2529 7.35875 10.5679 7.35875C10.9091 7.35875 11.1979 7.62125 11.3029 8.015L13.9279 16.2313C18.1279 16.2313 20.9891 17.9375 20.9891 17.9375L15.0041 1.6625C14.8466 1.19 14.5579 0.875 14.1641 0.875H6.99786C6.6041 0.875 6.3416 1.19 6.15785 1.6625L0.172852 17.9375Z" fill="#F8FAFC"/>
-        </svg>
-      </IconStack>
-
-      <!-- Icon tailwind -->
-      <IconStack>
-        <svg xmlns="http://www.w3.org/2000/svg" width="39" height="24" viewBox="0 0 39 24" fill="none">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M19.5694 0.57373C14.5165 0.57373 11.3592 3.085 10.0954 8.10753C11.9903 5.59626 14.2009 4.65472 16.727 5.28217C18.1683 5.64007 19.1989 6.67962 20.3387 7.83056C22.1965 9.70473 24.3469 11.8737 29.0427 11.8737C34.095 11.8737 37.253 9.36242 38.516 4.34063C36.6218 6.85189 34.4113 7.79343 31.8852 7.16524C30.4432 6.80734 29.4125 5.76779 28.2727 4.6176C26.4149 2.74194 24.2652 0.57373 19.5694 0.57373ZM10.0954 11.8737C5.04314 11.8737 1.88513 14.3849 0.62207 19.4075C2.51703 16.8962 4.72757 15.9547 7.25294 16.5821C8.69495 16.94 9.72559 17.9796 10.8654 19.1305C12.7232 21.0047 14.8729 23.1736 19.5694 23.1736C24.6217 23.1736 27.7797 20.6631 29.0427 15.6406C27.1478 18.1518 24.9372 19.0934 22.4111 18.4659C20.9699 18.1073 19.9392 17.0677 18.7994 15.9175C16.9416 14.0434 14.7912 11.8737 10.0954 11.8737Z" fill="#F8FAFC"/>
-        </svg>
-      </IconStack>
-
-       <!-- Icon Javascript -->
-       <IconStack>
-        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28" fill="none">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.726562 5.14352C0.726562 2.78608 2.63764 0.875 4.99508 0.875H22.708C25.0655 0.875 26.9766 2.78608 26.9766 5.14352V22.8565C26.9766 25.2139 25.0655 27.125 22.708 27.125H4.99508C2.63764 27.125 0.726562 25.2139 0.726562 22.8565V5.14352ZM20.7934 22.8808C20.0689 22.8808 19.5318 22.6558 19.1043 22.2914C18.6053 21.8661 17.9074 21.6459 17.3405 21.9753V21.9753C16.7875 22.2965 16.5687 23.009 16.991 23.4892C17.8191 24.4306 19.0974 25.07 20.8505 25.07C23.1934 25.07 24.938 23.8533 24.938 21.6325C24.938 19.5725 23.7547 18.6562 21.6589 17.7575L21.0422 17.4933C19.9839 17.035 19.5255 16.7354 19.5255 15.9954C19.5255 15.3967 19.9834 14.9383 20.7059 14.9383C21.0084 14.9383 21.2648 14.9928 21.4924 15.1142C22.0697 15.4223 22.7588 15.6966 23.3095 15.343V15.343C23.8169 15.0172 23.9974 14.3328 23.5846 13.8932C22.8449 13.1056 21.9041 12.7871 20.7059 12.7871C18.503 12.7871 17.0934 14.1954 17.0934 16.0454C17.0934 18.0537 18.2759 19.0037 20.0559 19.7621L20.6726 20.0267C21.7976 20.5187 22.4684 20.8183 22.4684 21.6642C22.4684 22.37 21.8155 22.8808 20.7934 22.8808ZM11.2339 22.8654C10.8785 22.8654 10.6102 22.7632 10.3898 22.5938C9.84648 22.1763 9.16126 21.8903 8.57508 22.2452V22.2452C8.04291 22.5674 7.82354 23.258 8.22528 23.733C8.88567 24.5138 9.88796 25.0654 11.3389 25.0654C13.5247 25.0654 15.0222 23.9029 15.0222 21.3487V14.1612C15.0222 13.4801 14.47 12.9279 13.7889 12.9279V12.9279C13.1077 12.9279 12.5555 13.4801 12.5555 14.1612V21.3154C12.5555 22.5483 12.0443 22.8654 11.2339 22.8654Z" fill="#F8FAFC"/>
-        </svg>
-      </IconStack>
-
-
-      <!-- Icon Webflow -->
-      <IconStack>
-        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M26.4893 13.1482C26.4893 20.3327 20.6651 26.157 13.4805 26.157C6.29593 26.157 0.47168 20.3327 0.47168 13.1482C0.47168 5.96359 6.29593 0.139343 13.4805 0.139343C20.6651 0.139343 26.4893 5.96359 26.4893 13.1482ZM16.1231 15.319L17.3021 11.6034H17.2939C17.8143 10.1968 18.8387 8.8715 20.7901 8.8715L18.0257 15.5873C17.7856 16.3483 17.3095 17.013 16.6663 17.4852C16.023 17.9573 15.2462 18.2124 14.4483 18.2135C14.4483 18.2135 13.6352 12.4408 13.6352 12.3107L12.4156 15.4816C11.8709 16.8882 10.8139 18.2135 8.86259 18.2135L7.33406 8.87963C8.07806 8.89828 8.7894 9.18913 9.33333 9.6971C9.87726 10.2051 10.216 10.8949 10.2854 11.6359C10.2854 11.6359 10.4887 15.0588 10.4887 15.3271L11.9278 11.6034C12.4481 10.1968 13.4401 8.8715 15.3101 8.8715C15.3101 8.8715 16.1231 15.0344 16.1231 15.319Z" fill="#F8FAFC"/>
-        </svg>
-      </IconStack>
-
-        <div class=" hidden group-hover:flex  text-indigo-200 border-indigo-200 transition-all absolute -bottom-10 left-0 w-full items-center justify-center border-b "> <p class=" w-fit absolute -bottom-8 ">Desenvolvimento</p></div>
+      </p>
     </div>
 
-
-     
-    <!-- Integração -->
-    <div class="group relative flex flex-row flex-wrap gap-x-4 gap-y-4 hover:-translate-y-4 transition-all">
-
-       <!-- Icon RD station -->
-       <IconStack>
-        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-          <path d="M13.7353 20.0133L27.0739 24.9489V20.5235L13.7353 15.5879L0.407227 20.5235V24.9489L13.7353 20.0133Z" fill="#E2E8F0"/>
-          <path d="M13.7353 20.0133L0.407227 24.9489L5.35439 27.3333L13.7353 24.2304L22.1268 27.3333L27.0739 24.9489L13.7353 20.0133Z" fill="#F8FAFC"/>
-          <path d="M13.7353 7.98675L0.407227 3.05113V7.47649L13.7353 12.4121L27.0739 7.47649V3.05113L13.7353 7.98675Z" fill="#E2E8F0"/>
-          <path d="M13.7353 7.98678L27.0739 3.05116L22.1268 0.666687L13.7353 3.76967L5.35439 0.666687L0.407227 3.05116L13.7353 7.98678Z" fill="#F8FAFC"/>
-        </svg>
-      </IconStack>
-
+    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-x-4 gap-y-4 w-full ">
+        
+      <!-- Figma -->
+      <div class="flex flex-row items-center justify-start gap-x-2 border-stone-800 rounded-lg border p-2 hover:bg-stone-800">
+        <div class="flex flex-row items-center justify-center border-stone-800 rounded-lg w-12 h-12 border bg-stone-950">
+          <Image
+            src="/src/assets/icons/logo-figma.svg"
+            alt="figma"
+            width="16"
+            height="16"
+            loading="lazy"
+        >
+        </div>
+        <h3 class="text-base text-stone-300">Figma</h3>
+        </div>
 
     
-  
-      
-
-      <!-- Icon Facebook -->
-      <IconStack>
-        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28" fill="none">
-          <path d="M26.9264 14C26.9264 6.63622 20.9569 0.666687 13.5931 0.666687C6.2293 0.666687 0.259766 6.63622 0.259766 14C0.259766 20.6551 5.13557 26.1711 11.5098 27.1714V17.8542H8.12436V14H11.5098V11.0625C11.5098 7.72085 13.5003 5.87503 16.546 5.87503C18.0048 5.87503 19.5306 6.13544 19.5306 6.13544V9.41669H17.8493C16.193 9.41669 15.6764 10.4445 15.6764 11.4989V14H19.3744L18.7832 17.8542H15.6764V27.1714C22.0506 26.1711 26.9264 20.6551 26.9264 14Z" fill="#F8FAFC"/>
-        </svg>
-      </IconStack>
-
-
-      <!-- Icon google ads -->
-      <IconStack>
-        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="27" viewBox="0 0 31 27" fill="none">
-          <path d="M1.64667 19.3329L11.521 2.42816C12.7753 3.16658 19.1001 6.6669 20.1215 7.33251L10.2472 24.2382C9.16728 25.6648 0.27854 21.4979 1.64667 19.3318V19.3329Z" fill="#E2E8F0"/>
-          <path d="M30.0186 19.3325L20.1443 2.42879C18.7638 0.131483 15.7907 -0.703343 13.3488 0.653505C10.9068 2.01035 10.1633 4.93327 11.5437 7.33313L21.4181 24.2389C22.7985 26.5351 25.7717 27.37 28.2136 26.0131C30.5488 24.6563 31.399 21.6298 30.0186 19.3345V19.3325Z" fill="#F8FAFC"/>
-          <path d="M5.91954 26.6665C8.65702 26.6665 10.8762 24.5025 10.8762 21.833C10.8762 19.1635 8.65702 16.9994 5.91954 16.9994C3.18206 16.9994 0.962891 19.1635 0.962891 21.833C0.962891 24.5025 3.18206 26.6665 5.91954 26.6665Z" fill="#F8FAFC"/>
-        </svg>
-      </IconStack>
-      <div class=" hidden group-hover:flex  text-indigo-200 border-indigo-200 transition-all absolute -bottom-10 left-0 w-full items-center justify-center border-b "> <p class=" w-fit absolute -bottom-8 ">Integrações</p></div>
-      </div>
-
-     </div>
-    </section>
-
-    <!-- DEPOIMENTOS -->
-    <section class="flex flex-col w-full h-fit px-6  xl:w-[1440px] items-start justify-center gap-y-12 mt-20 ">
-    
-     <div class="flex flex-col gap-y-4 w-full">
-       <h2 class="lg:text-6xl xl:text-6xl md:text-6xl text-2xl text-slate-200 font-bold">
-       O que estão falando sobre mim?
-       </h2>
-       
-     </div>
- 
-     <div class="grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-4">
-      
-      <!-- Depoimento Ingrid -->
-      <div class="flex flex-col h-fit  px-8 py-6 rounded-2xl bg-zinc-900 gap-y-8 backdrop-opacity-10  border border-zinc-800">
-        <div class="flex flex-row gap-x-4">
+        
+        <!-- wordpress -->
+        <div class="flex flex-row items-center justify-start gap-x-2 border-stone-800 rounded-lg border p-2 hover:bg-stone-800">
+        <div class="flex flex-row items-center justify-center border-stone-800 rounded-lg w-12 h-12 border bg-stone-950">
           <Image
-            src={AvatarImgIngrid}
-            alt="Ingrid Santin"
-            width="48"
-            height="48"
-           />
-          <div class="flex flex-col gap-x-4">
-            <h5 class="text-slate-50 text-lg font-semibold">Ingrid Santin</h5>
-            <span class="text-slate-200 text-sm">CEO e Sócia Fundadora</span>
+            src="/src/assets/icons/logo-wordpress.svg"
+            alt="Wordpress"
+            width="16"
+            height="16"
+            loading="lazy"
+        >
+        </div>
+        <h3 class="text-base text-stone-300">Wordpress</h3>
+        </div>
+
+         <!-- elementor -->
+         <div class="flex flex-row items-center justify-start gap-x-2 border-stone-800 rounded-lg border p-2 hover:bg-stone-800">
+          <div class="flex flex-row items-center justify-center border-stone-800 rounded-lg w-12 h-12 border bg-stone-950">
+            <Image
+              src="/src/assets/icons/logo-elementor.svg"
+              alt="Elementor"
+              width="16"
+              height="16"
+              loading="lazy"
+          >
           </div>
-      </div>
-      <p class="text-slate-100 text-base mt-4">
-        "Victor é um dos profissionais mais completos e comprometidos que já trabalhei. Além de todo o amplo conhecimento técnico e estratégico na área de tecnologia e marketing, é um profissional que realmente se preocupa com a entrega e seu propósito final para cada cliente. <br> <br>
-
-          Cada projeto é único e sempre supera todas as expectativas, deixa cada detalhe impecável e, ainda, apresenta soluções práticas, essenciais e antecipação de problemas pra entrega ficar perfeita. Hoje, o Victor é o meu parceiro de confiança, principalmente em projetos que envolvem tecnologia e marketing.”
-        </p>
-
-        <a href="https://www.instagram.com/loubfy_/" target="_blank" class="flex flex-row gap-x-4 justify-start items-center">
-          <Image
-            src={LogoLoubfy}
-            alt="Loubfy"
-            width="32"
-            height="32"
-           />
-          <span class="text-slate-200 text-lg font-semibold">@loubfy_</span>
-        </a>
-     </div>
-     
-       <!-- Depoimento Thauane -->
-       <div class="flex flex-col  h-fit px-8 py-6 rounded-2xl bg-zinc-900 backdrop-opacity-10 gap-y-8 border border-zinc-800">
-        <div class="flex flex-row gap-x-4">
-          <Image
-            src={AvatarImgThauane}
-            alt="Thauane"
-            width="48"
-            height="48"
-           />
-          <div class="flex flex-col gap-x-4">
-            <h5 class="text-slate-50 text-lg font-semibold">Thauane Rizzi</h5>
-            <span class="text-slate-200 text-sm">CEO e Sócia Fundadora</span>
+          <h3 class="text-base text-stone-300">Elementor</h3>
           </div>
-      </div>
-      <p class="text-slate-100 text-base mt-4">
-        “O Victor conseguiu captar exatamente o que a gente queria e ainda nos entregou algo que foi além das nossas expectativas. <br> <br>
 
-        Ficamos muito contentes com o resultado e indicamos muito não só pela entrega final mas também pelo profissionalismo, responsabilidade e cuidado que teve em todo o processo.”        </p>
+          <!-- React -->
+         <div class="flex flex-row items-center justify-start gap-x-2 border-stone-800 rounded-lg border p-2 hover:bg-stone-800">
+          <div class="flex flex-row items-center justify-center border-stone-800 rounded-lg w-12 h-12 border bg-stone-950">
+            <Image
+              src="/src/assets/icons/logo-react.svg"
+              alt="React"
+              width="16"
+              height="16"
+              loading="lazy"
+          >
+          </div>
+          <h3 class="text-base text-stone-300">React</h3>
+          </div>
 
-        <a href="https://www.instagram.com/mutinnocontent/" target="_blank" class="flex flex-row gap-x-4 justify-start items-center">
-          <Image
-            src={LogoMutinno}
-            alt="Mutinno"
-            width="32"
-            height="32"
-           />
-          <span class="text-slate-200 text-lg font-semibold">@mutinnocontent</span>
-        </a>
-     </div>
+        
+
+        <!-- Astro -->
+        <div class="flex flex-row items-center justify-start gap-x-2 border-stone-800 rounded-lg border p-2 hover:bg-stone-800">
+          <div class="flex flex-row items-center justify-center border-stone-800 rounded-lg w-12 h-12 border bg-stone-950">
+            <Image
+              src="/src/assets/icons/logo-astro.svg"
+              alt="Astro"
+              width="16"
+              height="16"
+              loading="lazy"
+          >
+          </div>
+          <h3 class="text-base text-stone-300">Astro</h3>
+          </div>
 
 
-     <!-- Depoimento Kelvyn -->
-     <div class="flex flex-col  h-fit px-8 py-6 rounded-2xl bg-zinc-900 backdrop-opacity-10 gap-y-8 border border-zinc-800">
+
+
+
+        <!-- Javascript -->
+        <div class="flex flex-row items-center justify-start gap-x-2 border-stone-800 rounded-lg border p-2 hover:bg-stone-800">
+          <div class="flex flex-row items-center justify-center border-stone-800 rounded-lg w-12 h-12 border bg-stone-950">
+            <Image
+              src="/src/assets/icons/logo-javascript.svg"
+              alt="Javascript"
+              width="16"
+              height="16"
+              loading="lazy"
+          >
+          </div>
+          <h3 class="text-base text-stone-300">Javascript</h3>
+        </div>
+
+
+         <!-- Rd Station -->
+         <div class="flex flex-row items-center justify-start gap-x-2 border-stone-800 rounded-lg border p-2 hover:bg-stone-800">
+          <div class="flex flex-row items-center justify-center border-stone-800 rounded-lg w-12 h-12 border bg-stone-950">
+            <Image
+              src="/src/assets/icons/logo-rd-station.svg"
+              alt="RD Station"
+              width="16"
+              height="16"
+              loading="lazy"
+          >
+          </div>
+          <h3 class="text-base text-stone-300">RD Station</h3>
+        </div>
+
+
+
+        
+         <!-- Webflow -->
+         <div class="flex flex-row items-center justify-start gap-x-2 border-stone-800 rounded-lg border p-2 hover:bg-stone-800">
+          <div class="flex flex-row items-center justify-center border-stone-800 rounded-lg w-12 h-12 border bg-stone-950">
+            <Image
+              src="/src/assets/icons/logo-webflow.svg"
+              alt="Webflow"
+              width="16"
+              height="16"
+              loading="lazy"
+          >
+          </div>
+          <h3 class="text-base text-stone-300">Webflow</h3>
+        </div>
+
+        <!-- Facebook -->
+        <div class="flex flex-row items-center justify-start gap-x-2 border-stone-800 rounded-lg border p-2 hover:bg-stone-800">
+          <div class="flex flex-row items-center justify-center border-stone-800 rounded-lg w-12 h-12 border bg-stone-950">
+            <Image
+              src="/src/assets/icons/logo-facebook.svg"
+              alt="Facebook"
+              width="16"
+              height="16"
+              loading="lazy"
+          >
+          </div>
+          <h3 class="text-base text-stone-300">Facebook</h3>
+        </div>
+
+
+        <!-- Google Ads -->
+        <div class="flex flex-row items-center justify-start gap-x-2 border-stone-800 rounded-lg border p-2 hover:bg-stone-800">
+          <div class="flex flex-row items-center justify-center border-stone-800 rounded-lg w-12 h-12 border bg-stone-950">
+            <Image
+              src="/src/assets/icons/logo-google-ads.svg"
+              alt="Google Ads"
+              width="16"
+              height="16"
+              loading="lazy"
+          >
+          </div>
+          <h3 class="text-base text-stone-300">Google Ads</h3>
+        </div>
+
+        </div>
+
+  </section>
+
+
+<!-- DEPOIMENTOS -->
+<section
+  class="flex flex-col w-full h-fit px-6 xl:w-[1440px] items-start justify-center gap-y-12 mt-20"
+>
+  <div class="flex flex-col gap-y-4 w-full">
+    <h2
+      class="lg:text-4xl text-2xl text-stone-50 font-bold"
+    >
+    O que estão falando sobre mim
+    </h2>
+  </div>
+
+  <div class="grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-4">
+    <!-- Depoimento Ingrid -->
+    <div
+      class="flex flex-col h-fit px-8 py-6  gap-y-8 backdrop-opacity-10  border-stone-800 rounded-lg border"
+    >
       <div class="flex flex-row gap-x-4">
         <Image
-          src={AvatarImgKelvyn}
-          alt="Kelvyn"
+          src={AvatarImgIngrid}
+          alt="Ingrid Santin"
           width="48"
           height="48"
-         />
+        />
         <div class="flex flex-col gap-x-4">
-          <h5 class="text-slate-50 text-lg font-semibold">Kelvyn Castro</h5>
-          <span class="text-slate-200 text-sm">Presidente e Sócio Fundador</span>
+          <h5 class="text-stone-50 text-lg font-semibold">Ingrid Santin</h5>
+          <span class="text-stone-500 text-sm">CEO e Sócia Fundadora</span>
         </div>
-    </div>
-    <p class="text-slate-100 text-base mt-4">
-      “Trabalhar com o Victor sem dúvidas foi uma das melhores experiências profissionais que já tive, profissional extremamente comunicativo, eficiente e pontual.”      </p>
+      </div>
+      <p class="text-stone-200 text-base mt-4">
+        "Victor é um dos profissionais mais completos e comprometidos que já
+        trabalhei. Além de todo o amplo conhecimento técnico e estratégico na
+        área de tecnologia e marketing, é um profissional que realmente se
+        preocupa com a entrega e seu propósito final para cada cliente. <br />
+        <br />
 
-      <a href="https://www.instagram.com/loubfy_/" target="_blank" class="flex flex-row gap-x-4 justify-start items-center">
-        <Image
-          src={LogoLoubfy}
-          alt="Loubfy"
-          width="32"
-          height="32"
-         />
+        Cada projeto é único e sempre supera todas as expectativas, deixa cada
+        detalhe impecável e, ainda, apresenta soluções práticas, essenciais e
+        antecipação de problemas pra entrega ficar perfeita. Hoje, o Victor é o
+        meu parceiro de confiança, principalmente em projetos que envolvem
+        tecnologia e marketing.”
+      </p>
+
+      <a
+        href="https://www.instagram.com/loubfy_/"
+        target="_blank"
+        class="flex flex-row gap-x-4 justify-start items-center"
+      >
+        <Image src={LogoLoubfy} alt="Loubfy" width="32" height="32" />
         <span class="text-slate-200 text-lg font-semibold">@loubfy_</span>
       </a>
-   </div>
-  
-    </section>
-    
+    </div>
 
-     <!-- PROJETOS-->
-    <section class="flex flex-col w-full h-auto my-40 px-6 relative xl:w-[1440px] items-start justify-center gap-y-8">
-      <div class="flex flex-col gap-y-4 md:w-full">
-        <h2 class="lg:text-6xl xl:text-6xl md:text-6xl text-2xl text-slate-200 font-bold" >
-       Projetos
-        </h2>
-        <p class="text-base text-slate-300" >
-          Cada projeto é como uma peça única de desenvolvimento 🧩
-        </p>
+    <!-- Depoimento Thauane -->
+    <div
+    class="flex flex-col h-fit px-8 py-6  gap-y-8 backdrop-opacity-10  border-stone-800 rounded-lg border"
+    >
+      <div class="flex flex-row gap-x-4">
+        <Image src={AvatarImgThauane} alt="Thauane" width="48" height="48" />
+        <div class="flex flex-col gap-x-4">
+          <h5 class="text-stone-50 text-lg font-semibold">Thauane Rizzi</h5>
+          <span class="text-stone-500 text-sm">CEO e Sócia Fundadora</span>
+        </div>
       </div>
-    
-      <div class="grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-4" transition:name="projetos">
+      <p class="text-stone-200 text-base mt-4">
+        “O Victor conseguiu captar exatamente o que a gente queria e ainda nos
+        entregou algo que foi além das nossas expectativas. <br />
+        <br />
 
-        <PortfolioCard 
-         
-          title="Mutinno • Landing Page"
-          stacks="Design e Desenvolvimento • RD Station"
-          description="Landing page desenvolvida utilizando o RD Station para o método Mais que um post bonito."
-          imageCard={SiteMutinno}
-          alt="Landing Page Mutinno - Mais Que Um Post Bonito"
-          link="https://materiais.mutinno.com.br/q1pb"
-          linkText="Visitar site"
-        />
+        Ficamos muito contentes com o resultado e indicamos muito não só pela
+        entrega final mas também pelo profissionalismo, responsabilidade e
+        cuidado que teve em todo o processo.”
+      </p>
 
-
-        <PortfolioCard 
-          
-          title="To Grow • Site Institucional"
-          stacks="Desenvolvimento • Wordpress e Elementor"
-          description="Site institucional focado em mostrar os serviços da empresa e captar leads."
-          imageCard={SiteTogrow}
-          alt="Site To Grow"
-          link="https://togrow.tech"
-          linkText="Visitar site"
-        />
-
-
-        <PortfolioCard 
-          
-          title="Disparo Pro • Landing Page"
-          stacks="Desenvolvimento • Wordpress e Elementor"
-          description="Landing page criada para o Disparo Festival, com o objetivo de captar leads para a campanha de Black Friday."
-          imageCard={LpDisparo}
-          alt="Landing page criada Disparo Festival Disparo PRO"
-          link="https://disparopro.com.br/disparo-festival"
-          linkText="Visitar site"
-        />
-
-        <a href="projetos" class="flex flex-row items-center gap-x-2 text-base text-indigo-300 hover:text-indigo-400 font-bold mt-4">
-          Todos os projetos
-  
-          <div class="w-[18px] h-[18px]">
-              <Icon
-                name="ph:caret-double-right-bold"
-              />
-      
-            </div>
+      <a
+        href="https://www.instagram.com/mutinnocontent/"
+        target="_blank"
+        class="flex flex-row gap-x-4 justify-start items-center"
+      >
+        <Image src={LogoMutinno} alt="Mutinno" width="32" height="32" />
+        <span class="text-slate-200 text-lg font-semibold">@mutinnocontent</span
+        >
       </a>
+    </div>
 
-    </section>
+    <!-- Depoimento Kelvyn -->
+    <div
+      class="flex flex-col h-fit px-8 py-6  gap-y-8 backdrop-opacity-10  border-stone-800 rounded-lg border"
+    >
+      <div class="flex flex-row gap-x-4">
+        <Image src={AvatarImgKelvyn} alt="Kelvyn" width="48" height="48" />
+        <div class="flex flex-col gap-x-4">
+          <h5 class="text-stone-50 text-lg font-semibold">Kelvyn Castro</h5>
+          <span class="text-stone-500 text-sm">Presidente e Sócio Fundador</span
+          >
+        </div>
+      </div>
+      <p class="text-stone-200 text-base mt-4">
+        “Trabalhar com o Victor sem dúvidas foi uma das melhores experiências
+        profissionais que já tive, profissional extremamente comunicativo,
+        eficiente e pontual.”
+      </p>
+
+      <a
+        href="https://www.instagram.com/loubfy_/"
+        target="_blank"
+        class="flex flex-row gap-x-4 justify-start items-center"
+      >
+        <Image src={LogoLoubfy} alt="Loubfy" width="32" height="32" />
+        <span class="text-slate-200 text-lg font-semibold">@loubfy_</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- PROJETOS-->
+  <section
+    class="flex flex-col w-full h-auto my-40 px-6 relative xl:w-[1440px] items-start justify-center gap-y-8"
+  >
+    <div class="flex flex-col gap-y-4 md:w-full">
+      <h2
+        class="lg:text-4xl text-2xl text-slate-200 font-bold"
+      >
+        Projetos
+      </h2>
+      <p class="text-base text-slate-300">
+        Cada projeto é como uma peça única de desenvolvimento 🧩
+      </p>
+    </div>
+
+    <div
+      class="grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-4"
+      transition:name="projetos"
+    >
+     
+    <PortfolioCard 
+         
+    title="Mutinno • Landing Page"
+    stacks="Design e Desenvolvimento • RD Station"
+    description="Landing page desenvolvida utilizando o RD Station para o método Mais que um post bonito."
+    imageCard={SiteMutinno}
+    alt="Landing Page Mutinno - Mais Que Um Post Bonito"
+    link="https://materiais.mutinno.com.br/q1pb"
+    linkText="Visitar site"
+  />
 
 
+  <PortfolioCard 
     
+    title="To Grow • Site Institucional"
+    stacks="Desenvolvimento • Wordpress e Elementor"
+    description="Site institucional focado em mostrar os serviços da empresa e captar leads."
+    imageCard={SiteTogrow}
+    alt="Site To Grow"
+    link="https://togrow.tech"
+    linkText="Visitar site"
+  />
 
 
+  <PortfolioCard 
+    
+    title="Disparo Pro • Landing Page"
+    stacks="Desenvolvimento • Wordpress e Elementor"
+    description="Landing page criada para o Disparo Festival, com o objetivo de captar leads para a campanha de Black Friday."
+    imageCard={LpDisparo}
+    alt="Landing page criada Disparo Festival Disparo PRO"
+    link="https://disparopro.com.br/disparo-festival"
+    linkText="Visitar site"
+  />
 
- <Footer />
+
+      <a
+        href="projetos"
+        class="flex flex-row items-center gap-x-2 text-base text-stone-50 hover:underline font-bold mt-4"
+      >
+        Todos os projetos
+
+        <div class="w-[18px] h-[18px]">
+          <Icon name="ph:caret-double-right-bold" />
+        </div>
+      </a>
+    </div>
+
+
+</section>
+
+
+<!-- <section class=" w-full">
+  <div class=" w-full p-8 border-stone-800 border text-stone-50 rounded-xl" transition:name="falecomigocard">
+    <div class="flex flex-col gap-y-6 ">
+      <div class="flex flex-row items-center justify-start text-stone-100">
+        <div class="w-10 h-10">
+          <Icon
+            name="noto:rocket"
+          />
+  
+        </div>
+      </div>
+            <h2 class="text-[2rem] leading-none font-bold ">Tem um projeto em <br> mente?</h2>
+            <MainButton 
+            labelButton="Fale comigo"
+            link="https://wa.me/5569992993889"
+            target="_blank"
+    
+         />
+     </div>
+</div> 
+</section> -->
 </Layout>
-

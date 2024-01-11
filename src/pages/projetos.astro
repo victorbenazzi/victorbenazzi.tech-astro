@@ -3,18 +3,17 @@ import { SEO } from "astro-seo";
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import PortfolioCard from "../components/PortfolioCard.astro";
-import SiteMutinno from "../assets/mutinno-card.png"
-import SiteTogrow from "../assets/togrow-card.png"
-import LpDisparo from "../assets/disparofestival-card.png"
-import SiteDisparo from "../assets/disparopro-card.png"
-import SiteBrasilfone from "../assets/brasilfone-card.png"
-import SiteAtivos from "../assets/ativos-card.png"
-import SiteLinkou from "../assets/linkou-card.png"
-import LpCapton from "../assets/capton-card.png"
-import SiteEstudyou from "../assets/estudyou-card.png"
-import Lpzucchi from "../assets/zucchi-card.png"
-import Footer from "../components/Footer.astro"; 
+import SiteMutinno from "../assets/mutinno-thumb.png"
+import SiteTogrow from "../assets/togrow-thumb.png"
+import LpDisparo from "../assets/disparofestival-thumb.png"
+import SiteDisparo from "../assets/disparopro-thumb.png"
+import SiteBrasilfone from "../assets/brasilfone-thumb.png"
+import SiteAtivos from "../assets/ativos-thumb.png"
+import SiteLinkou from "../assets/linkou-thumb.png"
+import LpCapton from "../assets/capton-thumb.png"
+import Lpzucchi from "../assets/zucchi-thumb.png"
 import MainButton from "../components/MainButton.astro";
+import { Icon } from "astro-icon";
 ---
 
 <head>
@@ -40,22 +39,27 @@ import MainButton from "../components/MainButton.astro";
   >
     <div class="flex flex-col gap-y-6 w-full lg:items-start">
       <h1
-        class="text-5xl lg:text-7xl x:text-8xl text-slate-50 font-bold lg:items-start"
+        class="text-5xl lg:text-7xl x:text-8xl text-stone-50 font-bold lg:items-start"
         transition:name="h1"
        
       >
         Projetos
       </h1>
-      <p class="text-slate-100 w-full text-base" transition:name="p" >
+      <p class="text-stone-300 w-full text-base" transition:name="p" >
         Cada projeto é como uma peça única de desenvolvimento 🧩
       </p>
     </div>
 
-    <div class=" w-full p-8 bg-zinc-800 text-slate-50 rounded-3xl" transition:name="falecomigocard">
+    <div class=" w-full p-8 border-stone-800 border text-stone-50 rounded-xl" transition:name="falecomigocard">
       <div class="flex flex-col gap-y-6 ">
-              <svg xmlns="http://www.w3.org/2000/svg" width="47" height="26" viewBox="0 0 47 26" fill="none">
-              <path d="M25.305 1.45968C24.5716 1.16129 23.7898 1 22.9758 1C21.9682 1 21.0014 1.25 20.0991 1.7092C22.6779 3.37713 24.5152 7.80171 24.5152 13C24.5152 18.1978 22.6784 22.6224 20.0991 24.2903M25.305 1.45968C28.851 2.89421 31.4379 7.51992 31.4379 13M25.305 1.45968C26.1997 1.16129 27.1504 1 28.1252 1C28.926 1.00037 29.7231 1.10888 30.4948 1.32258M25.305 1.45968C28.843 2.89421 31.4379 7.51992 31.4379 13M31.4379 13C31.4379 18.4801 28.851 23.1058 25.305 24.5403M25.305 24.5403C24.5636 24.8387 23.7823 24.9995 22.9758 24.9995C21.9687 24.9995 20.9934 24.75 20.0991 24.2903M25.305 24.5403C26.9827 25.1019 28.7894 25.1497 30.4943 24.6774M20.0991 24.2903C19.3899 24.7495 18.6238 24.9995 17.8264 24.9995C16.7623 24.9995 15.7552 24.5564 14.8605 23.7585M20.0987 1.70968C19.3895 1.25 18.6243 1 17.8264 1C16.7623 1 15.7552 1.45161 14.8605 2.24146M14.8605 2.24146C16.4805 4.19971 17.6006 8.2851 17.6006 13M14.8605 2.24146C16.4886 4.20825 17.6006 8.28558 17.6006 13M14.8605 2.24146C14.1997 1.45209 13.4583 1 12.6765 1C11.4839 1 10.388 2.03985 9.53368 3.76423C10.2263 5.96442 10.6698 9.28463 10.6698 13M14.8605 23.7585C16.4886 21.7917 17.6006 17.7144 17.6006 13M14.8605 23.7585C16.4805 21.7998 17.6006 17.7144 17.6006 13M14.8605 23.7585C14.1997 24.5479 13.4583 24.9995 12.6765 24.9995C11.4758 24.9995 10.388 23.9601 9.53368 22.2353M10.6698 13C10.6698 16.7149 10.2268 20.0351 9.53368 22.2353M10.6698 13C10.6698 9.28463 10.2348 5.96489 9.54174 3.76423C8.99383 2.03985 8.29222 1 7.52704 1C5.78605 1 4.37571 6.37524 4.37571 13C4.37571 19.6243 5.78605 24.9995 7.52704 24.9995C8.29222 24.9995 8.99336 23.9601 9.53368 22.2353M30.4948 1.32258C31.4059 1.10837 32.3387 1.00013 33.2747 1C39.9075 1 45.2747 6.37524 45.2747 13C45.2747 19.6243 39.8994 25 33.2747 25C32.3159 25 31.389 24.8866 30.4943 24.6774M30.4948 1.32258C34.9995 2.5797 38.352 7.32637 38.352 13C38.352 18.6736 35.0076 23.4203 30.4943 24.6774M30.4948 1.32258C35.0076 2.5797 38.3601 7.32637 38.3601 13C38.3601 18.6731 35.0076 23.4203 30.4943 24.6774M2.37808 1C1.62049 1 1 6.37524 1 13C1 19.6243 1.62049 24.9995 2.37808 24.9995C3.1352 24.9995 3.75569 19.6248 3.75569 13C3.75569 6.37524 3.14421 1 2.37808 1Z" stroke="#A5B4FC" stroke-width="1.62861" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+        <div class="flex flex-row items-center justify-start text-stone-100">
+          <div class="w-10 h-10">
+            <Icon
+              name="noto:rocket"
+            />
+    
+          </div>
+        </div>
               <h2 class="text-[2rem] leading-none font-bold ">Tem um projeto em <br> mente?</h2>
               <MainButton 
               labelButton="Fale comigo"
@@ -176,7 +180,7 @@ import MainButton from "../components/MainButton.astro";
     />
 
 
-
+<!-- 
     <PortfolioCard 
   
     title="estud.you • Site Institucional"
@@ -186,11 +190,11 @@ import MainButton from "../components/MainButton.astro";
     alt="Site estud.you"
     link="https://estudyou.com/"
     linkText="Visitar site"
-    />
+    /> -->
 
     </div>
 
   </section>
 
-<Footer />
+
 </Layout>
