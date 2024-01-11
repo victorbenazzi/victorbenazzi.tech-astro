@@ -1,18 +1,19 @@
 ---
-
+import { Image } from "astro:assets";
+import LogoVictor from "../assets/victor-logo.svg";
 ---
 
 <header
   class="flex flex-row items-center justify-center w-full py-6 border-b border-stone-800"
 >
   <div class="flex flex-row items-center justify-between w-full xl:w-[1024px] px-6 xl:px-0">
-    <a href="/"
-      ><span
-        class="text-stone-300 text-base text-bold p-2 px-4 border border-stone-800 bg-stone-900 rounded-lg"
-      >
-        Victor Benazzi</span
-      ></a
-    >
+    <a href="/">
+      <Image
+        src={LogoVictor}
+        alt="Logo Victor Benazzi"
+        />
+    </a>
+    
 
     <navbar class="flex flex-row h-auto gap-x-8">
       <a class="text-stone-200 hover:text-stone-50 hover:underline text-base font-bold" href="/"
