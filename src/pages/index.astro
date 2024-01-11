@@ -8,12 +8,9 @@ import LogoLoubfy from "../assets/logo-loubfy.png";
 import AvatarImgThauane from "../assets/avatar-thauane.png";
 import LogoMutinno from "../assets/logo-mutinno.png";
 import AvatarImgKelvyn from "../assets/avatar-kelvyn.png";
-import PortfolioCard from "../components/PortfolioCard.astro";
-import SiteMutinno from "../assets/mutinno-thumb.png";
-import SiteTogrow from "../assets/togrow-thumb.png";
-import LpDisparo from "../assets/disparofestival-thumb.png";
-import HeroCard from "../components/HeroCard.astro";
 import MainButton from "../components/MainButton.astro";
+import SocialIcons from "../components/SocialIcons.astro";
+
 
 
 ---
@@ -36,12 +33,12 @@ import MainButton from "../components/MainButton.astro";
  
 
   <section
-    class="flex flex-col gap-y-8 lg:flex-row w-full xl:w-[1440px] h-auto mt-20  items-center lg:justify-start"
+    class="flex flex-col items-start justify-center gap-y-10 w-full lg:w-[1024px]  mt-20 px-6 lg:px-0"
   >
-    <div class="flex flex-col gap-y-6 w-full lg:items-start">
- 
+    
+      
       <h1
-        class="text-5xl lg:text-7xl x:text-8xl text-stone-50 font-bold lg:items-start"
+        class="text-5xl lg:text-5xl x:text-8xl text-stone-50 font-bold lg:items-start"
         transition:name="h1"
       >
         Web Designer & Front-end Developer
@@ -51,16 +48,15 @@ import MainButton from "../components/MainButton.astro";
         landing pages incríveis. Desenvolvo soluções web que aliam design,
         funcionalidade e responsividade.
       </p>
-    </div>
+      <SocialIcons />
+    
 
-    <div class="flex flex-col w-full">
-      <HeroCard />
-    </div>
+    
   </section>
 
   <!-- ÍCONES DE STACKS -->
   <section
-    class="flex flex-col w-full  relative xl:w-[1440px] items-start justify-center gap-y-8 mt-20"
+    class="flex flex-col items-start justify-center gap-y-10 w-full lg:w-[1024px]  mt-20 px-6 lg:px-0"
   >
     <div class="flex flex-col gap-y-6 w-full">
       <h2
@@ -76,7 +72,7 @@ import MainButton from "../components/MainButton.astro";
     <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-x-4 gap-y-4 w-full ">
         
       <!-- Figma -->
-      <div class="flex flex-row items-center justify-start gap-x-2 border-stone-800 rounded-lg border p-2 hover:bg-stone-800">
+      <div class="flex flex-col items-center justify-start gap-y-2 border-stone-800 rounded-lg border p-2 hover:bg-stone-800">
         <div class="flex flex-row items-center justify-center border-stone-800 rounded-lg w-12 h-12 border bg-stone-950">
           <Image
             src="/src/assets/icons/logo-figma.svg"
@@ -92,7 +88,7 @@ import MainButton from "../components/MainButton.astro";
     
         
         <!-- wordpress -->
-        <div class="flex flex-row items-center justify-start gap-x-2 border-stone-800 rounded-lg border p-2 hover:bg-stone-800">
+        <div class="flex flex-col items-center justify-start gap-y-2 border-stone-800 rounded-lg border p-2 hover:bg-stone-800">
         <div class="flex flex-row items-center justify-center border-stone-800 rounded-lg w-12 h-12 border bg-stone-950">
           <Image
             src="/src/assets/icons/logo-wordpress.svg"
@@ -106,7 +102,7 @@ import MainButton from "../components/MainButton.astro";
         </div>
 
          <!-- elementor -->
-         <div class="flex flex-row items-center justify-start gap-x-2 border-stone-800 rounded-lg border p-2 hover:bg-stone-800">
+         <div class="flex flex-col items-center justify-start gap-y-2 border-stone-800 rounded-lg border p-2 hover:bg-stone-800">
           <div class="flex flex-row items-center justify-center border-stone-800 rounded-lg w-12 h-12 border bg-stone-950">
             <Image
               src="/src/assets/icons/logo-elementor.svg"
@@ -120,7 +116,7 @@ import MainButton from "../components/MainButton.astro";
           </div>
 
           <!-- React -->
-         <div class="flex flex-row items-center justify-start gap-x-2 border-stone-800 rounded-lg border p-2 hover:bg-stone-800">
+         <div class="flex flex-col items-center justify-start gap-y-2 border-stone-800 rounded-lg border p-2 hover:bg-stone-800">
           <div class="flex flex-row items-center justify-center border-stone-800 rounded-lg w-12 h-12 border bg-stone-950">
             <Image
               src="/src/assets/icons/logo-react.svg"
@@ -136,7 +132,7 @@ import MainButton from "../components/MainButton.astro";
         
 
         <!-- Astro -->
-        <div class="flex flex-row items-center justify-start gap-x-2 border-stone-800 rounded-lg border p-2 hover:bg-stone-800">
+        <div class="flex flex-col items-center justify-start gap-y-2 border-stone-800 rounded-lg border p-2 hover:bg-stone-800">
           <div class="flex flex-row items-center justify-center border-stone-800 rounded-lg w-12 h-12 border bg-stone-950">
             <Image
               src="/src/assets/icons/logo-astro.svg"
@@ -154,7 +150,7 @@ import MainButton from "../components/MainButton.astro";
 
 
         <!-- Javascript -->
-        <div class="flex flex-row items-center justify-start gap-x-2 border-stone-800 rounded-lg border p-2 hover:bg-stone-800">
+        <div class="flex flex-col items-center justify-start gap-y-2 border-stone-800 rounded-lg border p-2 hover:bg-stone-800">
           <div class="flex flex-row items-center justify-center border-stone-800 rounded-lg w-12 h-12 border bg-stone-950">
             <Image
               src="/src/assets/icons/logo-javascript.svg"
@@ -169,7 +165,7 @@ import MainButton from "../components/MainButton.astro";
 
 
          <!-- Rd Station -->
-         <div class="flex flex-row items-center justify-start gap-x-2 border-stone-800 rounded-lg border p-2 hover:bg-stone-800">
+         <div class="flex flex-col items-center justify-start gap-y-2 border-stone-800 rounded-lg border p-2 hover:bg-stone-800">
           <div class="flex flex-row items-center justify-center border-stone-800 rounded-lg w-12 h-12 border bg-stone-950">
             <Image
               src="/src/assets/icons/logo-rd-station.svg"
@@ -186,7 +182,7 @@ import MainButton from "../components/MainButton.astro";
 
         
          <!-- Webflow -->
-         <div class="flex flex-row items-center justify-start gap-x-2 border-stone-800 rounded-lg border p-2 hover:bg-stone-800">
+         <div class="flex flex-col items-center justify-start gap-y-2 border-stone-800 rounded-lg border p-2 hover:bg-stone-800">
           <div class="flex flex-row items-center justify-center border-stone-800 rounded-lg w-12 h-12 border bg-stone-950">
             <Image
               src="/src/assets/icons/logo-webflow.svg"
@@ -200,7 +196,7 @@ import MainButton from "../components/MainButton.astro";
         </div>
 
         <!-- Facebook -->
-        <div class="flex flex-row items-center justify-start gap-x-2 border-stone-800 rounded-lg border p-2 hover:bg-stone-800">
+        <div class="flex flex-col items-center justify-start gap-y-2 border-stone-800 rounded-lg border p-2 hover:bg-stone-800">
           <div class="flex flex-row items-center justify-center border-stone-800 rounded-lg w-12 h-12 border bg-stone-950">
             <Image
               src="/src/assets/icons/logo-facebook.svg"
@@ -215,7 +211,7 @@ import MainButton from "../components/MainButton.astro";
 
 
         <!-- Google Ads -->
-        <div class="flex flex-row items-center justify-start gap-x-2 border-stone-800 rounded-lg border p-2 hover:bg-stone-800">
+        <div class="flex flex-col items-center justify-start gap-y-2 border-stone-800 rounded-lg border p-2 hover:bg-stone-800">
           <div class="flex flex-row items-center justify-center border-stone-800 rounded-lg w-12 h-12 border bg-stone-950">
             <Image
               src="/src/assets/icons/logo-google-ads.svg"
@@ -234,7 +230,8 @@ import MainButton from "../components/MainButton.astro";
 
 
 <!-- DEPOIMENTOS -->
-<section class="flex flex-col w-full  xl:w-[1440px] items-start justify-center gap-y-12 mt-20">
+<section class="flex flex-col items-start justify-center gap-y-10 w-full lg:w-[1024px]  mt-20 px-6 lg:px-0">
+
   <div class="flex flex-col gap-y-4 w-full">
     <h2
       class="lg:text-4xl text-2xl text-stone-50 font-bold"
@@ -244,49 +241,51 @@ import MainButton from "../components/MainButton.astro";
   </div>
 
   <div class="grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-4">
-    <!-- Depoimento Ingrid -->
-    <div
-      class="flex flex-col h-fit px-8 py-6  gap-y-8 backdrop-opacity-10  border-stone-800 rounded-lg border"
-    >
-      <div class="flex flex-row gap-x-4">
-        <Image
-          src={AvatarImgIngrid}
-          alt="Ingrid Santin"
-          width="48"
-          height="48"
-        />
-        <div class="flex flex-col gap-x-4">
-          <h5 class="text-stone-50 text-lg font-semibold">Ingrid Santin</h5>
-          <span class="text-stone-500 text-sm">CEO e Sócia Fundadora</span>
-        </div>
+
+
+     <!-- Depoimento Ingrid -->
+      <div
+     class="flex flex-col h-fit px-8 py-6  gap-y-8  border-stone-800 rounded-lg border"
+   >
+     <div class="flex flex-row gap-x-4">
+       <Image
+         src={AvatarImgIngrid}
+         alt="Ingrid Santin"
+         width="48"
+         height="48"
+       />
+       <div class="flex flex-col gap-x-4">
+         <h5 class="text-stone-50 text-lg font-semibold">Ingrid Santin</h5>
+         <span class="text-stone-500 text-sm">CEO e Sócia Fundadora</span>
+       </div>
+     </div>
+     <p class="text-stone-200 text-base mt-4">
+       "Victor é um dos profissionais mais completos e comprometidos que já
+       trabalhei. Além de todo o amplo conhecimento técnico e estratégico na
+       área de tecnologia e marketing, é um profissional que realmente se
+       preocupa com a entrega e seu propósito final para cada cliente. <br />
+       <br />
+
+       Cada projeto é único e sempre supera todas as expectativas, deixa cada
+       detalhe impecável e, ainda, apresenta soluções práticas, essenciais e
+       antecipação de problemas pra entrega ficar perfeita. Hoje, o Victor é o
+       meu parceiro de confiança, principalmente em projetos que envolvem
+       tecnologia e marketing.”
+     </p>
+
+     <a
+       href="https://www.instagram.com/loubfy_/"
+       target="_blank"
+       class="flex flex-row gap-x-4 justify-start items-center"
+     >
+       <Image src={LogoLoubfy} alt="Loubfy" width="32" height="32" />
+       <span class="text-slate-200 text-lg font-semibold">@loubfy_</span>
+     </a>
       </div>
-      <p class="text-stone-200 text-base mt-4">
-        "Victor é um dos profissionais mais completos e comprometidos que já
-        trabalhei. Além de todo o amplo conhecimento técnico e estratégico na
-        área de tecnologia e marketing, é um profissional que realmente se
-        preocupa com a entrega e seu propósito final para cada cliente. <br />
-        <br />
 
-        Cada projeto é único e sempre supera todas as expectativas, deixa cada
-        detalhe impecável e, ainda, apresenta soluções práticas, essenciais e
-        antecipação de problemas pra entrega ficar perfeita. Hoje, o Victor é o
-        meu parceiro de confiança, principalmente em projetos que envolvem
-        tecnologia e marketing.”
-      </p>
-
-      <a
-        href="https://www.instagram.com/loubfy_/"
-        target="_blank"
-        class="flex flex-row gap-x-4 justify-start items-center"
-      >
-        <Image src={LogoLoubfy} alt="Loubfy" width="32" height="32" />
-        <span class="text-slate-200 text-lg font-semibold">@loubfy_</span>
-      </a>
-    </div>
-
-    <!-- Depoimento Thauane -->
+      <!-- Depoimento Thauane -->
     <div
-    class="flex flex-col h-fit px-8 py-6  gap-y-8 backdrop-opacity-10  border-stone-800 rounded-lg border"
+    class="flex flex-col h-fit px-8 py-6  gap-y-8 border-stone-800 rounded-lg border"
     >
       <div class="flex flex-row gap-x-4">
         <Image src={AvatarImgThauane} alt="Thauane" width="48" height="48" />
@@ -343,81 +342,13 @@ import MainButton from "../components/MainButton.astro";
         <span class="text-slate-200 text-lg font-semibold">@loubfy_</span>
       </a>
     </div>
+
+
   </div>
-
-  <!-- PROJETOS-->
-  <section
-    class="flex flex-col w-full h-auto xl:w-[1440px] items-start justify-center gap-y-8 mt-20"
-  >
-    <div class="flex flex-col gap-y-4 md:w-full">
-      <h2
-        class="lg:text-4xl text-2xl text-slate-200 font-bold"
-      >
-        Projetos
-      </h2>
-      <p class="text-base text-slate-300">
-        Cada projeto é como uma peça única de desenvolvimento 🧩
-      </p>
-    </div>
-
-    <div
-      class="grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-4"
-      transition:name="projetos"
-    >
-     
-    <PortfolioCard 
-         
-    title="Mutinno • Landing Page"
-    stacks="Design e Desenvolvimento • RD Station"
-    description="Landing page desenvolvida utilizando o RD Station para o método Mais que um post bonito."
-    imageCard={SiteMutinno}
-    alt="Landing Page Mutinno - Mais Que Um Post Bonito"
-    link="https://materiais.mutinno.com.br/q1pb"
-    linkText="Visitar site"
-  />
-
-
-  <PortfolioCard 
-    
-    title="To Grow • Site Institucional"
-    stacks="Desenvolvimento • Wordpress e Elementor"
-    description="Site institucional focado em mostrar os serviços da empresa e captar leads."
-    imageCard={SiteTogrow}
-    alt="Site To Grow"
-    link="https://togrow.tech"
-    linkText="Visitar site"
-  />
-
-
-  <PortfolioCard 
-    
-    title="Disparo Pro • Landing Page"
-    stacks="Desenvolvimento • Wordpress e Elementor"
-    description="Landing page criada para o Disparo Festival, com o objetivo de captar leads para a campanha de Black Friday."
-    imageCard={LpDisparo}
-    alt="Landing page criada Disparo Festival Disparo PRO"
-    link="https://disparopro.com.br/disparo-festival"
-    linkText="Visitar site"
-  />
-
-
-      <a
-        href="projetos"
-        class="flex flex-row items-center gap-x-2 text-base text-stone-50 hover:underline font-bold mt-4"
-      >
-        Todos os projetos
-
-        <div class="w-[18px] h-[18px]">
-          <Icon name="ph:caret-double-right-bold" />
-        </div>
-      </a>
-    </div>
-
-
 </section>
 
 
-<section class="w-full mt-20">
+<section class="w-full px-6 xl:px-0 xl:w-[1024px] mt-10">
   <div class=" w-full p-8 border-stone-800 border text-stone-50 rounded-xl" transition:name="falecomigocard">
     <div class="flex flex-col gap-y-6 ">
       <div class="flex flex-row items-center justify-start text-stone-100">
@@ -432,12 +363,17 @@ import MainButton from "../components/MainButton.astro";
             <p class="text-stone-300 w-full text-base">
             Se você tem algum projeto em mente, sinta-se à vontade para me enviar uma mensagem.
             </p>
+            <div class="flex flex-row items-center gap-x-4">
             <MainButton 
             labelButton="Fale comigo"
             link="https://wa.me/5569992993889"
             target="_blank"
-    
-         />
+            />
+            <a
+            class="text-stone-200 hover:text-stone-50 hover:underline text-base font-bold"
+            href="/projetos">Ver meus projetos</a
+            > 
+          </div>
      </div>
 </div> 
 </section>
