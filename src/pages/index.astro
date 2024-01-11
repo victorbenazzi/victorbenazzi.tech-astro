@@ -3,7 +3,6 @@ import { SEO } from "astro-seo";
 import Layout from "../layouts/Layout.astro";
 import { Icon } from "astro-icon";
 import { Image } from "astro:assets";
-import Header from "../components/Header.astro";
 import AvatarImgIngrid from "../assets/avatar-ingrid.png";
 import LogoLoubfy from "../assets/logo-loubfy.png";
 import AvatarImgThauane from "../assets/avatar-thauane.png";
@@ -33,11 +32,11 @@ import MainButton from "../components/MainButton.astro";
   />
 </head>
 
-<Layout title="Victor Benazzi - Web Designer">
-  <Header />
+<Layout title="Victor Benazzi - Web Designer" >
+ 
 
   <section
-    class="flex flex-col gap-y-8 lg:flex-row w-full xl:w-[1440px] h-auto py-12 px-6 items-center lg:justify-start"
+    class="flex flex-col gap-y-8 lg:flex-row w-full xl:w-[1440px] h-auto mt-20  items-center lg:justify-start"
   >
     <div class="flex flex-col gap-y-6 w-full lg:items-start">
  
@@ -61,7 +60,7 @@ import MainButton from "../components/MainButton.astro";
 
   <!-- ÍCONES DE STACKS -->
   <section
-    class="flex flex-col w-full  relative xl:w-[1440px] items-start justify-center gap-y-8 px-6"
+    class="flex flex-col w-full  relative xl:w-[1440px] items-start justify-center gap-y-8 mt-20"
   >
     <div class="flex flex-col gap-y-6 w-full">
       <h2
@@ -235,9 +234,7 @@ import MainButton from "../components/MainButton.astro";
 
 
 <!-- DEPOIMENTOS -->
-<section
-  class="flex flex-col w-full h-fit px-6 xl:w-[1440px] items-start justify-center gap-y-12 mt-20"
->
+<section class="flex flex-col w-full  xl:w-[1440px] items-start justify-center gap-y-12 mt-20">
   <div class="flex flex-col gap-y-4 w-full">
     <h2
       class="lg:text-4xl text-2xl text-stone-50 font-bold"
@@ -350,7 +347,7 @@ import MainButton from "../components/MainButton.astro";
 
   <!-- PROJETOS-->
   <section
-    class="flex flex-col w-full h-auto my-40 px-6 relative xl:w-[1440px] items-start justify-center gap-y-8"
+    class="flex flex-col w-full h-auto xl:w-[1440px] items-start justify-center gap-y-8 mt-20"
   >
     <div class="flex flex-col gap-y-4 md:w-full">
       <h2
@@ -420,7 +417,7 @@ import MainButton from "../components/MainButton.astro";
 </section>
 
 
-<!-- <section class=" w-full">
+<section class="w-full mt-20">
   <div class=" w-full p-8 border-stone-800 border text-stone-50 rounded-xl" transition:name="falecomigocard">
     <div class="flex flex-col gap-y-6 ">
       <div class="flex flex-row items-center justify-start text-stone-100">
@@ -431,7 +428,10 @@ import MainButton from "../components/MainButton.astro";
   
         </div>
       </div>
-            <h2 class="text-[2rem] leading-none font-bold ">Tem um projeto em <br> mente?</h2>
+            <h2 class="text-[2rem] leading-none font-bold ">Tem um projeto em mente?</h2>
+            <p class="text-stone-300 w-full text-base">
+            Se você tem algum projeto em mente, sinta-se à vontade para me enviar uma mensagem.
+            </p>
             <MainButton 
             labelButton="Fale comigo"
             link="https://wa.me/5569992993889"
@@ -440,5 +440,5 @@ import MainButton from "../components/MainButton.astro";
          />
      </div>
 </div> 
-</section> -->
+</section>
 </Layout>
