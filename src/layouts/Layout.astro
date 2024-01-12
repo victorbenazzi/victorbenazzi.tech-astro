@@ -24,7 +24,7 @@ import Header from "../components/Header.astro";
 		<ViewTransitions />
 	</head>
 	<body class="flex flex-col justify-center items-center bg-stone-950 scrollbar-thin scrollbar-thumb-stone-800 scroll-smooth">
-		<Header />
+		<Header />	
 		
 		<slot />
 		
@@ -67,3 +67,11 @@ import Header from "../components/Header.astro";
 	
 
  </style>
+
+<script is:inline>
+	const BntMenuMobile = document.getElementById("BtnMenuMobile");
+	const MenuMobile = document.getElementById("MenuMobile");
+	BntMenuMobile.addEventListener("click", () => {
+	MenuMobile.classList.toggle("hidden");
+  });
+  </script>
