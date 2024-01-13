@@ -28,7 +28,7 @@ import { Icon } from "astro-icon";
 
 
      
-     <div id="BtnMenuMobile" class="flex md:hidden flex-row gap-x-8">
+     <div id="BtnMenuMobile" class="flex md:hidden flex-row gap-x-8" onclick="toggleMenu()">
         <button class="p-2 border rounded-lg border-stone-800 ">
           <div class="w-4 h-4 text-stone-50">
             <Icon
@@ -40,7 +40,7 @@ import { Icon } from "astro-icon";
     </navbar>
   </div>
 
-  <div id="MenuMobile" class="hidden md:hidden justify-center w-full items-start">
+  <div id="MenuMobile" class="md:hidden justify-center w-full items-start hidden">
     <div class="flex flex-col gap-y-8 justify-center items-start w-full px-6 py-10">
     <a class="text-stone-200 hover:text-stone-50 hover:underline text-base font-bold" href="/">Início</a>
     <a class="text-stone-200 hover:text-stone-50 hover:underline text-base font-bold" href="/projetos">Projetos</a>
@@ -48,3 +48,20 @@ import { Icon } from "astro-icon";
   </div>
 </header>
 
+<script>
+const BntMenuMobile = document.getElementById("BtnMenuMobile");
+	const MenuMobile = document.getElementById("MenuMobile");
+	BntMenuMobile.addEventListener("click", () => {
+	MenuMobile.classList.toggle("hidden");
+  });
+</script>
+
+
+
+<!-- <script is:inline >
+	const BntMenuMobile = document.getElementById("BtnMenuMobile");
+	const MenuMobile = document.getElementById("MenuMobile");
+	BntMenuMobile.addEventListener("click", () => {
+	MenuMobile.classList.toggle("hidden");
+  });
+</script> -->
