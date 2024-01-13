@@ -5,6 +5,7 @@ import { Icon } from "astro-icon";
 
 
 
+
 ---
 
 <header class="flex flex-col items-center justify-center w-full py-6 border-b border-stone-800">
@@ -48,20 +49,9 @@ import { Icon } from "astro-icon";
   </div>
 </header>
 
+
 <script>
-const BntMenuMobile = document.getElementById("BtnMenuMobile");
-	const MenuMobile = document.getElementById("MenuMobile");
-	BntMenuMobile.addEventListener("click", () => {
-	MenuMobile.classList.toggle("hidden");
-  });
+  import  "../scripts/ToogleMenu.js";
 </script>
 
 
-
-<!-- <script is:inline >
-	const BntMenuMobile = document.getElementById("BtnMenuMobile");
-	const MenuMobile = document.getElementById("MenuMobile");
-	BntMenuMobile.addEventListener("click", () => {
-	MenuMobile.classList.toggle("hidden");
-  });
-</script> -->

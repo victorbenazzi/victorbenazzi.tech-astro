@@ -1,0 +1,43 @@
+---
+
+import { Image } from "astro:assets";
+
+ export interface props {
+    Avatar: string;
+    Name: string;
+    Role: string;
+    Content: string;
+    Link: string;
+    LinkText: string;
+    ImgLink: string;
+}
+
+const { Avatar,  Name, Role, Link, LinkText, ImgLink } = Astro.props;
+
+---
+<div class="flex flex-col h-fit md:h-[480px] px-8 py-6 gap-y-8 border-stone-800 rounded-lg border">
+<div class="flex flex-row gap-x-4">
+  <Image
+    src={Avatar}
+    alt={Name}
+    width="48"
+    height="48"
+  />
+  <div class="flex flex-col gap-x-4">
+    <h5 class="text-stone-50 text-lg font-semibold">{Name}</h5>
+    <span class="text-stone-500 text-sm">{Role}</span>
+  </div>
+</div>
+<p class="text-stone-200 text-base mt-4 overflow-auto scrollbar-thin scrollbar-thumb-stone-800">
+<slot />
+</p>
+
+<a
+  href={Link}
+  target="_blank"
+  class="flex flex-row gap-x-4 justify-start items-center"
+>
+  <Image src={ImgLink} alt="Loubfy" width="24" height="24" />
+  <span class="text-stone-200 text-sm hover:underline">{LinkText}</span>
+</a>
+ </div>
