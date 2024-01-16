@@ -31,7 +31,7 @@ import LpDisparo from "../assets/disparofestival-thumb.png"
 // My components
 import PortfolioCard from "../components/PortfolioCard.astro";
 import Testimonial from "../components/Testimonial.astro";
-import Status from "../components/Status.astro";
+import MainButton from "../components/MainButton.astro";
 
 
 ---
@@ -58,14 +58,14 @@ import Status from "../components/Status.astro";
     class="flex flex-col items-start justify-center gap-y-10 w-full lg:w-[1024px] mt-10 lg:mt-40 px-6 lg:px-0"
   >
     
-      <Status />
+      
       <h1
         class="text-4xl lg:text-5xl x:text-8xl text-stone-50 font-bold lg:items-start"
         transition:name="h1"
       >
         Web Designer & Front-end Developer
       </h1>
-      <p class="text-stone-300 w-full text-base" transition:name="p">
+      <p class="text-stone-300" >
         Sou web designer e front-end developer, especialista em criar sites e
         landing pages incríveis. Desenvolvo soluções web que aliam design,
         funcionalidade e responsividade.
@@ -370,13 +370,13 @@ import Status from "../components/Status.astro";
             </p>
             <div class="flex  flex-col  md:flex-row items-center  gap-x-4 gap-y-6 w-full">
 
-            <button class="flex flex-row items-center justify-center bg-stone-200 hover:bg-stone-50 px-4 py-2 transition-all rounded-lg text-stone-900 w-full md:w-fit h-auto relative">
-                <a href="https://wa.me/5569992993889" target="_blank" class="flex flew-row w-full items-center justify-center gap-4">
-                <p>Fale comigo</p>
-                </a>
-            </button>
+           
 
-
+            <MainButton 
+            link="https://wa.me/5569992993889"
+            labelButton="Fale Comigo"
+            target="_blank"
+            />
             <a
             class="text-stone-200 hover:text-stone-50 hover:underline text-base font-bold "
             href="/projetos">Ver meus projetos</a
