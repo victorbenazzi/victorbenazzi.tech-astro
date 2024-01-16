@@ -1,0 +1,17 @@
+---
+export interface props {
+    Link: string;
+    Label: string;
+
+}
+
+const { Link, Label } = Astro.props;
+
+---
+
+
+<a href={Link} class="flex flex-row text-stone-100 items-center gap-x-2 justify-start px-4 py-1 rounded-lg border border-stone-800  hover:border-blue-400 hover:text-blue-400">
+<img class="favicon w-4 h-4" src={`https://www.google.com/s2/favicons?domain=${Link}`} alt="Favicon" />
+{Label}
+</a>
+
