@@ -1,0 +1,114 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { SEO } from "astro-seo";
+import { Icon } from "astro-icon";
+
+
+export interface Props{
+    content: {
+        title: string;
+        description: string;
+        pubDate: string;
+        category: string;
+        cover:string;
+        coverAlt:string;
+
+
+    }
+}
+
+const { content: { title, description, pubDate, category, cover, coverAlt} } = Astro.props as Props;
+
+---
+
+<head>
+
+
+    <SEO
+    title={title}
+    description={description}
+    openGraph={{
+      basic: {
+        title: `${{title}}`,
+        type: "Blog",
+        image: `${{cover}}`,
+      },
+    }}
+    />
+</head>
+
+
+<Layout>
+    <main class="flex flex-col items-start justify-center gap-y-10 w-full lg:w-[1024px] mt-20 px-6 lg:px-0">
+        <h1 class="text-4xl lg:text-5xl text-stone-300 mt-0 font-bold">{title} </h1>
+        <p class="text-sm text-stone-300 mt-0">{description}</p>
+
+            <div class="flex flex-row items-center w-full gap-x-2 justify-start">
+                <div class="flex flex-row gap-x-2 justify-center items-center p-2 text-stone-300 border border-stone-800 rounded-lg mt-0">
+                    <div class="w-4 h-4"><Icon  name="ph:tag-fill" aria-label="Ícone de categoria"/></div> 
+                    <p class="text-sm mt-0"> <strong>Categoria:</strong> {category}</p>
+                </div>
+
+                <div class="flex flex-row gap-x-2 justify-center items-center p-2 text-stone-300 border border-stone-800 rounded-lg">
+                    <div class="w-4 h-4"><Icon  name="ph:calendar-blank-fill" aria-label="Ícone de data de publicação"/></div> 
+                    <p class="text-sm mt-0"> <strong>Data:</strong> {pubDate}</p>
+                </div>
+
+               
+                
+            </div>
+
+        <article class="text-sm text-stone-300" >
+            <p>
+               
+               
+                <slot />
+            </p>
+        </article>
+    </main>
+</Layout>
+
+<style>
+
+
+	 :global(article p) {
+		
+		font-family: 'Inter', sans-serif;
+		line-height: 1.5rem;
+		margin-top: 2rem;
+      
+		
+	}
+
+	
+	:global(article h2) {
+		
+		font-size: 1.5rem;
+		line-height: 1.8rem;
+		margin-top: 4rem;
+        border-bottom: 1px solid #292524;
+        padding-bottom: 8px;
+        font-weight: 700;
+		
+	}
+
+	:global(article h3) {
+		
+		font-size: 1.125rem;
+		line-height: 1.8rem;
+		margin-top: 4rem;
+        font-weight: 700;
+       
+	} 
+
+    :global(article img) {
+
+		border-radius: 16px;
+        border: 1px solid #292524;
+		
+	} 
+
+       
+
+
+ </style>

@@ -1,0 +1,40 @@
+---
+import { Image } from "astro:assets";
+export interface Props {
+    PostTitle: string;
+    PostImage: any;
+    PostDate: string;
+    PostContent: string;
+    AltImg: string;
+    LinkPost: string;
+    
+}
+
+const { PostTitle, PostImage, PostDate, PostContent, AltImg, LinkPost } = Astro.props;
+---
+
+
+<article class="flex flex-row gap-x-4 items-center box-border w-full" id="maindiv">
+        <a href={LinkPost} class="flex flex-row gap-x-4 items-center w-[80%]" >
+        <Image class="rounded-xl w-[155px] h-[87.11px] aspect-video border border-stone-800" src={PostImage} alt={AltImg} id="mainimage"/>
+        <div class="flex flex-col items center">
+        <h2 class="text-stone-50 text-lg font-bold" id="tituloestilo">{PostTitle}</h2>
+        <p class="text-stone-200">{PostContent}</p>
+        <div class="flex flex-col gap-x-2 text-stone-300 text-sm">{PostDate}</div>
+        </a>
+    </div>
+</article>
+<!-- <div class="w-full border-b border-stone-800">" "</div> -->
+
+
+<style>
+    #maindiv {
+        cursor: pointer ;
+    }
+    #maindiv:hover #tituloestilo {
+        text-decoration: underline;
+    }
+    #maindiv:hover #mainimage {
+        filter: opacity(80%);
+    }
+</style>
