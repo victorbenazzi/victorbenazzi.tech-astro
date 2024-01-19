@@ -51,18 +51,17 @@ const { content: { title, description, pubDate, category, thumbOg} } = Astro.pro
         <h1 class="text-4xl lg:text-5xl text-stone-300 mt-0 font-bold">{title} </h1>
         <p class="text-sm text-stone-300 mt-0">{description}</p>
 
-            <div class="flex flex-row items-center w-full gap-x-2 justify-start">
-                <div class="flex flex-row gap-x-2 justify-center items-center p-2 text-stone-300 border border-stone-800 rounded-lg mt-0">
+            <div class="flex flex-col md:flex-row md:items-center items-start w-full gap-x-2 gap-y-2 justify-start">
+                <div class="flex flex-row  gap-x-2 justify-center items-center p-2 text-stone-300 border border-stone-800 rounded-lg mt-0">
                     <div class="w-4 h-4"><Icon  name="ph:tag-fill" aria-label="Ícone de categoria"/></div> 
                     <p class="text-sm mt-0"> <strong>Categoria:</strong> {category}</p>
                 </div>
 
-                <div class="flex flex-row gap-x-2 justify-center items-center p-2 text-stone-300 border border-stone-800 rounded-lg">
+                <div class="flex flex-row   gap-x-2 justify-center items-center p-2 text-stone-300 border border-stone-800 rounded-lg">
                     <div class="w-4 h-4"><Icon  name="ph:calendar-blank-fill" aria-label="Ícone de data de publicação"/></div> 
                     <p class="text-sm mt-0"> <strong>Data:</strong> {pubDate}</p>
                 </div>
 
-               
                 
             </div>
 
