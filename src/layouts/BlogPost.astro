@@ -1,8 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { SEO } from "astro-seo";
+
 import { Icon } from "astro-icon";
-import { getCollection } from "astro:content";
+
 
 
 export interface Props{
@@ -21,19 +21,27 @@ const { content: { title, description, pubDate, category, cover} } = Astro.props
 ---
 
 <head>
+<!-- HTML Meta Tags -->
+<title>{title}</title>
+<meta name="description" content={description}>
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://www.victorbenazzi.tech/blog/elementor">
+<meta property="og:type" content="website">
+<meta property="og:title" content={title}>
+<meta property="og:description" content={description}>
+<meta property="og:image" content={cover}>
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="victorbenazzi.tech">
+<meta property="twitter:url" content="https://www.victorbenazzi.tech/blog/elementor">
+<meta name="twitter:title" content={title}>
+<meta name="twitter:description" content={description}>
+<meta name="twitter:image" content={cover}>
 
 
-    <SEO
-    title={title}
-    description={description}
-    openGraph={{
-      basic: {
-        title: `${title}`,
-        type: "Blog",
-        image: `${cover}`,
-      },
-    }}
-    />
+   
 </head>
 
 
@@ -50,7 +58,7 @@ const { content: { title, description, pubDate, category, cover} } = Astro.props
 
                 <div class="flex flex-row gap-x-2 justify-center items-center p-2 text-stone-300 border border-stone-800 rounded-lg">
                     <div class="w-4 h-4"><Icon  name="ph:calendar-blank-fill" aria-label="Ícone de data de publicação"/></div> 
-                    <p class="text-sm mt-0"> <strong></strong> {pubDate}</p>
+                    <p class="text-sm mt-0"> <strong>Data:</strong> {pubDate}</p>
                 </div>
 
                
