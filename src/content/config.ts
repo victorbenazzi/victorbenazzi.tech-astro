@@ -12,6 +12,11 @@ const blogCollection = defineCollection({
             message: "A imagem de capa deve ter pelo menos 1024 pixels de largura!",
         }),
         coverAlt: z.string(),
+        share: z.object({
+            image:z.string(),
+            title: z.string(),
+            description: z.string(),
+        }).optional()
     })
 })
 

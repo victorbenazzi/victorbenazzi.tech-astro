@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import { SEO } from "astro-seo";
 import { Icon } from "astro-icon";
+import { getCollection } from "astro:content";
 
 
 export interface Props{
@@ -12,12 +13,10 @@ export interface Props{
         category: string;
         cover:string;
         coverAlt:string;
-
-
     }
 }
 
-const { content: { title, description, pubDate, category, cover, coverAlt} } = Astro.props as Props;
+const { content: { title, description, pubDate, category, cover} } = Astro.props as Props;
 
 ---
 
@@ -29,9 +28,9 @@ const { content: { title, description, pubDate, category, cover, coverAlt} } = A
     description={description}
     openGraph={{
       basic: {
-        title: `${{title}}`,
+        title: `${title}`,
         type: "Blog",
-        image: `${{cover}}`,
+        image: `${cover}`,
       },
     }}
     />
@@ -72,7 +71,7 @@ const { content: { title, description, pubDate, category, cover, coverAlt} } = A
 
 
 	 :global(article p) {
-		
+		font-size:1rem;
 		font-family: 'Inter', sans-serif;
 		line-height: 1.5rem;
 		margin-top: 2rem;
