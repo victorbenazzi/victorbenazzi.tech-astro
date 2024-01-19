@@ -9,5 +9,6 @@ const {entry} = Astro.props;
 const { Content } = await entry.render();
 
 ---
-
+<meta property="og:url" content={`https://www.victorbenazzi.tech/blog/${entry.slug}`} />
+<meta property="twitter:url" content={`https://www.victorbenazzi.tech/blog/${entry.slug}`} />
 <Content />
