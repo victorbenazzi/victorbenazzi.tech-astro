@@ -59,7 +59,7 @@ Para escrever um bom prompt, é importante entender os elementos que compõem um
 
 ## Instrução
 
-A instrução é o componente mais importante de um prompt. É a tarefa ou instrução específica que você deseja que o modelo execute. A instrução deve ser clara e concisa, e deve fornecer ao modelo todas as informações de que ele precisa para concluir a tarefa.
+A instrução é o componente mais importante de um prompt. É a tarefa ou instrução específica que você deseja que o modelo execute. Ela deve ser clara e concisa, e deve fornecer ao modelo todas as informações de que ele precisa para concluir a tarefa.
 
 Por exemplo, se você deseja que o modelo gere um poema sobre o amor, sua instrução pode ser:
 
@@ -77,7 +77,15 @@ O contexto pode ser um componente importante de um prompt, especialmente se voc�
 
 Por exemplo:
 
-<Code code={`Responda a pergunta com base no contexto abaixo. Mantenha a resposta curta e concisa. Responda "Não tenho certeza sobre a resposta" se não tiver certeza da resposta. Contexto: Teplizumab tem suas raízes em uma empresa farmacêutica de Nova Jersey chamada Ortho Pharmaceutical. Lá, os cientistas geraram uma versão inicial do anticorpo, apelidada de OKT3. Originalmente proveniente de camundongos, a molécula foi capaz de se ligar à superfície das células T e limitar seu potencial de morte celular. Em 1986, foi aprovado para ajudar a prevenir a rejeição de órgãos após transplantes renais, tornando-se o primeiro anticorpo terapêutico permitido para uso humano. Pergunta: De onde veio originalmente o OKT3?`} lang="html" inline />
+<Code code={`Responda a pergunta com base no contexto abaixo. Mantenha a resposta curta e concisa. 
+Responda "Não tenho certeza sobre a resposta" se não tiver certeza da resposta. 
+
+Contexto: Teplizumab tem suas raízes em uma empresa farmacêutica de Nova Jersey chamada Ortho Pharmaceutical. Lá, os cientistas geraram uma versão inicial do anticorpo, apelidada de OKT3. 
+Originalmente proveniente de camundongos, a molécula foi capaz de se ligar à superfície das células T e limitar seu potencial de morte celular. 
+
+Em 1986, foi aprovado para ajudar a prevenir a rejeição de órgãos após transplantes renais, tornando-se o primeiro anticorpo terapêutico permitido para uso humano. 
+
+Pergunta: De onde veio originalmente o OKT3?`} lang="html" wrap />
 
 
 
@@ -109,6 +117,7 @@ Por exemplo, se você deseja que o modelo gere um poema sobre o amor, você pode
 ![Robo Humanoide - destroy humans](https://i.giphy.com/ckJF143W1gBS8Hk833.webp)
 </div>
 <div class="w-1/2">
+
 ### Comece Simples
 Ao começar a criar suas instruções, lembre-se de que é um processo iterativo que requer muita experimentação para obter resultados ótimos. Utilizar um playground simples da OpenAI ou Cohere é um bom ponto de partida. Inicie com instruções simples e adicione mais elementos e contexto à medida que busca melhores resultados. 
 
@@ -126,6 +135,13 @@ Você pode criar instruções eficazes para várias tarefas simples usando coman
 Lembre-se de que também é necessário experimentar muito para ver o que funciona melhor. Experimente diferentes instruções com palavras-chave diferentes, contextos e dados e veja o que funciona melhor para seu caso de uso específico. Geralmente, quanto mais específico e relevante for o contexto para a tarefa que você está tentando realizar, melhor. Falaremos sobre a importância da amostragem e adição de mais contexto nos próximos guias.
 
 Alguns recomendam que você coloque as instruções no início da instrução. Outra recomendação é usar um separador claro como "###" para separar a instrução e o contexto.
+
+
+<Code code={`### Instrução ###
+Traduza o texto abaixo para o espanhol: 
+"I love you"
+`} lang="html" wrap />
+
 
 
 ### Especificidade
