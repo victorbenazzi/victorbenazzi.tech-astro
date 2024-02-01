@@ -1,0 +1,169 @@
+---
+title: "Como criar um prompt para inteligência artificial. Elementos e dicas para escrever um bom prompt."
+layout: "../../layouts/BlogPost.astro"
+description: "Neste artigo, vamos explorar os elementos de um prompt para inteligência artificial e como escrever um bom prompt."
+pubDate: "31 de janeiro de 2024"
+category: "Inteligência artificial"
+cover: "../../../public/thumb-prompt-ai.png"
+thumbOg: "https://www.victorbenazzi.tech/thumb-prompt-ai.png"
+coverAlt: "Inteligência artificial"
+---
+import MainLink from "../../components/MainLink.astro";
+import { Code, } from 'astro:components';
+import { Image } from "astro:assets";
+import TableImgChatGpt from "../../assets/ImgsBlog/tabela-chat-gpt.png"
+import HeroImg from "../../../public/thumb-prompt-ai.png"
+import SocialIcons from "../../components/SocialIcons.astro";
+
+<Image class="rounded-xl w-full border border-stone-800 my-8 " src={HeroImg} alt="Como criar um prompt para inteligência artificial."/>
+
+## O que é prompt?
+
+Um prompt é uma instrução que você dá a um modelo de IA para que ele execute uma tarefa específica. Os prompts podem ser usados para uma variedade de tarefas, incluindo geração de texto, tradução de idiomas, escrita criativa e resposta a perguntas.
+
+Imagine que você quer usar um modelo de IA para fazer uma lista de compras. Você pode fornecer ao modelo um prompt como este:
+
+
+
+  <Code code={`"Faça uma lista de compras para uma refeição de quatro pessoas que inclui sopa, salada, carne, acompanhamentos e sobremesa."`} lang="html" inline />
+ 
+
+
+
+<div class="flex flex-row justify-center items-start w-full gap-x-6 mt-8">
+<div class="w-[60%]">
+### Por que os prompts são tão importantes?
+À medida que a inteligência artificial (IA) se torna mais sofisticada, os prompts estão se tornando cada vez mais importantes. Um prompt é uma instrução que fornecemos a um modelo de IA para que ele execute uma tarefa específica. 
+
+Os prompts podem ser usados para uma variedade de tarefas, incluindo geração de texto, tradução de idiomas, escrita criativa e resposta a perguntas.
+</div>
+<div class="w-[40%]">
+![Robo Humanoide](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdm1pcHp1MnR1empweWkyczh2em9mOW5mdmhnbGMyZ3M0dTQ1Nm5ieiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kE6xCyOOHoxlS/giphy.gif)
+</div>
+</div>
+
+
+
+## Elementos do prompt
+Para escrever um bom prompt, é importante entender os elementos que compõem um prompt. Um prompt pode conter qualquer um dos seguintes componentes:
+
+| Elemento | Descrição |
+| ----------- | ----------- |
+| Instrução (Instruction) | Uma tarefa ou instrução específica que você deseja que o modelo execute. |
+| Contexto (Context) | Pode envolver informações externas ou contexto adicional que pode direcionar o modelo para melhores respostas. |
+| Dados de entrada (Input Data) | É a entrada ou pergunta para a qual estamos interessados em encontrar uma resposta. |
+| Indicador de saída (Output Indicator) | Indica o tipo ou formato da saída.|
+
+
+
+
+## Instrução
+
+A instrução é o componente mais importante de um prompt. É a tarefa ou instrução específica que você deseja que o modelo execute. A instrução deve ser clara e concisa, e deve fornecer ao modelo todas as informações de que ele precisa para concluir a tarefa.
+
+Por exemplo, se você deseja que o modelo gere um poema sobre o amor, sua instrução pode ser:
+
+<Code code={`Gere um poema sobre o amor. O poema deve ter pelo menos 10 linhas e deve usar linguagem poética.`} lang="html" inline />
+
+O resultado:
+
+<Code code={`No crepúsculo dourado, amor a brilhar, Doce melodia, corações a dançar. Entre estrelas que contam segredos, O poema do amor, eterno enredo.`} lang="html" inline />
+
+
+
+## Contexto
+
+O contexto pode ser um componente importante de um prompt, especialmente se você estiver usando um modelo de IA que não foi treinado em um conjunto de dados de grande porte. O contexto pode fornecer ao modelo informações adicionais que podem ajudá-lo a compreender a tarefa e produzir uma resposta mais precisa.
+
+Por exemplo:
+
+<Code code={`Responda a pergunta com base no contexto abaixo. Mantenha a resposta curta e concisa. Responda "Não tenho certeza sobre a resposta" se não tiver certeza da resposta. Contexto: Teplizumab tem suas raízes em uma empresa farmacêutica de Nova Jersey chamada Ortho Pharmaceutical. Lá, os cientistas geraram uma versão inicial do anticorpo, apelidada de OKT3. Originalmente proveniente de camundongos, a molécula foi capaz de se ligar à superfície das células T e limitar seu potencial de morte celular. Em 1986, foi aprovado para ajudar a prevenir a rejeição de órgãos após transplantes renais, tornando-se o primeiro anticorpo terapêutico permitido para uso humano. Pergunta: De onde veio originalmente o OKT3?`} lang="html" inline />
+
+
+
+
+## Dados de entrada
+
+Os dados de entrada são a entrada ou pergunta para a qual estamos interessados em encontrar uma resposta. Os dados de entrada devem ser claros e concisos, e devem fornecer ao modelo todas as informações de que ele precisa para responder à pergunta.
+
+Por exemplo, se você deseja que o modelo traduza a frase "I love you" para o português, seus dados de entrada podem ser:
+
+<Code code={`Traduza parra português: I love you`} lang="html" inline />
+
+
+
+## Indicador de saída
+
+O indicador de saída indica o tipo ou formato da saída que você deseja que o modelo produza. O indicador de saída pode ser importante para garantir que o modelo produza a saída correta.
+
+Por exemplo, se você deseja que o modelo gere um poema sobre o amor, você pode especificar o indicador de saída como "poema" ou "tabela".
+
+<Image class="rounded-xl w-1/2 border border-stone-800 my-8 p-2" src={TableImgChatGpt} alt="Chat GPT respondendo"/>
+
+
+
+
+## Dicas Gerais para Criar Instruções
+<div class="flex flex-row justify-center items-start w-full gap-x-6">
+<div class="w-1/2">
+![Robo Humanoide - destroy humans](https://i.giphy.com/ckJF143W1gBS8Hk833.webp)
+</div>
+<div class="w-1/2">
+### Comece Simples
+Ao começar a criar suas instruções, lembre-se de que é um processo iterativo que requer muita experimentação para obter resultados ótimos. Utilizar um playground simples da OpenAI ou Cohere é um bom ponto de partida. Inicie com instruções simples e adicione mais elementos e contexto à medida que busca melhores resultados. 
+
+Quando tiver uma tarefa grande que envolva muitas sub-tarefas diferentes, tente dividir a tarefa em sub-tarefas mais simples e vá construindo à medida que obtém melhores resultados. Isso evita adicionar muita complexidade ao processo de design de instrução no início.
+</div>
+</div>
+
+
+
+
+
+### A Instrução
+Você pode criar instruções eficazes para várias tarefas simples usando comandos para instruir o modelo sobre o que você deseja alcançar, como "Escrever", "Classificar", "Resumir", "Traduzir", "Ordenar", etc.
+
+Lembre-se de que também é necessário experimentar muito para ver o que funciona melhor. Experimente diferentes instruções com palavras-chave diferentes, contextos e dados e veja o que funciona melhor para seu caso de uso específico. Geralmente, quanto mais específico e relevante for o contexto para a tarefa que você está tentando realizar, melhor. Falaremos sobre a importância da amostragem e adição de mais contexto nos próximos guias.
+
+Alguns recomendam que você coloque as instruções no início da instrução. Outra recomendação é usar um separador claro como "###" para separar a instrução e o contexto.
+
+
+### Especificidade
+Seja muito específico sobre a instrução e a tarefa que deseja que o modelo execute. Quanto mais descritiva e detalhada for a instrução, melhores serão os resultados. Isso é particularmente importante quando se busca um resultado ou estilo de geração desejado. Não existem tokens ou palavras-chave específicas que levem a melhores resultados. É mais importante ter um formato bom e uma instrução descritiva. Na verdade, fornecer exemplos na instrução é muito eficaz para obter saída desejada em formatos específicos.
+
+Ao criar instruções, também leve em consideração o comprimento da instrução, pois há limitações quanto a isso. Pense em quão específico e detalhado você deve ser. Incluir muitos detalhes desnecessários não é necessariamente uma abordagem boa. Os detalhes devem ser relevantes e contribuir para a tarefa em questão. Isso é algo que você precisará experimentar bastante. Encorajamos muita experimentação e iteração para otimizar instruções para suas aplicações.
+
+
+### Evite Imprecisões
+Apesar das orientações anteriores sobre ser detalhado e aprimorar o formato, é fácil cair na armadilha de querer ser excessivamente inteligente com os prompts, o que pode resultar em descrições imprecisas. Em geral, é preferível ser específico e direto. A analogia aqui é muito semelhante à comunicação eficaz - quanto mais direta, mais eficaz a mensagem é transmitida.
+
+
+
+### Por hoje é só
+
+Agradeço a sua leitura até aqui! Espero que este artigo tenha ajudado você a entender o que é um prompt e como escrever bons prompts para inteligência artificial. Lembre-se, a engenharia de prompt ainda é um campo em evolução, e a melhor maneira de aprender é experimentando e vendo o que funciona para você.
+
+Abraço!
+
+
+### Redes Sociais:
+
+<SocialIcons />
+
+### Referência:
+
+<MainLink
+  link="https://www.promptingguide.ai/"
+  label="Prompt Engineering Guide"
+/>
+
+
+### Palavras-chave:
+
+- prompt para inteligência artificial
+- escrever um bom prompt
+- elementos de um prompt
+- engenharia de prompt
+- IA
+- Inteligência artificial
+
