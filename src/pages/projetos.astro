@@ -2,18 +2,19 @@
 import { SEO } from "astro-seo";
 import Layout from "../layouts/Layout.astro";
 import PortfolioCard from "../components/PortfolioCard.astro";
-import SiteMutinno from "../assets/mutinno-thumb.png"
-import SiteTogrow from "../assets/togrow-thumb.png"
-import LpDisparo from "../assets/disparofestival-thumb.png"
-import SiteDisparo from "../assets/disparopro-thumb.png"
-import SiteBrasilfone from "../assets/brasilfone-thumb.png"
-import SiteAtivos from "../assets/ativos-thumb.png"
-import SiteLinkou from "../assets/linkou-thumb.png"
-import LpCapton from "../assets/capton-thumb.png"
-import Lpzucchi from "../assets/zucchi-thumb.png"
+import SiteMutinno from "../assets/mutinnocontent.png";
+import SiteTogrow from "../assets/togrow.png";
+import LpDisparo from "../assets/disparo-pro-festival.png";
+import SiteDisparo from "../assets/disparo-pro.png";
+import SiteBrasilfone from "../assets/brasilfone.png";
+import SiteAtivos from "../assets/ativos-capital.png";
+import SiteLinkou from "../assets/linkou.png";
+import LpCapton from "../assets/oportunidades-capton-desafios.png";
+import Lpzucchi from "../assets/zucchi.png";
+import SiteSoulvox from "../assets/soulvox.png";
+import QrCode from "../assets/gerador-qr-code.png";
 import MainButton from "../components/MainButton.astro";
 import { Icon } from "astro-icon";
-
 ---
 
 <head>
@@ -32,155 +33,152 @@ import { Icon } from "astro-icon";
 </head>
 
 <Layout title="Projetos - Victor Benazzi">
- 
   <section
-    class="flex flex-col items-start justify-center gap-y-10 w-full lg:w-[1024px] mt-20 px-6 lg:px-0"
-    
-  >
+    class="flex flex-col items-start justify-center gap-y-10 w-full lg:w-[1024px] mt-20 px-6 lg:px-0">
     <div class="flex flex-col gap-y-6 w-full lg:items-start">
       <h1
         class="text-5xl lg:text-5xl x:text-8xl text-stone-50 font-bold lg:items-start"
-        transition:name="h1"
-       
-      >
+        transition:name="h1">
         Projetos
       </h1>
-      <p class="text-stone-300 w-full text-base" transition:name="p" >
+      <p class="text-stone-300 w-full text-base" transition:name="p">
         Cada projeto é como uma peça única de desenvolvimento 🧩
       </p>
     </div>
 
-    <div class=" w-full p-8 border-stone-800 border text-stone-50 rounded-lg" transition:name="falecomigocard">
-      <div class="flex flex-col gap-y-6 ">
+    <div
+      class="w-full p-8 border-stone-800 border text-stone-50 rounded-lg"
+      transition:name="falecomigocard">
+      <div class="flex flex-col gap-y-6">
         <div class="flex flex-row items-center justify-start text-stone-100">
           <div class="w-10 h-10">
-            <Icon
-              name="noto:rocket"
-            />
-    
+            <Icon name="noto:rocket" />
           </div>
         </div>
-              <h2 class="text-[2rem] leading-none font-bold ">Tem um projeto em mente?</h2>
-              <MainButton 
-              labelButton="Fale comigo"
-              link="https://wa.me/5569992993889"
-              target="_blank"
-      
-           />
-       </div>
-  </div>  
-
+        <h2 class="text-[2rem] leading-none font-bold">
+          Tem um projeto em mente?
+        </h2>
+        <MainButton
+          labelButton="Fale comigo"
+          link="https://wa.me/5569992993889"
+          target="_blank"
+        />
+      </div>
+    </div>
   </section>
 
-  
-  <section class="flex flex-col items-start justify-center gap-y-10 w-full lg:w-[1024px]  mt-10 px-6 lg:px-0" transition:name="projetos">
-    
-  
+  <section
+    class="flex flex-col items-start justify-center gap-y-10 w-full lg:w-[1024px] mt-10 px-6 lg:px-0"
+    transition:name="projetos">
     <div class="grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-4">
-
-     
-      <PortfolioCard 
-         
-      title="Mutinno • Landing Page"
-      stacks="Design e Desenvolvimento • RD Station"
-      description="Landing page desenvolvida utilizando o RD Station para o método Mais que um post bonito."
-      imageCard={SiteMutinno}
-      alt="Landing Page Mutinno - Mais Que Um Post Bonito"
-      link="https://materiais.mutinno.com.br/q1pb"
-      linkText="Visitar site"
-    />
-
-
-    <PortfolioCard 
-      
-      title="To Grow • Site Institucional"
-      stacks="Desenvolvimento • Wordpress e Elementor"
-      description="Site institucional focado em mostrar os serviços da empresa e captar leads."
-      imageCard={SiteTogrow}
-      alt="Site To Grow"
-      link="https://togrow.tech"
-      linkText="Visitar site"
-    />
-
-
-    <PortfolioCard 
-      
-      title="Disparo Pro • Landing Page"
-      stacks="Desenvolvimento • Wordpress e Elementor"
-      description="Landing page criada para o Disparo Festival, com o objetivo de captar leads para a campanha de Black Friday."
-      imageCard={LpDisparo}
-      alt="Landing page criada Disparo Festival Disparo PRO"
-      link="https://disparopro.com.br/disparo-festival"
-      linkText="Visitar site"
-    />
-
-
-      <PortfolioCard 
-      title="Disparo Pro • Site institucional"
-      stacks="Desenvolvimento • Wordpress e Elementor"
-      description="Site principal da plataforma, integração com RD Station, GTAG e Meta Tag."
-      imageCard={SiteDisparo}
-      alt="Site Disparo Pro"
-      link="https://disparopro.com.br/"
-      linkText="Visitar site"
+      <PortfolioCard
+        title="Soulvox • Website"
+        stacks="Design e Desenvolvimento • Wordpress e Elementor"
+        description="Plataforma de locução online com locutores profissionais."
+        imageCard={SiteSoulvox}
+        alt="Soulvox"
+        link="https://soulvox.com.br"
+        linkText="Visitar site"
       />
-      
-      <PortfolioCard 
-  
-      title="Brasilfone • Site institucional"
-      stacks="Design e Desenvolvimento • Wordpress e Elementor"
-      description="Site principal da empresa, integração com RD Station, GTAG e Meta Tag."
-      imageCard={SiteBrasilfone}
-      alt="Site Brasilfone"
-      link="https://brasilfone.com.br/"
-      linkText="Visitar site"
-    />
+      <PortfolioCard
+        title="Mutinno • Landing Page"
+        stacks="Design e Desenvolvimento • RD Station"
+        description="Landing page desenvolvida utilizando o RD Station para o método Mais que um post bonito."
+        imageCard={SiteMutinno}
+        alt="Landing Page Mutinno - Mais Que Um Post Bonito"
+        link="https://materiais.mutinno.com.br/q1pb"
+        linkText="Visitar site"
+      />
 
-    <PortfolioCard 
+      <PortfolioCard
+        title="To Grow • Site Institucional"
+        stacks="Desenvolvimento • Wordpress e Elementor"
+        description="Site institucional focado em mostrar os serviços da empresa e captar leads."
+        imageCard={SiteTogrow}
+        alt="Site To Grow"
+        link="https://togrow.tech"
+        linkText="Visitar site"
+      />
 
-    title="Ativos Capital • Site institucional"
-    stacks="Design e Desenvolvimento • Wordpress e Elementor"
-    description="Site institucional da empresa, integração com RD Station, GTAG e Meta Tag."
-    imageCard={SiteAtivos}
-    alt="Site Ativos Capital"
-    link="https://ativos.capital/"
-    linkText="Visitar site"
-    />
+      <PortfolioCard
+        title="Capton • Página de Oportunidades"
+        stacks="Design e Desenvolvimento • Wordpress e Elementor"
+        description="Página focada em demonstrar todas as oportunidades que a Capton oferece ao mercado."
+        imageCard={LpCapton}
+        alt="Página de benefícios Capton"
+        link="https://oportunidades.capton.com.br/"
+        linkText="Visitar site"
+      />
 
-    <PortfolioCard 
-    title="Linkou • Blog"
-    stacks="Design e Desenvolvimento • Wordpress e Elementor"
-    description="Blog comercial da linkou e integração com RD Station, GTAG e Meta Tag."
-    imageCard={SiteLinkou}
-    alt="Site Linkou Digital"
-    link="https://linkou.digital/"
-    linkText="Visitar site"
-    />
+      <PortfolioCard
+        title="Disparo Pro • Landing Page"
+        stacks="Desenvolvimento • Wordpress e Elementor"
+        description="Landing page criada para o Disparo Festival, com o objetivo de captar leads para a campanha de Black Friday."
+        imageCard={LpDisparo}
+        alt="Landing page criada Disparo Festival Disparo PRO"
+        link="https://disparopro.com.br/disparo-festival"
+        linkText="Visitar site"
+      />
 
-    <PortfolioCard 
-    title="Capton • Página de benefícios"
-    stacks="Design e Desenvolvimento • Wordpress e Elementor"
-    description="Criação da página de benefícios editável e integração com RD Station."
-    imageCard={LpCapton}
-    alt="Página de benefícios Capton"
-    link="https://beneficios.capton.com.br/"
-    linkText="Visitar site"
-    />
+      <PortfolioCard
+        title="Disparo Pro • Site institucional"
+        stacks="Desenvolvimento • Wordpress e Elementor"
+        description="Site principal da plataforma, integração com RD Station, GTAG e Meta Tag."
+        imageCard={SiteDisparo}
+        alt="Site Disparo Pro"
+        link="https://disparopro.com.br/"
+        linkText="Visitar site"
+      />
 
+      <PortfolioCard
+        title="Brasilfone • Site institucional"
+        stacks="Design e Desenvolvimento • Wordpress e Elementor"
+        description="Site principal da empresa, integração com RD Station, GTAG e Meta Tag."
+        imageCard={SiteBrasilfone}
+        alt="Site Brasilfone"
+        link="https://brasilfone.com.br/"
+        linkText="Visitar site"
+      />
+      <PortfolioCard
+        title="Gerador de QR Code • Website"
+        stacks="Design e Desenvolvimento • React e Tailwind"
+        description="Gerador de QR Code que não expira e sem propagandas."
+        imageCard={QrCode}
+        alt="Gerador de QR Code"
+        link="https://qrcode.victorbenazzi.tech/"
+        linkText="Visitar site"
+      />
+      <PortfolioCard
+        title="Ativos Capital • Site institucional"
+        stacks="Design e Desenvolvimento • Wordpress e Elementor"
+        description="Site institucional da empresa, integração com RD Station, GTAG e Meta Tag."
+        imageCard={SiteAtivos}
+        alt="Site Ativos Capital"
+        link="https://ativos.capital/"
+        linkText="Visitar site"
+      />
 
-    <PortfolioCard 
+      <PortfolioCard
+        title="Linkou • Blog"
+        stacks="Design e Desenvolvimento • Wordpress e Elementor"
+        description="Blog comercial da linkou e integração com RD Station, GTAG e Meta Tag."
+        imageCard={SiteLinkou}
+        alt="Site Linkou Digital"
+        link="https://linkou.digital/"
+        linkText="Visitar site"
+      />
 
-    title="Zucchi • Landing Page "
-    stacks="Design e Desenvolvimento • RD Station"
-    description="Landing page focada em divulgar o serviço de valuation corporativo da Zucchi. Integração com RD Station."
-    imageCard={Lpzucchi}
-    alt="Landing page Zucchi"
-    link="https://www-zucchi-com-br.rds.land/lp-zucchi-valuation-corporativo-b"
-    linkText="Visitar site"
-    />
+      <PortfolioCard
+        title="Zucchi • Landing Page "
+        stacks="Design e Desenvolvimento • RD Station"
+        description="Landing page focada em divulgar o serviço de valuation corporativo da Zucchi. Integração com RD Station."
+        imageCard={Lpzucchi}
+        alt="Landing page Zucchi"
+        link="https://www-zucchi-com-br.rds.land/lp-zucchi-valuation-corporativo-b"
+        linkText="Visitar site"
+      />
 
-
-<!-- 
+      <!-- 
     <PortfolioCard 
   
     title="estud.you • Site Institucional"
@@ -191,10 +189,6 @@ import { Icon } from "astro-icon";
     link="https://estudyou.com/"
     linkText="Visitar site"
     /> -->
-
     </div>
-
   </section>
-
-
 </Layout>
