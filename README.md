@@ -1,54 +1,49 @@
-# Astro Starter Kit: Basics
+# Meu Site Pessoal
 
-```sh
-npm create astro@latest -- --template basics
-```
+ Visite o site em [victorbenazzi.tech](https://www.victorbenazzi.tech/).
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Tecnologias Utilizadas
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+![Astro](https://img.shields.io/badge/astro-%231f1f1f.svg?style=for-the-badge&logo=astro&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%231f1f1f.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Sobre o Site
 
-## 🚀 Project Structure
+Este site foi desenvolvido para mostrar meus trabalhos e habilidades como desenvolvedor web. Utilizei as seguintes tecnologias para criar uma experiência rápida, moderna e responsiva:
 
-Inside of your Astro project, you'll see the following folders and files:
+### Astro
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+Astro é um moderno framework de construção de sites estáticos que permite combinar componentes de diferentes frameworks JavaScript, como React, Vue e Svelte, em um único projeto. Ele oferece uma renderização rápida do lado do servidor (SSR) e uma excelente performance na entrega de conteúdo estático.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+### TailwindCSS
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+TailwindCSS é uma biblioteca de utilitários CSS altamente configurável que permite criar designs modernos e responsivos de forma rápida e eficiente. Com TailwindCSS, podemos aplicar estilos diretamente nos elementos HTML através de classes utilitárias, tornando o processo de estilização mais intuitivo e produtivo.
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Funcionalidades
 
-## 🧞 Commands
+- **Projetos**: Uma seção dedicada aos meus projetos, com detalhes sobre cada um.
+- **Sobre Mim**: Uma página com informações sobre minha carreira e habilidades.
+- **Contato**: Formulário de contato para que você possa entrar em contato comigo facilmente.
+- **Blog**: Compatilhar conteúdo relevante sobre áreas de conhecimento que domino
 
-All commands are run from the root of the project, from a terminal:
+## Contato
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Sinta-se à vontade para entrar em contato comigo através das minhas redes sociais:
 
-## 👀 Want to learn more?
+<div>
+  <a href="https://instagram.com/v1torb" target="_blank">
+    <img src="https://img.shields.io/badge/-Instagram-%231f1f1f?style=for-the-badge&logo=instagram&logoColor=white" target="_blank">
+  </a>
+  <br>
+  <a href="https://www.linkedin.com/in/victorbenazzi" target="_blank">
+    <img src="https://img.shields.io/badge/-LinkedIn-%231f1f1f?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank">
+  </a>
+  <br>
+  <a href="https://www.victorbenazzi.tech" target="_blank">
+    <img src="https://img.shields.io/badge/-Website-%231f1f1f?style=for-the-badge&logo=google-chrome&logoColor=white" target="_blank">
+  </a>
+</div>
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Licença
+
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
