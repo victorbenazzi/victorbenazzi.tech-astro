@@ -8,116 +8,118 @@ import LogoJavascript from "/src/assets/icons/logo-javascript.svg";
 import LogoRD from "/src/assets/icons/logo-rd-station.svg";
 import LogoPHP from "/src/assets/icons/logo-php.svg";
 import { Image } from "astro:assets";
+import Container from "./Container.astro";
 ---
 
-<section
-  class="flex flex-col items-start justify-center gap-y-12 w-full lg:w-[1024px] lg:mt-40 mt-20 px-6 lg:px-0">
-  <div class="flex flex-col gap-y-6 w-full">
-    <h2 class="lg:text-4xl text-2xl text-stone-50 font-bold">
-      Criação e integração 🧑‍💻
-    </h2>
-    <p class="text-stone-300 xl:w-[50%] w-[100%] text-base">
-      Crio, desenvolvo e integro com as principais ferramentas do mercado.
-    </p>
-  </div>
-
-  <div class="grid grid-cols-2 md:grid-cols-8 gap-x-4 gap-y-4 w-full">
-    <!-- wordpress -->
-    <div
-      class="flex flex-row items-center md:justify-center justify-start gap-x-4">
-      <Image
-        src={LogoWordpress}
-        alt="Wordpress"
-        width="16"
-        height="16"
-        loading="lazy"
-      />
-      <h3 class="text-base text-stone-300">Wordpress</h3>
+<Container>
+  <section class="flex flex-col items-start justify-center gap-y-12 w-full">
+    <div class="flex flex-col items-center justify-between gap-y-6 w-full">
+      <h2 class="lg:text-4xl text-2xl text-stone-50 font-bold text-center">
+        Criação e integração 🧑‍💻
+      </h2>
+      <p class="text-stone-300 w-full text-center text-base">
+        Crio, desenvolvo e integro com as principais ferramentas do mercado.
+      </p>
     </div>
 
-    <!-- React -->
-    <div
-      class="flex flex-row items-center md:justify-center justify-start gap-x-4">
-      <Image
-        src={LogoReact}
-        alt="React"
-        width="16"
-        height="16"
-        loading="lazy"
-      />
-      <h3 class="text-base text-stone-300">React</h3>
-    </div>
+    <div class="grid grid-cols-2 md:grid-cols-8 gap-x-4 gap-y-4 w-full">
+      <!-- wordpress -->
+      <div
+        class="flex flex-row items-center md:justify-center justify-start gap-x-4">
+        <Image
+          src={LogoWordpress}
+          alt="Wordpress"
+          width="16"
+          height="16"
+          loading="lazy"
+        />
+        <h3 class="text-base text-stone-300">Wordpress</h3>
+      </div>
 
-    <!-- Astro -->
-    <div
-      class="flex flex-row items-center md:justify-center justify-start gap-x-4">
-      <Image
-        src={LogoAstro}
-        alt="Astro"
-        width="16"
-        height="16"
-        loading="lazy"
-      />
-      <h3 class="text-base text-stone-300">Astro</h3>
-    </div>
+      <!-- React -->
+      <div
+        class="flex flex-row items-center md:justify-center justify-start gap-x-4">
+        <Image
+          src={LogoReact}
+          alt="React"
+          width="16"
+          height="16"
+          loading="lazy"
+        />
+        <h3 class="text-base text-stone-300">React</h3>
+      </div>
 
-    <!-- Javascript -->
-    <div
-      class="flex flex-row items-center md:justify-center justify-start gap-x-4">
-      <Image
-        src={LogoJavascript}
-        alt="Javascript"
-        width="16"
-        height="16"
-        loading="lazy"
-      />
-      <h3 class="text-base text-stone-300">Javascript</h3>
-    </div>
+      <!-- Astro -->
+      <div
+        class="flex flex-row items-center md:justify-center justify-start gap-x-4">
+        <Image
+          src={LogoAstro}
+          alt="Astro"
+          width="16"
+          height="16"
+          loading="lazy"
+        />
+        <h3 class="text-base text-stone-300">Astro</h3>
+      </div>
 
-    <!-- PHP -->
-    <div
-      class="flex flex-row items-center md:justify-center justify-start gap-x-4">
-      <Image src={LogoPHP} alt="PHP" width="16" height="16" loading="lazy" />
-      <h3 class="text-base text-stone-300">PHP</h3>
-    </div>
+      <!-- Javascript -->
+      <div
+        class="flex flex-row items-center md:justify-center justify-start gap-x-4">
+        <Image
+          src={LogoJavascript}
+          alt="Javascript"
+          width="16"
+          height="16"
+          loading="lazy"
+        />
+        <h3 class="text-base text-stone-300">Javascript</h3>
+      </div>
 
-    <!-- Rd Station -->
-    <div
-      class="flex flex-row items-center md:justify-center justify-start gap-x-4">
-      <Image
-        src={LogoRD}
-        alt="RD Station"
-        width="16"
-        height="16"
-        loading="lazy"
-      />
-      <h3 class="text-base text-stone-300">RD Station</h3>
-    </div>
+      <!-- PHP -->
+      <div
+        class="flex flex-row items-center md:justify-center justify-start gap-x-4">
+        <Image src={LogoPHP} alt="PHP" width="16" height="16" loading="lazy" />
+        <h3 class="text-base text-stone-300">PHP</h3>
+      </div>
 
-    <!-- elementor -->
-    <div
-      class="flex flex-row items-center md:justify-center justify-start gap-x-4">
-      <Image
-        src={LogoElementor}
-        alt="Elementor"
-        width="16"
-        height="16"
-        loading="lazy"
-      />
-      <h3 class="text-base text-stone-300">Elementor</h3>
-    </div>
-    <!-- Figma -->
+      <!-- Rd Station -->
+      <div
+        class="flex flex-row items-center md:justify-center justify-start gap-x-4">
+        <Image
+          src={LogoRD}
+          alt="RD Station"
+          width="16"
+          height="16"
+          loading="lazy"
+        />
+        <h3 class="text-base text-stone-300">RD Station</h3>
+      </div>
 
-    <div
-      class="flex flex-row items-center md:justify-center justify-start gap-x-4">
-      <Image
-        src={LogoFigma}
-        alt="figma"
-        width="16"
-        height="16"
-        loading="lazy"
-      />
-      <h3 class="text-base text-stone-300">Figma</h3>
+      <!-- elementor -->
+      <div
+        class="flex flex-row items-center md:justify-center justify-start gap-x-4">
+        <Image
+          src={LogoElementor}
+          alt="Elementor"
+          width="16"
+          height="16"
+          loading="lazy"
+        />
+        <h3 class="text-base text-stone-300">Elementor</h3>
+      </div>
+      <!-- Figma -->
+
+      <div
+        class="flex flex-row items-center md:justify-center justify-start gap-x-4">
+        <Image
+          src={LogoFigma}
+          alt="figma"
+          width="16"
+          height="16"
+          loading="lazy"
+        />
+        <h3 class="text-base text-stone-300">Figma</h3>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+</Container>

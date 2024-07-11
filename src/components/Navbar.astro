@@ -1,0 +1,43 @@
+---
+import { Icon } from "astro-icon";
+import SocialIcons from "./SocialIcons.astro";
+---
+
+<nav class="flex flex-row gap-x-2 h-auto w-fit items-center justify-center">
+  <div
+    id="MenuDesktop"
+    class="hidden md:flex flex-row items-center justify-center">
+    <a
+      class="text-stone-200 hover:text-stone-50 px-4 py-2 hover:bg-stone-900 rounded-lg text-base font-bold"
+      href="/">Início</a
+    >
+
+    <a
+      class="text-stone-200 hover:text-stone-50 px-4 py-2 hover:bg-stone-900 rounded-lg text-base font-bold"
+      href="/blog">Blog</a
+    >
+  </div>
+  <SocialIcons />
+  <div
+    id="BtnMenuMobile"
+    class="flex md:hidden flex-row gap-x-8"
+    onclick="toggleMenu()">
+    <button
+      class="p-2 border rounded-lg border-stone-800"
+      aria-label="Botão para o menu principal">
+      <div class="w-4 h-4 text-stone-50">
+        <Icon name="ph:list-bold" />
+      </div>
+    </button>
+  </div>
+</nav>
+
+<script>
+  function toggleMenu() {
+    const BntMenuMobile = document.getElementById("BtnMenuMobile");
+    const MenuMobile = document.getElementById("MenuMobile");
+    BntMenuMobile.addEventListener("click", () => {
+      MenuMobile.classList.toggle("hidden");
+    });
+  }
+</script>

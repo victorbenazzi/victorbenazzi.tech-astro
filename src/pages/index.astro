@@ -2,25 +2,11 @@
 // Astro Components
 import { SEO } from "astro-seo";
 import Layout from "../layouts/Layout.astro";
-import { Icon } from "astro-icon";
-import { Image } from "astro:assets";
-
-// Imagens
-import AvatarImgIngrid from "../assets/avatar-ingrid.png";
-import LogoLoubfy from "../assets/logo-loubfy.png";
-import AvatarImgThauane from "../assets/avatar-thauane.png";
-import LogoMutinno from "../assets/logo-mutinno.png";
-import AvatarImgKelvyn from "../assets/avatar-kelvyn.png";
-import SiteSoulvox from "../assets/soulvox.png";
-import SiteTogrow from "../assets/togrow.png";
-import LpDisparo from "../assets/disparo-pro-festival.png";
-
-// My components
-import PortfolioCard from "../components/PortfolioCard.astro";
-import Testimonial from "../components/Testimonial.astro";
+import Projects from "../components/Projects.astro";
+import Container from "../components/Container.astro";
 import MainButton from "../components/MainButton.astro";
-import SocialIcons from "../components/SocialIcons.astro";
-import Stacks from "../components/stacks.astro";
+import HeroBg from "../assets/bg-desktop.png";
+import { Image } from "astro:assets";
 ---
 
 <head>
@@ -38,144 +24,26 @@ import Stacks from "../components/stacks.astro";
 </head>
 
 <Layout>
-  <section
-    class="flex flex-col items-start justify-center gap-y-10 w-full lg:w-[1024px] mt-10 lg:mt-40 px-6 lg:px-0">
-    <h1
-      class="text-4xl lg:text-5xl x:text-8xl text-stone-50 font-bold lg:items-start"
-      transition:name="h1">
-      Web Designer & Front-end Developer
-    </h1>
-    <p class="text-stone-300">
-      Sou web designer e front-end developer, especialista em criar sites e
-      landing pages incríveis. Desenvolvo soluções web que aliam design,
-      funcionalidade e responsividade.
-    </p>
-    <SocialIcons />
-  </section>
-
-  <Stacks />
-
-  <section
-    class="flex flex-col items-start justify-center gap-y-10 w-full lg:w-[1024px] mt-20 px-6 lg:px-0">
-    <h2 class="lg:text-4xl text-2xl text-stone-50 font-bold">Projetos</h2>
-
-    <div class="grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-4">
-      <PortfolioCard
-        title="Soulvox • Website"
-        stacks="Design e Desenvolvimento • Wordpress e Elementor"
-        description="Plataforma de locução online com locutores profissionais."
-        imageCard={SiteSoulvox}
-        alt="Soulvox"
-        link="https://soulvox.com.br"
-        linkText="Visitar site"
-      />
-
-      <PortfolioCard
-        title="To Grow • Site Institucional"
-        stacks="Desenvolvimento • Wordpress e Elementor"
-        description="Site institucional focado em mostrar os serviços da empresa e captar leads."
-        imageCard={SiteTogrow}
-        alt="Site To Grow"
-        link="https://togrow.tech"
-        linkText="Visitar site"
-      />
-
-      <PortfolioCard
-        title="Disparo Pro • Landing Page"
-        stacks="Desenvolvimento • Wordpress e Elementor"
-        description="Landing page criada para o Disparo Festival, com o objetivo de captar leads para a campanha de Black Friday."
-        imageCard={LpDisparo}
-        alt="Landing page criada Disparo Festival Disparo PRO"
-        link="https://disparopro.com.br/disparo-festival"
-        linkText="Visitar site"
-      />
-      <a
-        class="text-stone-200 hover:text-stone-50 hover:underline text-base font-bold"
-        href="/projetos">Ver todos os projetos</a
-      >
-    </div>
-
-    <!-- DEPOIMENTOS -->
+  <Container>
     <section
-      class="flex flex-col items-start justify-center gap-y-10 w-full lg:w-[1024px] mt-20 lg:px-0">
-      <h2 class="lg:text-4xl text-2xl text-stone-50 font-bold">
-        O que estão falando sobre mim
-      </h2>
-
-      <div class="grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-4">
-        <!-- Depoimento Ingrid -->
-        <Testimonial
-          Avatar={AvatarImgIngrid}
-          Name="Ingrid Santin"
-          Role="CEO e Sócia Fundadora"
-          Link="https://www.instagram.com/loubfy_/"
-          LinkText="@loubfy_"
-          ImgLink={LogoLoubfy}>
-          "Victor é um dos profissionais mais completos e comprometidos que já
-          trabalhei. <br />
-          Cada projeto é único e sempre supera todas as expectativas, deixa cada
-          detalhe impecável. Hoje, o Victor é o meu parceiro de confiança, principalmente
-          em projetos que envolvem tecnologia e marketing.”
-        </Testimonial>
-
-        <!-- Depoimento Kelvyn -->
-        <Testimonial
-          Avatar={AvatarImgKelvyn}
-          Name="Kelvyn Castro"
-          Role="Presidente e Sócio Fundador"
-          Link="https://www.instagram.com/loubfy_/"
-          LinkText="@loubfy_"
-          ImgLink={LogoLoubfy}>
-          “Trabalhar com o Victor sem dúvidas foi uma das melhores experiências
-          profissionais que já tive, profissional extremamente comunicativo,
-          eficiente e pontual.”
-        </Testimonial>
-
-        <!-- Depoimento Thauane -->
-        <Testimonial
-          Avatar={AvatarImgThauane}
-          Name="Thauane Rizzi"
-          Role="CEO e Sócia Fundadora"
-          Link="https://www.instagram.com/mutinnocontent/"
-          LinkText="@mutinnocontent"
-          ImgLink={LogoMutinno}>
-          “O Victor conseguiu captar exatamente o que a gente queria e ainda nos
-          entregou algo que foi além das nossas expectativas.
-          <br />
-
-          Ficamos muito contentes com o resultado e indicamos muito não só pela
-          entrega final mas também pelo profissionalismo, responsabilidade e
-          cuidado que teve em todo o processo.”
-        </Testimonial>
-      </div>
-    </section>
-
-    <section
-      class="flex flex-col justify-center items-start w-full xl:w-[1024px] p-8 border-stone-800 border text-stone-50 rounded-lg gap-y-8">
-      <div
-        class="flex flex-row items-center justify-start text-stone-100 w-10 h-10">
-        <Icon name="noto:rocket" />
-      </div>
-
-      <h2 class="text-[2rem] leading-none font-bold">
-        Tem um projeto em mente?
-      </h2>
-      <p class="text-stone-300 w-full text-base">
-        Se você tem algum projeto em mente, sinta-se à vontade para me enviar
-        uma mensagem.
+      class="flex flex-col items-center justify-center gap-y-8 w-full h-[440px] mt-20 relative">
+      <Image class="absolute top-0 left-0 hidden" src={HeroBg} alt="bg" />
+      <h1
+        class="text-4xl lg:text-5xl x:text-8xl text-stone-50 font-bold text-center z-10">
+        Web Designer & Front-end Developer
+      </h1>
+      <p class="text-stone-300 text-center w-full max-w-[680px] z-10">
+        Sou web designer e front-end developer, especialista em criar sites e
+        landing pages incríveis. Desenvolvo soluções web que aliam design,
+        funcionalidade e responsividade.
       </p>
-      <div
-        class="flex flex-col md:flex-row items-center gap-x-4 gap-y-6 w-full">
-        <MainButton
-          link="https://wa.me/5569992993889"
-          labelButton="Fale Comigo"
-          target="_blank"
-        />
-        <a
-          class="text-stone-200 hover:text-stone-50 hover:underline text-base font-bold"
-          href="/projetos">Ver meus projetos</a
-        >
-      </div>
+      <MainButton
+        labelButton="Entre em contato"
+        link="https://wa.me/5569992993889?text=Olá, vim pelo seu site e gostaria de saber mais sobre seus serviços!"
+        target="_blank"
+      />
     </section>
-  </section>
+  </Container>
+
+  <Projects />
 </Layout>

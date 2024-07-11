@@ -1,62 +1,12 @@
 ---
-import { Image } from "astro:assets";
-import LogoVictor from "../assets/victor-logo.svg";
-import { Icon } from "astro-icon";
-
-
-
-
+import Container from "./Container.astro";
+import Logo from "./Logo.astro";
+import Navbar from "./Navbar.astro";
 ---
 
-<header class="flex flex-col items-center justify-center w-full py-6 border-b border-stone-800 bg-stone-950">
-  <div class="flex flex-row items-center justify-between w-full xl:w-[1024px] px-6 xl:px-0">
-    <a href="/">
-      <Image src={LogoVictor} alt="Logo Victor Benazzi" />
-    </a>
-
-    <navbar class="flex flex-row h-auto ">
-      <div id="MenuDesktop" class="hidden md:flex flex-row gap-x-8">
-      <a
-        class="text-stone-200 hover:text-stone-50 hover:underline text-base font-bold"
-        href="/">Início</a
-      >
-      <a
-        class="text-stone-200 hover:text-stone-50 hover:underline text-base font-bold"
-        href="/projetos">Projetos</a
-      >
-      <a
-        class="text-stone-200 hover:text-stone-50 hover:underline text-base font-bold"
-        href="/blog">Blog</a
-      >
-     </div>
-
-
-
-     
-     <div id="BtnMenuMobile" class="flex md:hidden flex-row gap-x-8" onclick="toggleMenu()">
-        <button class="p-2 border rounded-lg border-stone-800" aria-label="Botão para o menu principal">
-          <div class="w-4 h-4 text-stone-50">
-            <Icon
-              name="ph:list-bold"
-            />
-          </div>
-        </button>
-     </div>
-    </navbar>
-  </div>
-
-  <div id="MenuMobile" class="md:hidden justify-center w-full items-start hidden">
-    <div class="flex flex-col gap-y-8 justify-center items-start w-full px-6 py-10">
-    <a class="text-stone-200 hover:text-stone-50 hover:underline text-base font-bold" href="/">Início</a>
-    <a class="text-stone-200 hover:text-stone-50 hover:underline text-base font-bold" href="/projetos">Projetos</a>
-    <a class="text-stone-200 hover:text-stone-50 hover:underline text-base font-bold" href="/blog">Blog</a>
-    </div>
-  </div>
-</header>
-
-
-<script>
-  import  "../scripts/ToogleMenu.js";
-</script>
-
-
+<Container>
+  <header class="flex justify-between items-center h-20 w-full">
+    <Logo />
+    <Navbar />
+  </header>
+</Container>

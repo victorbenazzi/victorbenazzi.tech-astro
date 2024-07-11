@@ -1,47 +1,42 @@
 ---
-import { Image } from 'astro:assets';
 import { Icon } from "astro-icon";
 export interface Props {
-   
-    title: string ;
-    description: string ;
-    imageCard: any;
-    link: string ;
-    linkText: string ;
-    alt: string ;
-    stacks: string ;
+  title: string;
+  description: string;
+  imageCard: string;
+  link: string;
+  linkText: string;
+  alt: string;
+  stacks: string;
+  key?: number;
 }
 
-const { title,  description, imageCard, link, linkText, alt, stacks } = Astro.props;
+const { title, description, imageCard, link, linkText, alt, stacks, key } =
+  Astro.props;
 ---
 
-<div class="flex flex-col h-fit md:h-[495px] p-6  justify-between gap-y-8 border-stone-800 rounded-lg border ">
-    
+<div
+  class="flex flex-col gap-y-4 max-h-[495px] p-4 justify-between border-stone-800 rounded-xl border">
+  <img
+    class="rounded-lg border border-stone-800 aspect-video hover:opacity-80"
+    src={imageCard}
+    alt={alt}
+  />
 
-    
-        <Image
-            class="rounded-lg border border-stone-800 aspect-video hover:opacity-80"
-            src={imageCard}
-            alt={alt}
-        />
+  <div class="flex flex-col gap-y-2">
+    <h3 class="text-stone-50 text-lg font-bold">{title}</h3>
+    <p class="text-xs text-stone-500">{stacks}</p>
+  </div>
 
-    <div class="flex flex-col">
-        <h3 class=" text-stone-50 text-xl font-bold">{title}</h3>
-        <p class="text-sm text-stone-300">{stacks}</p>
+  <p class="text-sm text-stone-200">{description}</p>
+
+  <a
+    href={link}
+    target="_blank"
+    class="flex flex-row items-center gap-x-2 text-sm w-fit text-stone-50 font-bold group mt-4">
+    {linkText}
+    <div class="w-4 h-4 group-hover:translate-x-1 transition-all">
+      <Icon name="ph:caret-circle-right-bold" />
     </div>
-
-    <p class="text-sm text-stone-200">{description}</p>
-    
-
-    <a href={link} target="_blank" class="flex flex-row items-center gap-x-2 text-base w-fit text-stone-50 hover:underline font-bold ">
-        {linkText}
-
-        <div class="w-[18px] h-[18px]">
-            <Icon
-              name="ph:caret-right-bold"
-            />
-    
-          </div>
-    </a>
-
+  </a>
 </div>
