@@ -13,6 +13,33 @@ export default {
         "bg-hero-desktop": "url('./src/assets/bg-desktop.png')",
         "bg-hero-mobile": "url('./src/assets/bg-mobile.png')",
       },
+      animation: {
+        topToBottom: "topToBottom 0.9s ease-in-out",
+        BottomToTop: "BottomToTop 0.9s ease-in-out",
+        BottomToTopDelay: "BottomToTop 0.9s ease-in-out",
+      },
+      keyframes: {
+        topToBottom: {
+          "0%": {
+            transform: "translateY(-10%)",
+            opacity: 0,
+          },
+          "100%": {
+            transform: "translateY(0)",
+            opacity: 1,
+          },
+        },
+        BottomToTop: {
+          "0%": {
+            transform: "translateY(10%)",
+            opacity: 0,
+          },
+          "100%": {
+            transform: "translateY(0)",
+            opacity: 1,
+          },
+        },
+      },
     },
   },
 
