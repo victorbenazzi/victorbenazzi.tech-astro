@@ -18,11 +18,9 @@ import SocialIcons from "./SocialIcons.astro";
     >
   </div>
   <SocialIcons />
-  <div
-    id="BtnMenuMobile"
-    class="flex md:hidden flex-row gap-x-8"
-    onclick="toggleMenu()">
+  <div id="BtnMenuMobile" class="flex md:hidden flex-row gap-x-8">
     <button
+      id="menu-toggle"
       class="p-2 border rounded-lg border-stone-800"
       aria-label="Botão para o menu principal">
       <div class="w-4 h-4 text-stone-50">
@@ -30,14 +28,28 @@ import SocialIcons from "./SocialIcons.astro";
       </div>
     </button>
   </div>
+  <div
+    id="MenuMobile"
+    class="hidden absolute top-0 left-0 w-full bg-neutral-950 h-[220px] flex-col gap-y-2 items-center justify-center mt-20 md:hidden">
+    <a
+      class="text-stone-200 hover:text-stone-50 px-4 py-2 hover:bg-stone-900 rounded-lg text-base font-bold"
+      href="/">Início</a
+    >
+
+    <a
+      class="text-stone-200 hover:text-stone-50 px-4 py-2 hover:bg-stone-900 rounded-lg text-base font-bold"
+      href="/blog">Blog</a
+    >
+  </div>
 </nav>
 
 <script>
-  function toggleMenu() {
-    const BntMenuMobile = document.getElementById("BtnMenuMobile");
-    const MenuMobile = document.getElementById("MenuMobile");
-    BntMenuMobile.addEventListener("click", () => {
-      MenuMobile.classList.toggle("hidden");
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menu-toggle");
+    const menuMobile = document.getElementById("MenuMobile");
+
+    menuToggle.addEventListener("click", function () {
+      menuMobile.classList.toggle("hidden");
     });
-  }
+  });
 </script>
