@@ -5,8 +5,6 @@ import Layout from "../layouts/Layout.astro";
 import Projects from "../components/Projects.astro";
 import Container from "../components/Container.astro";
 import MainButton from "../components/MainButton.astro";
-import HeroBg from "../assets/bg-desktop.png";
-import { Image } from "astro:assets";
 ---
 
 <head>
@@ -27,7 +25,6 @@ import { Image } from "astro:assets";
   <Container>
     <section
       class="flex flex-col items-center justify-center gap-y-8 w-full h-[440px] mt-20 relative animate-BottomToTop">
-      <Image class="absolute top-0 left-0 hidden" src={HeroBg} alt="bg" />
       <h1
         class="text-4xl lg:text-5xl x:text-8xl text-stone-50 font-bold text-center z-10">
         Web Designer & Front-end Developer

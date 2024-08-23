@@ -10,7 +10,7 @@ export default {
         yellowBranding: "#EDCA4C",
       },
       backgroundImage: {
-        "bg-hero-desktop": "url('./src/assets/bg-desktop.png')",
+        "bg-hero-desktop": "url('./src/assets/bg-hero.png)",
         "bg-hero-mobile": "url('./src/assets/bg-mobile.png')",
       },
       animation: {
