@@ -4,7 +4,7 @@
     "title": "Grupo Floss • Landing Page",
     "stacks": "Design e Desenvolvimento • Wordpress e Elementor",
     "description": "Landing page desenvolvida para divulgar a plataforma de ensino.",
-    "imageCard": "/src/assets/floss.png",
+    "imageCard": "/floss.png",
     "alt": "Grupo Floss",
     "link": "https://assinatura.grupofloss.com/",
     "linkText": "Visitar site"
@@ -14,7 +14,7 @@
     "title": "Soulvox • Website",
     "stacks": "Design e Desenvolvimento • Wordpress e Elementor",
     "description": "Plataforma de locução online com locutores profissionais.",
-    "imageCard": "/src/assets/soulvox.png",
+    "imageCard": "/soulvox.png",
     "alt": "Soulvox",
     "link": "https://soulvox.com.br",
     "linkText": "Visitar site"
@@ -24,7 +24,7 @@
     "title": "Academia Atlética • Website",
     "stacks": "Design e Desenvolvimento • Framer",
     "description": "Site institucional para divulgar as unidades da academia.",
-    "imageCard": "/src/assets/atletica.png",
+    "imageCard": "/atletica.png",
     "alt": "Atlética",
     "link": "https://academiaatletica.com.br/",
     "linkText": "Visitar site"
@@ -35,7 +35,7 @@
     "title": "Mutinno • Landing Page",
     "stacks": "Design e Desenvolvimento • RD Station",
     "description": "Landing page desenvolvida utilizando o RD Station para o método Mais que um post bonito.",
-    "imageCard": "/src/assets/mutinno.png",
+    "imageCard": "/mutinno.png",
     "alt": "Landing Page Mutinno - Mais Que Um Post Bonito",
     "link": "https://materiais.mutinno.com.br/q1pb",
     "linkText": "Visitar site"
@@ -45,7 +45,7 @@
     "title": "To Grow • Site Institucional",
     "stacks": "Desenvolvimento • Wordpress e Elementor",
     "description": "Site institucional focado em mostrar os serviços da empresa e captar leads.",
-    "imageCard": "/src/assets/togrow.png",
+    "imageCard": "/togrow.png",
     "alt": "Site To Grow",
     "link": "https://togrow.tech",
     "linkText": "Visitar site"
@@ -55,7 +55,7 @@
     "title": "Capton • Página de Oportunidades",
     "stacks": "Design e Desenvolvimento • Wordpress e Elementor",
     "description": "Página focada em demonstrar todas as oportunidades que a Capton oferece ao mercado.",
-    "imageCard": "/src/assets/capton.png",
+    "imageCard": "/capton.png",
     "alt": "Página de benefícios Capton",
     "link": "https://oportunidades.capton.com.br/",
     "linkText": "Visitar site"
@@ -66,7 +66,7 @@
     "title": "Disparo Pro • Site institucional",
     "stacks": "Desenvolvimento • Wordpress e Elementor",
     "description": "Site principal da plataforma, integração com RD Station, GTAG e Meta Tag.",
-    "imageCard": "/src/assets/disparo.png",
+    "imageCard": "/disparo.png",
     "alt": "Site Disparo Pro",
     "link": "https://disparopro.com.br/",
     "linkText": "Visitar site"
@@ -76,7 +76,7 @@
     "title": "Brasilfone • Site institucional",
     "stacks": "Design e Desenvolvimento • Wordpress e Elementor",
     "description": "Site principal da empresa, integração com RD Station, GTAG e Meta Tag.",
-    "imageCard": "/src/assets/brasilfone.png",
+    "imageCard": "/brasilfone.png",
     "alt": "Site Brasilfone",
     "link": "https://brasilfone.com.br/",
     "linkText": "Visitar site"
@@ -87,7 +87,7 @@
     "title": "Ativos Capital • Site institucional",
     "stacks": "Design e Desenvolvimento • Wordpress e Elementor",
     "description": "Site institucional da empresa, integração com RD Station, GTAG e Meta Tag.",
-    "imageCard": "/src/assets/ativos.png",
+    "imageCard": "/ativos.png",
     "alt": "Site Ativos Capital",
     "link": "https://ativos.capital/",
     "linkText": "Visitar site"
@@ -97,7 +97,7 @@
     "title": "Linkou • Blog",
     "stacks": "Design e Desenvolvimento • Wordpress e Elementor",
     "description": "Blog comercial da linkou e integração com RD Station, GTAG e Meta Tag.",
-    "imageCard": "/src/assets/linkou.png",
+    "imageCard": "/linkou.png",
     "alt": "Site Linkou Digital",
     "link": "https://linkou.digital/",
     "linkText": "Visitar site"
@@ -107,7 +107,7 @@
     "title": "Zucchi • Landing Page",
     "stacks": "Design e Desenvolvimento • RD Station",
     "description": "Landing page focada em divulgar o serviço de valuation corporativo da Zucchi. Integração com RD Station.",
-    "imageCard": "/src/assets/zucchi.png",
+    "imageCard": "/zucchi.png",
     "alt": "Landing page Zucchi",
     "link": "https://www-zucchi-com-br.rds.land/lp-zucchi-valuation-corporativo-b",
     "linkText": "Visitar site"
