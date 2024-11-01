@@ -5,6 +5,7 @@ import Layout from "../layouts/Layout.astro";
 import Projects from "../components/Projects.astro";
 import Container from "../components/Container.astro";
 import MainButton from "../components/MainButton.astro";
+import Logo from "../components/Logo.astro";
 ---
 
 <head>
@@ -15,7 +16,7 @@ import MainButton from "../components/MainButton.astro";
       basic: {
         title: "Front-end Developer e Web Designer",
         type: "Website",
-        image: "https://www.victorbenazzi.tech/Og-SEO.png",
+        image: "https://www.victorbenazzi.com.br/Og-SEO.png",
       },
     }}
   />
@@ -24,23 +25,20 @@ import MainButton from "../components/MainButton.astro";
 <Layout>
   <Container>
     <section
-      class="flex flex-col items-center justify-center gap-y-8 w-full h-[440px] mt-20 relative animate-BottomToTop">
+      class="flex flex-col items-center justify-center gap-y-2 w-full h-[440px] mt-20 relative animate-BottomToTop">
+      
       <h1
-        class="text-4xl lg:text-5xl x:text-8xl text-stone-50 font-bold text-center z-10">
-        Web Designer & Front-end Developer
+        class="text-5xl  text-stone-50 font-bold text-center">
+        Website Development Specialist
       </h1>
-      <p class="text-stone-300 text-center w-full max-w-[680px] z-10">
-        Sou web designer e front-end developer, especialista em criar sites e
+      <p class="text-stone-300 text-center w-full ">
+        @ <a href="http://optidata.cloud" target="_blank">Optidata</a> 
+        <!-- Sou web designer e front-end developer, especialista em criar sites e
         landing pages incríveis. Desenvolvo soluções web que aliam design,
-        funcionalidade e responsividade.
+        funcionalidade e responsividade. -->
       </p>
-      <MainButton
-        labelButton="Entre em contato"
-        link="https://wa.me/5569992993889?text=Olá, vim pelo seu site e gostaria de saber mais sobre seus serviços!"
-        target="_blank"
-      />
+     
     </section>
   </Container>
 
-  <Projects />
 </Layout>
