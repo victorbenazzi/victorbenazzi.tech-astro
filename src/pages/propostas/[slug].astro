@@ -1,0 +1,15 @@
+---
+import { getCollection } from "astro:content";
+export async function getStaticPaths() {
+	const propostas = await getCollection("propostas");
+	return propostas.map((entry) => ({
+		params: { slug: entry.slug },
+		props: { entry },
+	}));
+}
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+<meta property="og:url" content={`https://www.victorbenazzi.com.br/propostas/${entry.slug}`} />
+<meta property="twitter:url" content={`https://www.victorbenazzi.com.br/propostas/${entry.slug}`} />
+<Content />

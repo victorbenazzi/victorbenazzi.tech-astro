@@ -9,10 +9,7 @@ export default {
         "indigo-hover": "#1F212C",
         yellowBranding: "#EDCA4C",
       },
-      backgroundImage: {
-        "bg-hero-desktop": "url('./src/assets/bg-hero.png)",
-        "bg-hero-mobile": "url('./src/assets/bg-mobile.png')",
-      },
+      
       animation: {
         topToBottom: "topToBottom 0.9s ease-in-out",
         BottomToTop: "BottomToTop 0.9s ease-in-out",

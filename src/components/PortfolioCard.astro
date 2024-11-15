@@ -1,18 +1,18 @@
 ---
 import { Icon } from "astro-icon";
 export interface Props {
-  title: string;
-  description: string;
-  imageCard: string;
-  link: string;
-  linkText: string;
-  alt: string;
-  stacks: string;
-  key?: number;
+	title: string;
+	description: string;
+	imageCard: string;
+	link: string;
+	linkText: string;
+	alt: string;
+	stacks: string;
+	key?: number;
 }
 
 const { title, description, imageCard, link, linkText, alt, stacks, key } =
-  Astro.props;
+	Astro.props;
 ---
 
 <div
@@ -24,11 +24,11 @@ const { title, description, imageCard, link, linkText, alt, stacks, key } =
   />
 
   <div class="flex flex-col gap-y-2">
-    <h3 class="text-stone-50 text-lg font-bold">{title}</h3>
-    <p class="text-xs text-stone-500">{stacks}</p>
+    <h3 class="text-stone-50 text-lg font-bold ">{title}</h3>
+    <p class="text-xs text-stone-500 mt-0">{stacks}</p>
   </div>
 
-  <p class="text-sm text-stone-200">{description}</p>
+  <p class="text-sm text-stone-200 mt-2">{description}</p>
 
   <a
     href={link}

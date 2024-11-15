@@ -16,8 +16,20 @@ const blogCollection = defineCollection({
     })
 })
 
+
+const propostas = defineCollection({
+    schema: () => z.object({
+        title: z.string(),
+        layout: z.string(),
+        description: z.string(),
+        pubDate: z.string(),
+        expires: z.string(),
+       
+    })
+})
 export const collections = {
     'blog': blogCollection,
+    'propostas': propostas,
 };
 
 
